@@ -20,10 +20,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: checkout
+      - name: Checkout
       - uses: actions/checkout@v2
 
-      - name: ssh login to jacky's tencent-1 host
+      - name: SSH login to jacky's tencent-1 host
       env:
         id_rsa_pri: ${{ secrets.TOKEN_PRI }}
         id_rsa_pub: ${{ secrets.TOKEN_PUB }}
