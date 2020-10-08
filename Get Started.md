@@ -1,6 +1,10 @@
-## How to run your first tearust demo.
+# How to run your first tearust demo.
 
-### Get docker-compose files
+## Get docker-compose files
+
+### Install docker and docker compose
+
+
 
 ### Install the substrate plugin
 
