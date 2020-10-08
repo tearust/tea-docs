@@ -6,9 +6,11 @@ name: Sync to jacky's tencent-1 server
 # events but only for the main branch
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -23,11 +25,11 @@ jobs:
 
       - name: SSH
       env: 
+        id_rsa_pri: ${{ secrets.TOKEN_PRI }}
         
-        id_rsa_pub: ${{ secrets.TOKEN_PUB }}
       run: |
-        mkdir -p ~/.ssh/   
-        echo "$id_rsa_pub" > ~/.ssh/id_rsa.pub 
+        mkdir -p ~/.ssh/
+        echo "$id_rsa_pri" > ~/.ssh/id_rsa 
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan 81.70.96.136 >> ~/.ssh/known_hosts
         ssh ubuntu@81.70.96.136 "cd TEA/tea-docs && git pull"
