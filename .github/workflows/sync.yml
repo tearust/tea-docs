@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      - name: SSH login
+      - name: SSH
       env: 
         id_rsa_pri: ${{ secrets.TOKEN_PRI }}
         id_rsa_pub: ${{ secrets.TOKEN_PUB }}
