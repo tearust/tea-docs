@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@main
 
       - name: SSH login to jacky's tencent-1 host
-      env: |
+      env: 
         id_rsa_pri: ${{ secrets.TOKEN_PRI }}
 
       run: |
