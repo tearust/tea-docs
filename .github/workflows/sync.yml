@@ -19,16 +19,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-      - uses: actions/checkout@main
+        uses: actions/checkout@main
 
       - name: SSH login to jacky's tencent-1 host
-      env: 
+      env: |
         id_rsa_pri: ${{ secrets.TOKEN_PRI }}
-
+        id_rsa_pub: ${{ secrets.TOKEN_PUB }}
       run: |
         mkdir -p ~/.ssh/
         echo "$id_rsa_pri" > ~/.ssh/id_rsa 
-
+        echo "$id_rsa_pub" > ~/.ssh/id_rsa.pub 
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan 81.70.96.136 >> ~/.ssh/known_hosts
         ssh ubuntu@81.70.96.136 "cd TEA/tea-docs && git pull"
