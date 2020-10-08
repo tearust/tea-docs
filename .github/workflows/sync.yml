@@ -23,11 +23,10 @@ jobs:
 
       - name: SSH
       env: 
-        id_rsa_pri: ${{ secrets.TOKEN_PRI }}
+        
         id_rsa_pub: ${{ secrets.TOKEN_PUB }}
       run: |
-        mkdir -p ~/.ssh/
-        echo "$id_rsa_pri" > ~/.ssh/id_rsa 
+        mkdir -p ~/.ssh/   
         echo "$id_rsa_pub" > ~/.ssh/id_rsa.pub 
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan 81.70.96.136 >> ~/.ssh/known_hosts
