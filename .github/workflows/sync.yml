@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      - name: SSH login to jacky's tencent-1 host
+      - name: SSH login
       env: 
         id_rsa_pri: ${{ secrets.TOKEN_PRI }}
         id_rsa_pub: ${{ secrets.TOKEN_PUB }}
