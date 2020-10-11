@@ -24,7 +24,7 @@ Please following the below steps to start.
 
 ### Test Errand task with your data.
 * [Open the demo](http://81.70.96.136:8080/ipfs/QmeUDxyZZ9djsd5YH7ncJmvKeX1t7M2dJyoYeTekDHV1ic/)
-* [Here] are some prepared images, or use your own image to upload in next step.
+* [Here](https://github.com/tearust/tea-docs/tree/main/res) are some prepared images, or use your own image to upload in next step.
 * The prepared code is a tensorflow driver to recognize the uploaded image.
 * Check out the result for your data.
 
