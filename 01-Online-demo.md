@@ -16,7 +16,7 @@ Please following the below steps to start.
 ### Test Errand task with prepared data.
 * [Open the demo (China)](http://81.70.96.136:8080/ipfs/QmfN8jUUqddZbE7K1w5AG84GnYJtkC33LtzhDr9mEmWVYT/)
 * [Open the demo (US)](http://159.203.170.228:8080/ipfs/QmZ9SYocTSUjD5uZX1vvQ5UHS5qHKviiBCw74qyzBEhPsk)
-* Select your substract address and select the delegate node url (e.g. http://81.70.96.136:8000).
+* Select your Substract address and select the delegate node url (e.g. http://81.70.96.136:8000).
 * In next step, You need to deposit some tokens to the selected delegate node, please input more than 100 and confirm. The amount area in the page top will be changed as your expect after few seconds.
 * To next step, You can see the prepared data and code cid which in IPFS.
 * After click the **Run Errand Task** button, the browser plugin will ask you to input account's password to sign this task for encrypted.
