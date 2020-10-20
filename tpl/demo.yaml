@@ -1,0 +1,71 @@
+version: "3.1"
+services:
+
+  nats-server:
+    image: nats:latest
+    container_name: "nats-server"
+
+  ipfs:
+    image: ipfs/go-ipfs:v0.7.0
+    container_name: ipfs
+    ports:
+      - 4001:4001
+      - 5001:5001
+    volumes:
+      - ".ipfs:/data/ipfs"
+    command: ["daemon", "--migrate", "--enable-pubsub-experiment"]
+    
+  # layer1:
+  #   image: tearust/tea-layer1:0.2
+  #   container_name: layer1
+  #   ports:
+  #     - 9944:9944
+  #     - 30333:30333
+  #   volumes:
+  #     - .layer1:/root/.local
+  #   command: bash -c "tea-layer1 --chain dev --ws-external -lwarn --rpc-external --rpc-cors all --bootnodes /ip4/159.203.101.15/tcp/30333/p2p/QmRs8muPr7dgHrXdf7VRnQiMZ2bR8JBwkp7piSs96QeEAR"
+
+  facade:
+    environment:
+      - NATS_URL=nats-server:4222
+      - FACADE_WSURL=ws://81.70.96.136:9944
+      - FACADE_ACCOUNT_URI=//Ferdie
+    image: tearust/layer1-facade:1.6
+    container_name: "facade"
+
+  adapter:
+    environment:
+      - NATS_URL=nats-server:4222
+      - NKN_ID=954bb74ec665daa8
+      - NKN_SEED=0e7a17940b39dc323a400b91b5e36787212cb462a93008d32059ca86e8f81ade
+      - IPFS_LISTENSERVER=adapter
+      - IPFS_LISTENPORT=7788
+      - IPFS_SERVER=ipfs
+      - IPFS_PORT=5001
+      - IPFS_DAIL=false
+    image: tearust/adapter:0.7.6
+    container_name: "adapter"
+    ports:
+      - 8000:8000
+      - 8001:8001
+    command: ["./wait-for-it.sh", "ipfs:5001", "--", "./tea-adapter"]
+
+  runtime:
+    environment:
+      - IPFS_HOST=ipfs
+      - IPFS_PORT=5001
+      - NATS_URL=nats-server:4222
+      
+      # Input your public url here
+      - PUBLIC_URLS=
+
+      - DISABLE_SELF_SUB_MESSAGE=true
+      - TEA_ID_PUB={{tea_id_pub}}
+      - TEA_ID_PRI={{tea_id_pri}}
+      - PAYMENT_ACCOUNT=5CiPPseXPECbkjWCa6MnjNokrgYjMqmKndv2rSnekmSK2DjL
+      - RUST_LOG=info,cranelift_wasm=warn
+      - CACHE_DIR_PATH=/tea/runtime-cache
+    image: tearust/runtime:0.9
+    container_name: "runtime"
+
+
