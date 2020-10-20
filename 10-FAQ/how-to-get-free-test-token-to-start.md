@@ -1,0 +1,1 @@
+[Click the free token faucet](http://t-rust.com/tools/layer1_faucet)
