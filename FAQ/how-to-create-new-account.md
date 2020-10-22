@@ -1,6 +1,6 @@
 # prerequisits
 
-You will need Polkadot Extension in your browser to create new account. If have not install one, please go to "[How to install Polkadot Extension](https://github.com/tearust/tea-docs/blob/main/10-FAQ/how-to-install-pokda-dot-extension.md)" first.
+You will need Polkadot Extension in your browser to create new account. If have not install one, please go to "[How to install Polkadot Extension](https://github.com/tearust/tea-docs/blob/main/FAQ/how-to-install-pokda-dot-extension.md)" first.
 
 # Steps
 ![click +](http://t-rust.com/img/extension1.png)

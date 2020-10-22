@@ -12,7 +12,7 @@ When you click the easy start demo link, you browser may give you a warning on "
 
 Do not worry it is not a security threat. This is a normal *pure* dapp feed from IPFS. You can know from the URL in the picture (red box).
 
-To learn more about why it is OK to be "not secure" and what is *pure* dapp mean, please go to "![under the hood(/doc_list/%2F03-Under%20the%20hood%2F1-Easy-start.m)".
+To learn more about why it is OK to be "not secure" and what is *pure* dapp mean, please go to "![under the hood(/doc_list/%2FFAQ%2Fwhy-no-secure-website.md)".
 
 # Select an account
 
