@@ -24,4 +24,8 @@ Each of them fixed a specific problem, and made a huge improvement towards a ful
 - Trusted computing have been around for so many years, but the boundary of single metal box limited its expending. It needs to extend with blockchain and other new technologies and beyond.
 - WebAssembly is still at its early stage. It needs practical use cases to get popular. 
 
+# TEA, thinking differently
+
+To build a dApp platform, it is impossible to use a single layer of tools. Combine all the latest technologies together, we can probably solve the problems and fix the internet.
+
 Please keep reading Next Page (TODO) about how TEA project glues them together into a pure dApp platform: the T-rust
