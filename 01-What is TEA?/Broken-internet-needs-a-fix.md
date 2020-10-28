@@ -1,5 +1,5 @@
 # Decentralization movement - Internet is broken, we are trying to fix it!
-![tea](/res/tea1.svg)
+![tea](https://raw.githubusercontent.com/tearust/tea-docs/fe92e1b1ca9582e505c0c87c4f7699b2438d41d2/res/tea1.svg =100x)
 From [Zoë Corbyn](https://www.theguardian.com/profile/zoe-corbyn)'s 2018 article [Decentralisation: the next big step for the world wide web](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle), 
 >"The proponents of the so-called decentralised web – or DWeb – want a new, better web where the entire planet’s population can communicate without having to rely on big companies that amass our data for profit and make it easier for governments to conduct surveillance. "
 
