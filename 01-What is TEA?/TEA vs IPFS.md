@@ -1,9 +1,3 @@
-TEA project design the T-rust platform based on existing technologies such as IPFS, Substrate blockchain, WebAssembly and Trusted computing. To summarise how we used them in a few bullets:
-- Code and data all stored in IPFS
-- Libp2p is the p2p network layer for both IPFS and T-rust
-- The most important businese and consensus logic runs in the blockchain developed using Substrate.
-- Most of T-rust system code and custom's code executes inside hardware protected trusted computing modules. TPM chips provide Proof-of-trust.
-- 
 # TEA vs IPFS
 ## TEA use IPFS as File System
 Except for temporary memory cache, TEA modules do not allow to save anything on its local storage. Everything is required to store in the IPFS node which it connects to.
@@ -38,12 +32,3 @@ TEA do not run [FHE](https://en.wikipedia.org/wiki/Homomorphic_encryption) algor
 ## TEA uses LibP2P as network layer
 
 LibP2P is part of IPFS project. TEA also use the LibP2P as the network layer of T-rust platform so that both IPFS and T-rust can share the network resources.
-
-# Edge computing and 5G
-
-# Use cases
-## Defi
-
-# Business models in decentralized era
-
-
