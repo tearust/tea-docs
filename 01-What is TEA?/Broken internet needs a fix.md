@@ -9,6 +9,8 @@ and
 
 If you did not understant what he said back in 2018, you probably totally understand it now. Our existing internet is broken, we are trying to fix it.
 
+![fix the net](https://github.com/tearust/tea-docs/blob/main/res/fix-the-net.png?raw=true)
+
 # The existing cures and remaining problems
 There are so many new projects released the recent years. They fixed parts of the broken internet. Such as:
 - IPFS provides a peer-2-peer file system which a store files in decentralzied manner.
