@@ -1,24 +1,37 @@
 sort:
-  - name: 01-Online-demo.md
-
-  - name: 01-What is TEA?
+  - name: What is TEA?
     children:
-      - name: 01-Problems.md
-      - name: 02-Key-concepts.md
-      - name: 03-Use-cases.md
-      - name: 04-New-business-models.md
+      - name: Broken internet needs a fix.md
+      - name: Standing on the shoulder of giants.md
+      - name: TEA vs IPFS.md
+      - name: TEA vs Blockchain.md
+      - name: Key concepts.md
+      - name: Use cases.md
+      - name: New business models.md
+  - name: Try the demo
+    children:
+      - name: Easy start.md
+      - name: Use your own picture.md
+      - name: Deploy your own code.md
+      - name: Run your own TEA node.md
 
-  - name: 02-Try-the-demo
+  - name: Under the hood
     children:
       - name: 01-Easy-start.md
       - name: 02-Use-your-own-picture.md
       - name: 03-Deploy-your-own-code.md
 
-  - name: Get Started.md
+  # - name: Ecosystem
+  #   children:
+  #   - name: todo.md
 
   - name: FAQ
     children:
-      - name: why-no-secure-website.md
+      - name: why not secure.md
+      - name: how to install polkadot extension.md  
+      - name: how to create a new account.md
+      - name: how to get free test token to start.md
+
 
   
 
