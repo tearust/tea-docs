@@ -5,7 +5,6 @@ TEA project ties to blockchain closely. A lot of essential consensus algorithm r
 However, we do not consider T-rust is a blockchain itself. It is more like a layer-2 oracle on top of existing blockchain because the main purpose of T-rust is not to run a self blockchain, but to run a computation oracle for other blockchains. 
 
 ## T-rust as a computation oracle to blockchains
-![oracle](https://m.media-amazon.com/images/I/41SRz47UbAL.jpg)
 Smart contracts are the logic running in a blockchain. You can use anything happened previous in the block as input perameters for a smart contract function, but if some facts happened outside of the blockchina, smart contracts have no way to know or trust. Thus, an Oracle(https://academy.binance.com/en/articles/blockchain-oracles-explained) is needed as the trusted input source. This Oracle has nothing to do with the database or the company. There are many kinds of oracles. TEA is the computation oracle which takes input from the blockchain, run complex algorithm out of the chain, then send the computation result back to the chain. 
 
 The reason why do not do the computing inside blockchain lays in the following facts
