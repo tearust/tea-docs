@@ -1,36 +1,31 @@
 sort:
-  - name: What is TEA?
+  - name: What_is_TEA?
     children:
-      - name: Broken internet needs a fix.md
-      - name: Standing on the shoulder of giants.md
-      - name: TEA vs IPFS.md
-      - name: TEA vs Blockchain.md
-      - name: Key concepts.md
-      - name: Use cases.md
-      - name: New business models.md
-  - name: Try the demo
+      - name: Broken_internet_needs_a_fix.md
+      - name: TEA_vs_IPFS.md
+      - name: TEA_vs_blockchain.md
+      - name: Key_concepts.md
+      - name: Use_cases.md
+      - name: New_business_models.md
+  - name: Try_the_demo
     children:
-      - name: Easy start.md
-      - name: Use your own picture.md
-      - name: Deploy your own code.md
-      - name: Run your own TEA node.md
+      - name: Easy_start.md
+      - name: Use_your_own_picture.md
+      - name: Deploy_your_own_code.md
+      - name: Run_your_own_TEA_node.md
 
-  - name: Under the hood
+  - name: Under_the_hood
     children:
-      - name: 01-Easy-start.md
-      - name: 02-Use-your-own-picture.md
-      - name: 03-Deploy-your-own-code.md
-
-  # - name: Ecosystem
-  #   children:
-  #   - name: todo.md
+      - name: Easy_start.md
+      - name: Use_your_own_picture.md
+      - name: Deploy_your_own_code.md
 
   - name: FAQ
     children:
-      - name: why not secure.md
-      - name: how to install polkadot extension.md  
-      - name: how to create a new account.md
-      - name: how to get free test token to start.md
+      - name: why_not_secure.md
+      - name: how_to_install_polkadot_extension.md  
+      - name: how_to_create_a_new_account.md
+      - name: how_to_get_free_test_token_to_start.md
 
 
   
