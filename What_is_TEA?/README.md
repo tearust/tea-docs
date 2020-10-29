@@ -9,8 +9,6 @@ T-rust is the name of the platform TEA project builds to run dApps. So far T-rus
 
 ![logo](/img/logo.png)
 
-![lion](../res/lion.jpg)
-
 
 Since it is called “tea”, the logo should be tea-related. So a cup of tea is my first idea.
 
@@ -20,3 +18,4 @@ Well, it looks like a cup of tea now. But it is just a cup of tea. Nothing to do
 I asked my designer friend Nick to put all of those elements together. Bang! we got it!
 
 For more stories behind the name TEA and the logo click [here](https://medium.com/@pushbar/i-designed-a-logo-for-tea-project-9cf85d733708)
+
