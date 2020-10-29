@@ -9,6 +9,8 @@ T-rust is the name of the platform TEA project builds to run dApps. So far T-rus
 
 ![logo](/img/logo.png)
 
+![lion](../res/lion.jpg)
+
 
 Since it is called “tea”, the logo should be tea-related. So a cup of tea is my first idea.
 
