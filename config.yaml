@@ -1,5 +1,6 @@
 sort:
   - name: What_is_TEA?
+    path: What_is_TEA?/README.md
     children:
       - name: Broken_internet_needs_a_fix.md
       - name: TEA_vs_IPFS.md
@@ -8,6 +9,7 @@ sort:
       - name: Use_cases.md
       - name: New_business_models.md
   - name: Try_the_demo
+    path: Try_the_demo/README.md
     children:
       - name: Easy_start.md
       - name: Use_your_own_picture.md
@@ -15,12 +17,14 @@ sort:
       - name: Run_your_own_TEA_node.md
 
   - name: Under_the_hood
+    path: Under_the_hood/README.md
     children:
       - name: Easy_start.md
       - name: Use_your_own_picture.md
       - name: Deploy_your_own_code.md
 
   - name: FAQ
+    path: FAQ/README.md
     children:
       - name: why_not_secure.md
       - name: how_to_install_polkadot_extension.md  
