@@ -28,7 +28,11 @@ TEA do not run [FHE](https://en.wikipedia.org/wiki/Homomorphic_encryption) algor
 
 ### How do I know that the TEA module doesn't have a backdoor to steal my privacy?
 
-[Trusted computing](https://en.wikipedia.org/wiki/Trusted_Computing) has been widely used for more than decades. You probably do not know that all computers and most cell phones produceds in recent 10 years have a small [TPM](https://en.wikipedia.org/wiki/Trusted_Platform_Module) chip on board. This tiny chip generate PoT (Proof of Trust) that get validated by other nodes through the consensus in the smart contracts on the blockchain. Using the combination of these technologies T-rust protects your privacy against breaching. 
+[Trusted computing](https://en.wikipedia.org/wiki/Trusted_Computing) has been widely used for more than decades. You probably do not know that all computers and most cell phones produceds in recent 10 years have a small [TPM](https://en.wikipedia.org/wiki/Trusted_Platform_Module) chip on board. This tiny chip generate PoT (Proof of Trust) that get validated by other nodes through the consensus in the smart contracts on the blockchain. 
+
+If the computation can be loaded into CPU's enclave, the [TEE](https://en.wikipedia.org/wiki/Trusted_execution_environment), such as the popular [Intel SGX](https://en.wikipedia.org/wiki/Software_Guard_Extensions) is a better choice since only those sensitive code running inside enclave get protected. This made the remove attestation much easier except for a comprimise that a centralized manufacturer validation is required.
+
+Using the combination of these technologies T-rust protects your privacy against breaching. More details on trusted computing please read [this](TEA_vs_trusted_computing.md).
 
 ## TEA uses LibP2P as network layer
 
