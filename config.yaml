@@ -22,9 +22,17 @@ sort:
   - name: Under_the_hood
     path: Under_the_hood/README.md
     children:
+      - name: Tea_layer1.md
+      - name: Delegation_chain.md
+      - name: Repin.md
+      - name: Trust_chain.md
       - name: Easy_start.md
       - name: Use_your_own_picture.md
       - name: Deploy_your_own_code.md
+      - name: Select_executor.md
+      - name: Revenue_distribution.md
+      - name: Submit_task.md
+
 
   - name: FAQ
     path: FAQ/README.md
