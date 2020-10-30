@@ -32,13 +32,13 @@ When we design the TEA project, we try to fill the gap between dApps and Cloud A
 - Using our deployment tools to deploy to the TEA network (based on IPFS)
 - Do not forget to pay :)
 
-Your code/data is encrypted first before saved to IPFS. Only trusted TEA nodes (passed remote attestation) have a copy of the decryption keys in their secured memory. The security of the TEA nodes is protected by hardware (TPM & HSM) and guaranteed by TEA consensus on Substrate Blockchain.
+Your code/data is encrypted first before saved to IPFS. Only trusted TEA nodes (passed remote attestation) have a copy of the decryption keys in their secured memory. The security of the TEA nodes is protected by hardware (TEE, TPM or HSM) and guaranteed by TEA consensus on Substrate Blockchain.
 
 I listed quite a few concepts in my last long sentence. If you do not know all of them, let me give you a basic explanation here.
 
 - Wasm: WebAssembly, a new ISA, bytecode binary format to executables
 - IPFS: A decentralized file system.
-- TPM & HSM: Trusted Computing technologies in chips or hardware enclosure
+- TEE, TPM or HSM: Trusted Computing technologies in chips or hardware enclosure
 - Substrate: The tech base of popular Polkadot blockchain
 - TEA: Trusted Execution and Attestation, the project I am talking about now
 

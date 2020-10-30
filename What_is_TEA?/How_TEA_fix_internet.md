@@ -21,7 +21,7 @@ This is a typical problem TEA is trying to solve. TEA's goal is build a platform
 
 TEA made this possible by the following factors
 - TEA nodes connects to each other by a peer to peers network
-- Every TEA node itself is protected and monitored by hardware TPM chips. The TPM can provider PoT (proof of trust). 
+- Every TEA node itself is protected and monitored by hardware TPM chips or CPU's TEE. The TPM can provider PoT (proof of trust). CPU's TEE depends on manufacturer's verification.  
 - Every TEA node can verify other TEA nodes integrity through a Remote Attestation process
 - The verification is controlled and determinined by blockchain smart contracts. 
 - Any one outside the TEA modules hardware is ZK (Zero Knowledge) about what happened inside. Even the TEA node's owner or the server connect to the module won't know.

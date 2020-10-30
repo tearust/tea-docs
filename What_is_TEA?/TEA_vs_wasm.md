@@ -25,7 +25,7 @@ Wait for a minute, it won't be useful until we can solve the trust issue. What i
 ## Put wasm runtime inside TEE sounds a good idea
 
 We already have TPM, TEE, Wasm, how about we put them together?
-Wasm runtime executes inside TEE so that we know outsiders (even the OS) cannot access the secret inside. The computing machine is protected by the TPM so that we know it is what it claimed to be. The node itself is the client or a CDN node or IPFS node, which stored the data.
+Wasm runtime executes inside TEE so that we know outsiders (even the OS) cannot access the secret inside. For the TPM/HSM solution, the computing machine is protected by the TPM so that we know it is what it claimed to be. For the TEE solution the CPU chips provide the protection via manufacturer validation. The node itself is the client or a CDN node or IPFS node, which stored the data.
 
 Developers no longer need to deploy the server function code to cloud computing service providers. They upload their static resources (app binary or HTML/CSS/js/wasm) to IPFS or CDN. Client apps do not need to upload their user data to the cloud server, it just sends requests to nearby computing node which caches code. The node makes the computing inside its TEE and returns the result with proof of trust (PoT). The client machine also can also become a compute node if equipped with TEE. Because there is a PoT, everyone can verify this compute result and process can be trusted by remote attestation.
 
@@ -49,6 +49,8 @@ When TEA node boots, hardware TPM chips verify everything including the hash of 
 Most of TEA consensus logic runs either in the layer-1 blockchain as smart contacts or the wasm actors in the tea-runtime. Every actors and provider will be verified by runtime before loading. This verification is not waSCC built-in signature verification, but a hash stored in TPM chips and blockchain. Again if any actor or provider hash doesn't match its claim on blockchain or TPM records, this node may be quarantined.
 
 Once the boot and init completed. Other TEA nodes can verify by running a remote attestation process. The truth comes from the TPM and blockchain. Any component doesn't match claim will be detected.
+
+If the TEA node choose to use CPU TEE instead of TPM. The validation is done by the CPU manufacturer. We can still use TPM to enforce the correct code is loaded, however the sensitve data is processed inside CPU's enclave. More about trusted computing please read [this](TEA_vs_trusted_computing.md).
 
 ## Provisioning
 
