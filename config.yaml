@@ -6,7 +6,7 @@ sort:
       - name: How_TEA_fix_internet.md
       - name: TEA_vs_IPFS.md
       - name: TEA_vs_blockchain.md
-      - name: TEA_vs_trusted_computing.md
+      - name: TEA_vs_Trusted_computing.md
       - name: TEA_vs_wasm.md
       - name: Key_concepts.md
       - name: Use_cases.md
