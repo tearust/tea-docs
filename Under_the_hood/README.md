@@ -15,7 +15,7 @@ As I mentioned above, TEA itself is not a blockchain, but it is built on top of 
 - Immutable trust information storage, such as credit history, key IDs and Hashes
 - Block height as a universal clock between TEA nodes
 
-Continue [reading...](tea_layer1.md)
+Continue [reading...](Tea_on_layer1.md)
 
 ## Delegation chain - where the data and code flow
 - A Client send the secure data or code to a trusted TEA node as a delegator. If he doesn't trust any others, he would better to own one TEA node so that he can trust as delegator to himself
@@ -25,7 +25,7 @@ Continue [reading...](tea_layer1.md)
 - Anyone can verify the delegation chain from the latest step all the way up to the first delegator or the client to make sure the chain is valid. Any alter in the middle would be easily found. This is similar to a blockchain
 - Layer1 blockchain will be used to do the verification. Incentive or punishment will be applied.
 
-Continue [reading...](delegation_chain.md)
+Continue [reading...](Delegation_chain.md)
 
 ## Trust chain - our hardware security guard
 
@@ -33,7 +33,7 @@ We support 2 trusted hardware solution, TEE or TPM/HSM. In the case of TEE, the 
 
 Unlikely most other layer2 trusted computing project, we do not trust pure software solution, we do not use expensive and unrealistic cryptographic solution either. We use mature and widely used Trusted Computing technologies, such as TPM / HSM as our hardware root of trust. We know TPM along is not secure enough, there are so much known vulnerabilities of TPM. That’s why we insert it into the bandwidth — between blockchain and delegation chain. TPM can be broken, but the damage is very limited and under control.
 
-Continue [reading...](trust_chain.md)
+Continue [reading...](Trust_chain.md)
 
 
 ![](/img/Under_Construction_Tape.png)
