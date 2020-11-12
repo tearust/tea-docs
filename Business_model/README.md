@@ -17,7 +17,7 @@ As shown in the picture above. The servers are owned by their own owners, we cal
 
 Long before T-rust, IPFS has been providing the decentralized file storage service for a while. IPFS doesn't provide security since all content is open. The PoT from IPFS is much easy. Just a hash can verify the content is correct. But computing is much harder. For technologies under the hood, please read [What is TEA?](../What_is_TEA?/README.md) and [Under the hood](../Under_the_hood/README.md).
 
-# [T-rust providers a channel for investors to invest in crypto and gain revenue in fiat](Double_loop.md)
+# [T-rust providers a channel for investors to invest in crypto and gain revenue in fiat](Double_loops.md)
 
 T-rust has a specially designed double-loops. It segregates the cryptocurrency loop and fiat currency loop. There is no exchange between crypto and fiat so that prevent any crypto-related legal issue. Furthermore, it provides a way to invest in crypto while gaining revenue in fiat.
 
