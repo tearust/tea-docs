@@ -18,7 +18,10 @@ sort:
       - name: Use_your_own_picture.md
       - name: Deploy_your_own_code.md
       - name: Run_your_own_TEA_node.md
-
+  - name: Busineses_model
+    path: Business_model/README.md
+      - name: Double_loops.md
+      - name: Life_cycle.md
   - name: Under_the_hood
     path: Under_the_hood/README.md
     children:
