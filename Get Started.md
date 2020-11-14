@@ -15,7 +15,7 @@ Standard NATS server. Used as the system messaging pluming system. No developmen
 Substrate blockchain full node in docker container.
 #### NATS client
 Layer1 communicate with outside world using NATS
-see [./nats-protocol.md](./nats-protocol.md) for detail protocol.
+see [./nats-protocol.md](nats-protocol.md) for detail protocol.
 #### VRF
 Not resolved yet.
 #### Runtime logic

@@ -1,4 +1,4 @@
-Before trying the "Deploy code first, run ad-hoc data" demo, please make sure you finished the ["Deploy data first, run ad-hoc code" demo](./Deploy_data_run_adhoc_code.md).
+Before trying the "Deploy code first, run ad-hoc data" demo, please make sure you finished the ["Deploy data first, run ad-hoc code" demo](Deploy_data_run_adhoc_code.md).
 
 Most of the steps are the same, so we are not going to repeat the instructions. 
 # Deploy code

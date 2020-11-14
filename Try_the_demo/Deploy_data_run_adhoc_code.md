@@ -2,7 +2,7 @@
 In our first easy start demo. You run an existing dApp to detect a pre-deployed image using Tensorflow algorithm. 
 Now you can try to deploy your image and use the same algorithm to detect.
 
-To learn more about what is ad-hoc, please go to [Advanced demo](./Advanced_demo.md).
+To learn more about what is ad-hoc, please go to [Advanced demo](Advanced_demo.md).
 
 # Deploy your image
 Click <a href="t-rust.com:8080/ipfs/QmezXbaokmMvevn7krWZpixwPxb1qjcSjate9VvfDtz7Ha/">Data dpeloyment tool</a> to start. If you are behind the China Great Firewall, please use the [Chinese local IPFS server IP](http://81.70.96.136:8080/ipfs/QmezXbaokmMvevn7krWZpixwPxb1qjcSjate9VvfDtz7Ha) instead.

@@ -1,4 +1,4 @@
-Assuming you have done the [Easy Start Demo](./Easy_start.md) first. If not, please try that first. Many concepts and workflows are the same as Easy Start, and we will ignore them.
+Assuming you have done the [Easy Start Demo](Easy_start.md) first. If not, please try that first. Many concepts and workflows are the same as Easy Start, and we will ignore them.
 
 # Deploy or ad-hoc?
 
@@ -14,9 +14,9 @@ On the other hand, if someone deployed an image, but you developed a newer versi
 Please follow the sequence, try the first demo first. The second demo's instruction is much simpler since many steps are the same as the first one.
 
 ## Deploy data first, then run the code ad-hoc
-Follow the instruction [here](./Deploy_data_run_adhoc_code.md)
+Follow the instruction [here](Deploy_data_run_adhoc_code.md)
 
 ## Deploy code first, then run the data ad-hoc
-Follow the instruction [here](./Deploy_code_run_adhoc_data.md)
+Follow the instruction [here](Deploy_code_run_adhoc_data.md)
 
 
