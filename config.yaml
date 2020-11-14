@@ -15,8 +15,9 @@ sort:
     path: Try_the_demo/README.md
     children:
       - name: Easy_start.md
-      - name: Use_your_own_picture.md
-      - name: Deploy_your_own_code.md
+      - name: Advanced_demo.md
+      - name: Deploy_data_run_adhoc_code.md
+      - name: Deploy_code_run_adhoc_data.md
       - name: Run_your_own_TEA_node.md
   - name: Business_model
     path: Business_model/README.md
