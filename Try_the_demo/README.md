@@ -1,7 +1,7 @@
 
 Before try any of these demos, please make sure you 
 - read the [introduction](http://t-rust.com/#/demo) 
-- installed required [extension](../FAQ/how_to_install_polkdadot_extension.md)
+- installed required [extension](../FAQ/how_to_install_polkadot_extension.md)
 - [created your own account](../FAQ/how_to_create_a_new_account.md)
 - get some free tokens from our [faucet](../FAQ/how_to_get_free_test_token_to_start.md)
 
