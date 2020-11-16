@@ -14,6 +14,10 @@ Do not worry it is not a security threat. This is a normal *pure* dapp feed from
 
 To learn more about why it is OK to be "not secure" and what is *pure* dapp mean, please go to "![under the hood(/doc_list/%2FFAQ%2Fwhy-no-secure-website.md)".
 
+# Prerequisites
+  - Mac or Linux computer. Windows should work too, but we did not get a chance to test
+  - A Chrome or Firefox web browser which supports Polkadot plugin/extension ([How to install?](../FAQ/how_to_install_polkadot_extension.md))
+
 # Start the dApp
 From your browser installed with Polkadot extension, click this link [http://t-rust.com:8080/ipfs/QmRfcEVcd4zb9osyUtCLLzEGVvpmKEYECgCDgzTuACQA2p/#/](http://t-rust.com:8080/ipfs/QmRfcEVcd4zb9osyUtCLLzEGVvpmKEYECgCDgzTuACQA2p/#/). 
 
