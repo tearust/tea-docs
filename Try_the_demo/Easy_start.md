@@ -19,7 +19,9 @@ To learn more about why it is OK to be "not secure" and what is *pure* dapp mean
   - A Chrome or Firefox web browser which supports Polkadot plugin/extension ([How to install?](../FAQ/how_to_install_polkadot_extension.md))
   - [Create Polkadot account](../FAQ/how_to_create_a_new_account.md) using the extension
   - [Get some free test token](../FAQ/how_to_get_free_test_token_to_start.md) to make you rich enough to try our demo
+
 # Start the dApp
+
 From your browser installed with Polkadot extension, click this link [http://t-rust.com:8080/ipfs/QmRfcEVcd4zb9osyUtCLLzEGVvpmKEYECgCDgzTuACQA2p/#/](http://t-rust.com:8080/ipfs/QmRfcEVcd4zb9osyUtCLLzEGVvpmKEYECgCDgzTuACQA2p/#/). 
 
 Because it is **pure** dApp, all resources need to be downloaded to your browser. The first time loading will take a few seconds. 
