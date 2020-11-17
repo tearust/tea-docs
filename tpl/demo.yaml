@@ -16,7 +16,7 @@ services:
     command: ["daemon", "--migrate", "--enable-pubsub-experiment"]
     
   # layer1:
-  #   image: tearust/tea-layer1:0.2
+  #   image: tearust/tea-layer1:0.5
   #   container_name: layer1
   #   ports:
   #     - 9944:9944
@@ -28,7 +28,7 @@ services:
   facade:
     environment:
       - NATS_URL=nats-server:4222
-      - FACADE_WSURL=ws://81.70.96.136:9944
+      - FACADE_WSURL=ws://64.227.57.97:9944
       - FACADE_ACCOUNT_URI=//Ferdie
     image: tearust/layer1-facade:1.6
     container_name: "facade"
@@ -43,7 +43,7 @@ services:
       - IPFS_SERVER=ipfs
       - IPFS_PORT=5001
       - IPFS_DAIL=false
-    image: tearust/adapter:0.7.6
+    image: tearust/adapter:0.8
     container_name: "adapter"
     ports:
       - 8000:8000
@@ -65,7 +65,7 @@ services:
       - PAYMENT_ACCOUNT=5CiPPseXPECbkjWCa6MnjNokrgYjMqmKndv2rSnekmSK2DjL
       - RUST_LOG=info,cranelift_wasm=warn
       - CACHE_DIR_PATH=/tea/runtime-cache
-    image: tearust/runtime:0.9
+    image: tearust/runtime:0.9.9
     container_name: "runtime"
 
 
