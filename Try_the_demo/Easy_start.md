@@ -22,11 +22,11 @@ To learn more about why it is OK to be "not secure" and what is *pure* dapp mean
 
 # Start the dApp
 
-From your browser installed with Polkadot extension, click this link [http://t-rust.com:8080/ipfs/QmRfcEVcd4zb9osyUtCLLzEGVvpmKEYECgCDgzTuACQA2p/#/](http://t-rust.com:8080/ipfs/QmRfcEVcd4zb9osyUtCLLzEGVvpmKEYECgCDgzTuACQA2p/#/). 
+From your browser installed with Polkadot extension, click this link [http://t-rust.com:8080/ipfs/Qmd7txFUP7DQSY7Vb6mMRKBTR1AniB1dTHLY7ZjAauWyb9/#/](http://t-rust.com:8080/ipfs/Qmd7txFUP7DQSY7Vb6mMRKBTR1AniB1dTHLY7ZjAauWyb9/#/). 
 
 Because it is **pure** dApp, all resources need to be downloaded to your browser. The first time loading will take a few seconds. 
 
-If you are behind the China Great Firewall, please use this Chinese local IPFS address instead: [http://81.70.96.136:8080/ipfs/QmdxbhK5x993mJ58DVUJutXmSricz1ueHKFxPqfPrKUPMG](http://81.70.96.136:8080/ipfs/QmdxbhK5x993mJ58DVUJutXmSricz1ueHKFxPqfPrKUPMG)
+If you are behind the China Great Firewall, please use this Chinese local IPFS address instead: [http://81.70.96.136:8080/ipfs/QmbHfBZuLK41zf3nePiFstRTa81vAvpsf9HBQLycjw6VFb](http://81.70.96.136:8080/ipfs/QmbHfBZuLK41zf3nePiFstRTa81vAvpsf9HBQLycjw6VFb)
 
 # Select an account
 

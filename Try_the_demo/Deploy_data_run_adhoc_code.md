@@ -5,7 +5,7 @@ Now you can try to deploy your image and use the same algorithm to detect.
 To learn more about what is ad-hoc, please go to [Advanced demo](Advanced_demo.md).
 
 # Deploy your image
-Click <a href="t-rust.com:8080/ipfs/QmezXbaokmMvevn7krWZpixwPxb1qjcSjate9VvfDtz7Ha/">Data dpeloyment tool</a> to start. If you are behind the China Great Firewall, please use the [Chinese local IPFS server IP](http://81.70.96.136:8080/ipfs/QmezXbaokmMvevn7krWZpixwPxb1qjcSjate9VvfDtz7Ha) instead.
+Click <a href="t-rust.com:8080/ipfs/QmY2rEeBf325KhCiNsKrsi8EUZDqiEMxarfUmCRQir6HRY/">Data dpeloyment tool</a> to start. If you are behind the China Great Firewall, please use the [Chinese local IPFS server IP](http://81.70.96.136:8080/ipfs/QmY2rEeBf325KhCiNsKrsi8EUZDqiEMxarfUmCRQir6HRY) instead.
 
 ![snap1](https://github.com/tearust/tea-docs/blob/main/res/deploy-data1.png?raw=true)
 
@@ -37,7 +37,7 @@ In the screenshot above, you can see there are four nodes "pinned" your data. Al
 
 # Run demo dApp with pre-deployed data
 
-Please keep the previous browser tab open and open a new tab then launch the [Deployed Data dApp Demo](http://t-rust.com:8080/ipfs/QmaerhKWyeLaD73NYkb9BwL4FTepW8HWSTMTbQ8D8JnTcg). If you are behind the China Great Firewall, use this [local ipfs address](http://81.70.96.136:8080/ipfs/QmaerhKWyeLaD73NYkb9BwL4FTepW8HWSTMTbQ8D8JnTcg) instead.
+Please keep the previous browser tab open and open a new tab then launch the [Deployed Data dApp Demo](http://t-rust.com:8080/ipfs/QmdZXJFVuoSSx8q8aiU8i2mhsoPe27DbQY9mZ5WJCtxZEM). If you are behind the China Great Firewall, use this [local ipfs address](http://81.70.96.136:8080/ipfs/QmdZXJFVuoSSx8q8aiU8i2mhsoPe27DbQY9mZ5WJCtxZEM) instead.
 
 The first page is the same as before, but you do not have to select the same delegator node as you did when deploying the data. You can select any active node. When you get the confirmation from the delegator, you will see the page below.
 
