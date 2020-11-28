@@ -12,7 +12,7 @@ When you click the easy start demo link, your browser may give you a warning on 
 
 Do not worry it is not a security threat. This is a normal *pure* dapp feed from IPFS. You can know from the URL in the picture (red box).
 
-To learn more about why it is OK to be "not secure" and what is *pure* dapp mean, please go to "![under the hood(/doc_list/%2FFAQ%2Fwhy-no-secure-website.md)".
+To learn more about why it is OK to be "not secure" and what is *pure* dapp mean, please go to "[under the hood](../FAQ/why_not_secure.md)".
 
 # Prerequisites
   - Mac or Linux computer; We believe Windows computer should work too, but we haven't tested it yet. 
@@ -95,7 +95,7 @@ It looks very familiar, right? This is the lion Google used to demonstrate Tenso
 ## Description
 You do not need to change this JSON edit box unless you want to modify the revenue sharing model between Delegator and Executor. Please keep this in mind: if you pay too low to either Executor or Delegator, they may reject your work request because they work for money.
 
-# Submit task and wait for the result
+# <a id="test">Submit task and wait for the result</a>
 After review, the summary of the task, click "Run Errand Task". You will see
 ![run](https://github.com/tearust/tea-docs/blob/main/res/easystart8.png?raw=true)
 It may take a few seconds to a few minutes depending on how many miners are working and how many tasks are waiting in the pool.
