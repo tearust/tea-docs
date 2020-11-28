@@ -1,4 +1,6 @@
 # TEA Project
+![s1](../res/s1.jpg)
+
 TEA means Trusted Execution and Attestation. It happens to be one of the favorite drinks for many software developers. That's why coffee and tea are most commonly used as project names by developers, such as Java language, Coffeescript, Jasmine, Mocha, etc. 
 
 In this blog post, we will discover
@@ -7,6 +9,8 @@ In this blog post, we will discover
 - What will TEA be used in the future
 
 # Blockchain 3.0
+
+![s1](../res/s2.jpg)
 
 Blockchain has a short history starting about ten years ago. It can be split into three stages, commonly named Blockchain 1.0, 2.0, and upcoming 3.0.
 
@@ -19,15 +23,18 @@ It is not uncommon that many contracts need to run complex computations based on
 
 # Computer and trust
 
+![s3](../res/s3.jpg)
 Building trust between computers is not a new problem. There are existing solutions in cryptographic algorithms, software technologies, and hardware technologies around this area since computers were invented. I listed a few in the picture, but there are more. While those technologies can solve a particular part of the problem, any single technology has significant limitations. Either make the computation super complex so that it cost more than benefit, or has known vulnerabilities can be broken-in. 
 
 Cloud computing gets popular so that more and more data are centrally stored and processed in some central server. Those data becomes a big bait to hackers. As long as they break into one, they can get a massive return on investment. No doubt that more and more data breaches in recent years.
 
 # Layered solution with token economy
 
+![s4](../res/s4.jpg)
 We believe there is no such single technology that can reach the balance between security and cost. The solution is to combine those technologies into a layered solution. The technology in each layer can leverage their most strength while minimizing their disadvantage by utilizing other layers' technologies. This solution could reach a sweet balance between cost, security, and performance. By leverage the blockchain's token economy, we turn the problem from "unable to break into" to "too expensive to break into." Users can set an affordable yet secure enough balance point between cost and security. The higher price you pay, the higher the security level you can get—Vice versa.
 
 # Increase the attacker's cost while reducing their benefit
+![](../res/s6.jpg)
 The motivation of attackers is the return on investment (ROI). In the centralized computing (such as cloud computing) architect, although breaking in is very hard and costly, as long as they can break in once, the benefit is high enough to cover the cost. Not need to mention that they can easily break in other servers using the same technology because the marginal cost is getting lower.
 
 To defeat the attacker's motivation, we can combine existing technologies to do two things:
@@ -44,6 +51,7 @@ In this picture, we listed the technologies we used in the TEA Project. We will 
 
 # Three chains technical architect
 
+![](../res/s7.jpg)
 We group the technologies into three categories. We call them three chains: 
 
 - Blockchain
@@ -68,6 +76,8 @@ The delegation chain is a network protocol. It guarantees that all the secrets t
 # Four technical pillars of TEA project
 
 
+
+![](../res/s8.jpg)
 
 
 
