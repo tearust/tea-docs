@@ -95,7 +95,7 @@ It looks very familiar, right? This is the lion Google used to demonstrate Tenso
 ## Description
 You do not need to change this JSON edit box unless you want to modify the revenue sharing model between Delegator and Executor. Please keep this in mind: if you pay too low to either Executor or Delegator, they may reject your work request because they work for money.
 
-# <a id="test">Submit task and wait for the result</a>
+# Submit task and wait for the result
 After review, the summary of the task, click "Run Errand Task". You will see
 ![run](https://github.com/tearust/tea-docs/blob/main/res/easystart8.png?raw=true)
 It may take a few seconds to a few minutes depending on how many miners are working and how many tasks are waiting in the pool.
