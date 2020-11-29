@@ -108,7 +108,7 @@ The lastest logs says the alice node identity is `12D3KooWHfMp4oTPeM8Wi2BgqXy1pb
 At the second terminal, run the following command to run a normal node with bootstrap node of Alice.
 
 ```
-./substrate-demo --dev --tmp --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5
+./substrate-demo --dev --tmp --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --port 30334 --ws-port 9966 --bob
 ```
 
 If this node runs successfully, you should see it sync to the same height as Alice node.
@@ -126,6 +126,8 @@ In the Node WebUI we creat a `requestDelegate` extrinsic first. Note there are t
 1. employer: account that want to send a task
 2. net_address: net address of delegator in [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) (you can find it at "Prerequisites->Delegate Net Address" section above)
 3. fee: gas fee for the node that help to sent HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md)
+
+Note: Remember to transfer some token to employer account.
 
 ![](../res/substrate-demo-request-delegate.png)
 
@@ -166,8 +168,10 @@ And also we can see an event about the task at the Network->Explorer page.
 
 ![](../res/substrate-demo-task-begined.png)
 
-We can see an event about the result of the task at the Neework->Explorer page.
+We can see an event about the result of the task at the Network->Explorer page.
 
 ![](../res/substrate-demo-errand-updated.png)
 
 
+## Resources
+Refer to the [substrate_demo_sequence diagram](Run_task_on_other_blockchain_sequence.md), We can get a general idea of the whole process
