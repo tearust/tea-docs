@@ -111,6 +111,17 @@ The TEA Project designed the TEA module hardware that can be plugged in existing
 
 ![](../res/s29.jpg)
 
+Proof of Trust (PoT) is the essential security-related data collected from the hardware security chip. Unlikely traditional attestation done by the owner, we use blockchain consensus to select remote attestation verifiers (RA nodes) to attest the PoT. Every single verifier signs its result and commits to the blockchain. Once the blockchain received enough verification results to run a BFT algorithm, the verification result will be posted on the blockchain. Therefore no one can predict who will be my verifier. There is no chance of collusion. 
+
+Before remote attestation, the testee needs to post its "claims" on the blockchain. The PoT to support its claims send to the RA nodes. RA nodes test if the PoT matches its claim. If the PoT matches the claim, the RA nodes will send the positive result to the blockchain. Positive means the claim is valid. Other TEA nodes can check the claim of a node to decide trust or not. 
+
+In the TEA project, most decisions are made decentralized.  Every node can decide trust or non-trust on its business logic. The RA process is to attest a node's claim is honest. Therefore TEA can be made security technologies neutral. We do not tell you if a node is trustable or not, we just tell you what it claims and the claim is correct or not. You make your decision.  
+
+# Trust computing services is traditional cloud computing but in a decentralized way
 
 
+![](../res/s13.jpg)
 
+TEA's trusted computing services is similar to traditional cloud comnputing service, but it is decentrazlied. You do not need a centralized trust. The hardware and blockchain are new root of trust. 
+
+Naturally decentralized cloud services could be the first impression of available business models. 
