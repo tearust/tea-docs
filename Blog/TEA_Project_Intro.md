@@ -122,6 +122,9 @@ In the TEA project, most decisions are made decentralized.  Every node can decid
 
 ![](../res/s13.jpg)
 
-TEA's trusted computing services is similar to traditional cloud comnputing service, but it is decentrazlied. You do not need a centralized trust. The hardware and blockchain are new root of trust. 
 
-Naturally decentralized cloud services could be the first impression of available business models. 
+TEA's trusted computing services is similar to traditional cloud computing service, but it is decentralized. You do not need a centralized trust. The hardware and blockchain are the new roots of trust. 
+
+Naturally, decentralized cloud services could be the first business model to come into mind. Correct, but not identical. We never think to run the second Amazon EC2 or Google Function services. We focus on the business models of the decentralized world. We do not need to buy tons of servers to build data centers. We can learn from Uber or Airbnb. They are the largest taxi company and hotel chain, but they do not own any car or hotel room. We do not need to own any TEA nodes either. Anyone can download the code from GitHub and run his TEA node anywhere. The trust does not come from his reputation or geolocation. The trust comes from the hardware and blockchain consensus. We link all these TEA nodes together to become the largest world trusted computing network. Just like IPFS provides file storage, we provide computing services.
+
+We decided to go one step further than Uber or Airbnb. Because the system runs on the blockchain, we can decentralize the management functionality to a DAO. Therefore we do not need to take the 30% cut from our node owner's revenue as Uber did. We will talk more about the TEA business model in our next talk. 
