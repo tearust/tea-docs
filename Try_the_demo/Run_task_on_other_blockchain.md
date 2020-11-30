@@ -1,23 +1,23 @@
 # Substrate demo
-This demo will demonstrate how to compute privacy and difficult tasks by using [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) on other blockchain.
+This demo will demonstrate how to run privacy and difficult computation tasks using [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) from other blockchain.
 
 ## Prerequisites
 
 We suppose you have read the [easy start](http://t-rust.com/#/doc_list/%2FTry_the_demo%2FEasy_start.md) and followed the **Prerequisites** in this essay.
 
 And there are also some additional steps:
-### Delegate Net Address
+### Delegator's IP Address
 
 To send a errand task to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md), we have to choose a delegator (this is similar to [Select a delegator node]()). Normally you can choose one of the following delegators:
 
-| Delegator Name | Net Address        | Location |
+| Delegator Name | Address        | Location |
 | -------------- | ------------------ | -------- |
 | Alice          | 64.227.57.209:8000 | USA      |
 | Bob            | 64.227.57.97:8000  | USA      |
 | Charlie        | 81.68.250.243:8000 | China    |
 | Dave           | 81.70.96.136:8000  | China    |
 
-If you choose Bob here, please remember the "Net Address" value `64.227.57.97:8000` and we will use it later. 
+If you choose Bob here, please remember the "Address" value `64.227.57.97:8000` and we will use it later. 
 
 ### Errand JSON
 
