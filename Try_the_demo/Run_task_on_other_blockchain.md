@@ -155,14 +155,14 @@ Again we creat a `beginTask` extrinsic, and there are three parameters too:
 
 If the extrinsic executed successfully, we shoud see logs below. We can see we send a HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) and go corresponding response.
 ```
-Nov 28 18:31:36.014  INFO begin to send http post request, url is http://localhost:8000/api/service/5G97JLuuT1opraWvfS6Smt4jaAZuyDquP9GjamKVcPC366qU/6d349d56-8f9e-4029-8766-6b24e2b71fdd/3363383664386639333834336132663666616265626237343762313735363932333332633430373466656265353436353233613164633436366238663339653434633830333733366630613165363964646639643939663434363539663037323034633831303139303833653865323664363061646262366461343036313031?content=QmPdh2fPtfqxA2HmgBpSAAk6hsFCQsR3rig3Z61G3wmnGd    
-Nov 28 18:31:36.622  INFO end of http request (http://localhost:8000/api/service/5G97JLuuT1opraWvfS6Smt4jaAZuyDquP9GjamKVcPC366qU/6d349d56-8f9e-4029-8766-6b24e2b71fdd/3363383664386639333834336132663666616265626237343762313735363932333332633430373466656265353436353233613164633436366238663339653434633830333733366630613165363964646639643939663434363539663037323034633831303139303833653865323664363061646262366461343036313031?content=QmPdh2fPtfqxA2HmgBpSAAk6hsFCQsR3rig3Z61G3wmnGd), response is ok
+Nov 28 18:31:36.014  INFO begin to send http post request, url is http://81.68.250.243:8000/api/service/5G97JLuuT1opraWvfS6Smt4jaAZuyDquP9GjamKVcPC366qU/6d349d56-8f9e-4029-8766-6b24e2b71fdd/3363383664386639333834336132663666616265626237343762313735363932333332633430373466656265353436353233613164633436366238663339653434633830333733366630613165363964646639643939663434363539663037323034633831303139303833653865323664363061646262366461343036313031?content=QmPdh2fPtfqxA2HmgBpSAAk6hsFCQsR3rig3Z61G3wmnGd    
+Nov 28 18:31:36.622  INFO end of http request (http://81.68.250.243:8000/api/service/5G97JLuuT1opraWvfS6Smt4jaAZuyDquP9GjamKVcPC366qU/6d349d56-8f9e-4029-8766-6b24e2b71fdd/3363383664386639333834336132663666616265626237343762313735363932333332633430373466656265353436353233613164633436366238663339653434633830333733366630613165363964646639643939663434363539663037323034633831303139303833653865323664363061646262366461343036313031?content=QmPdh2fPtfqxA2HmgBpSAAk6hsFCQsR3rig3Z61G3wmnGd), response is ok
 ...
-Nov 28 18:32:06.012  INFO begin to send http post request, url is http://localhost:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd    
-Nov 28 18:32:06.028  INFO end of http request (http://localhost:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd), response is {"completed":false,"failed_count":0,"result_cid":""} 
+Nov 28 18:32:06.012  INFO begin to send http post request, url is http://81.68.250.243:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd    
+Nov 28 18:32:06.028  INFO end of http request (http://81.68.250.243:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd), response is {"completed":false,"failed_count":0,"result_cid":""} 
 ...
-Nov 28 18:33:06.009  INFO begin to send http post request, url is http://localhost:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd    
-Nov 28 18:33:06.022  INFO end of http request (http://localhost:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd), response is {"completed":true,"failed_count":0,"result_cid":"QmSNAQQ5tGVYtpeqjPc7AHGunq7J5H3vzNGAgQVrbudzwJ"}
+Nov 28 18:33:06.009  INFO begin to send http post request, url is http://81.68.250.243:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd    
+Nov 28 18:33:06.022  INFO end of http request (http://81.68.250.243:8000/api/query_errand_execution_result_by_uuid/6d349d56-8f9e-4029-8766-6b24e2b71fdd), response is {"completed":true,"failed_count":0,"result_cid":"QmSNAQQ5tGVYtpeqjPc7AHGunq7J5H3vzNGAgQVrbudzwJ"}
 ```
 And also we can see an event about the task at the Network->Explorer page.
 
