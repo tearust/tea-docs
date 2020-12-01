@@ -62,20 +62,26 @@ First, use git clone the demo source code:
 git clone https://github.com/tearust/substrate-demo
 ```
 
-Normally you can use `cargo build` to compile demo, [for some knowing issues](https://github.com/paritytech/substrate/issues/7466) you may got compile errors. We have prepared a compile environment with docker image, you can use the following command to build from the docker image:
+Normally you can use `cargo build` to compile demo, [for some knowing issues](https://github.com/paritytech/substrate/issues/7466) you may got compile errors. We have prepared a compile environment with docker image, you can go into the `docker` directory and use the following command to build from the docker image:
 
 ```
-docker/build.sh
+./build.sh
 ```
 
 If compiled successfully, you should see an executable file named "substrate-demo" in `target/debug` directory if you build with `cargo build` command, or in `docker/target/release` directory if you use the `docker/build.sh` shell script (compile with `cargo build --release` command inner). Congratulations, then you should open two terminals and `cd` into the directory contains "substrate-demo" to complete the following steps:
 
 ### Start Alice Node 
 
-At the first terminal, run the following commands to run alice node.
+At the first terminal, run the following commands to run alice node:
 
 ```
 ./substrate-demo --dev --tmp --alice --ws-port 9955
+```
+
+Or run following command if you used "build.sh" script to compile:
+
+```
+./run.sh alice 9955 --dev --tmp --alice
 ```
 
 Note that we run with specify a custom web-socket port `9955` (default is 9944), this is because we use the next node more frequently.
@@ -108,7 +114,23 @@ The lastest logs says the alice node identity is `12D3KooWHfMp4oTPeM8Wi2BgqXy1pb
 At the second terminal, run the following command to run a normal node with bootstrap node of Alice.
 
 ```
-./substrate-demo --dev --tmp --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --port 30334 --ws-port 9966 --bob
+./substrate-demo --dev --tmp --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --port 30334 --ws-port 9944 --bob
+```
+
+If you used "build.sh" script to compile, the following steps need to be executed:
+
+1. run following command to dump IP address of alice node
+
+```
+docker network inspect substrate-demo  | grep IPv4Address
+```
+
+the dump result may like` "IPv4Address": "192.168.176.2/20",` then the alice IP address should be `192.168.176.2`.
+
+2. run following command with custom alice IP address and  node identity
+
+```
+./run.sh bob 9944 --dev --tmp --bootnodes /ip4//tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --bob
 ```
 
 If this node runs successfully, you should see it sync to the same height as Alice node.
@@ -172,6 +194,16 @@ We can see an event about the result of the task at the Network->Explorer page.
 
 ![](../res/substrate-demo-errand-updated.png)
 
+Then we can find execute result in WebUI  by specifying description_cid:
+
+![](../res/substrate-query-task-result.png)
+
+You can see the result cid is `QmSNAQQ5tGVYtpeqjPc7AHGunq7J5H3vzNGAgQVrbudzwJ`, the content of cid can be fetched from IPFS server that stored. The execution result should like this:
+
+![](../res/substrate-demo-tensorflow-result.jpg )
+
+The `tiger - 58.66%` is the classify result about a image use tensorflow.  
 
 ## Resources
+
 Refer to the [substrate_demo_sequence diagram](Run_task_on_other_blockchain_sequence.md), We can get a general idea of the whole process
