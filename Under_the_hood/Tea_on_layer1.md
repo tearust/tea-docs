@@ -16,4 +16,4 @@ TEA is not only to utilize blockchain, but TEA also works as a Layer 2 solution 
 As explained in [TEA vs Blockchain](../What_is_TEA?/TEA_vs_blockchain.md)
 > The TEA nodes runs above other blockchains. Any blockchain can send a computational oracle request in a blockchain event and receive the result along with PoT (proof of trust) in a tx at the later time.
 
-![](/img/Under_Construction_Tape.png)
+![](/img/Trust-construction.png)

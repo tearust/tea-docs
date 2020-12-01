@@ -36,4 +36,4 @@ Unlikely most other layer2 trusted computing project, we do not trust pure softw
 Continue [reading...](Trust_chain.md)
 
 
-![](/img/Under_Construction_Tape.png)
+![](/img/Trust-construction.png)
