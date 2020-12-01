@@ -194,6 +194,16 @@ We can see an event about the result of the task at the Network->Explorer page.
 
 ![](../res/substrate-demo-errand-updated.png)
 
+Then we can find execute result in WebUI  by specifying description_cid:
+
+![](../res/substrate-query-task-result.png)
+
+You can see the result cid is `QmSNAQQ5tGVYtpeqjPc7AHGunq7J5H3vzNGAgQVrbudzwJ`, the content of cid can be fetched from IPFS server that stored. The execution result should like this:
+
+![](../res/substrate-demo-tensorflow-result.jpg )
+
+The `tiger - 58.66%` is the classify result about a image use tensorflow.  
 
 ## Resources
+
 Refer to the [substrate_demo_sequence diagram](Run_task_on_other_blockchain_sequence.md), We can get a general idea of the whole process
