@@ -145,11 +145,11 @@ Because we use the default `9944` websocket port for normal node, we can operate
 
 In the Node WebUI we creat a `requestDelegate` extrinsic first. Note there are three parameters:
 
-1. employer: account that want to send a task
+1. client: account that want to send a task
 2. net_address: net address of delegator in [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) (you can find it at "Prerequisites->Delegate Net Address" section above)
 3. fee: gas fee for the node that help to sent HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md)
 
-Note: Remember to transfer some token to employer account.
+Note: Remember to transfer some token to client account.
 
 ![](../res/substrate-demo-request-delegate.png)
 
@@ -169,7 +169,7 @@ And also we can see an event about the delegate at the Network->Explorer page.
 
 Again we creat a `beginTask` extrinsic, and there are three parameters too:
 
-1. employer: account that want to send a task
+1. client: account that want to send a task
 2. description_cid: an IPFS cid to describe the task (you can find it at "Prerequisites->Errand Json" section above) 
 3. fee: gas fee for the node that help to sent HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md)
 

@@ -18,17 +18,17 @@ end box
 
 client->alice: request delegate
 note right
-request_delegate(sender, employer, net_address, fee)
-record employer information to chain
-   insert into EmployersApplys(block_number, vec[(employer, sender])
-   insert into Employers(employer, false)
-   insert into EmployerSender(employer, sender)
-   insert into EmployerFee(empolyer, fee)
+request_delegate(sender, client, net_address, fee)
+record client information to chain
+   insert into ClientsApplys(block_number, vec[(client, sender])
+   insert into Clients(client, false)
+   insert into ClientSender(client, sender)
+   insert into ClientFee(empolyer, fee)
 end note
 
 alice-->layer1Alice: request delegate
 note right
- request_delegate(employer, net_address) {
+ request_delegate(client, net_address) {
    Call BeMyDelegateRequest
  }
 end note
@@ -49,16 +49,16 @@ end note
 alice-[#blue]>alice: <OffChainWorker> apply delegate
 rnote right
 apply_delegates(block_number)
- update_delegate_status(employer, updater)
+ update_delegate_status(client, updater)
  need updater sign 
- insert into Employers(employer, true)
+ insert into Clients(client, true)
 end note
 
 client->alice: begin task
 note right
-begin_task(sender, employer, description_cid, fee)
+begin_task(sender, client, description_cid, fee)
  insert into Tasks(block_number, vec[TaskInfo])
- insert into EmployerTaskFee(employer, fee)
+ insert into ClientTaskFee(client, fee)
 end note
 
 alice-[#blue]>alice:<OffChanWorker> send errand tasks
@@ -70,16 +70,16 @@ range tasks {
             errand_id: &ErrandId,
             net_address: &NetAddress,
         ) {
-             get DelegateInfo from local storage: load_delegate_info(employer)
+             get DelegateInfo from local storage: load_delegate_info(client)
              send task to tea network
         }
    init_single_errand_task(
             signer: &Signer<T, T::AuthorityId, ForAll>,
-            employer: &T::AccountId,
+            client: &T::AccountId,
             description_cid: &Cid,
             errand_id: &ErrandId,
         ) {
-               init_errand(employer, errand_id, description_cid) {
+               init_errand(client, errand_id, description_cid) {
                    insert into ProcessingErrands(description_cid)
                }
         }
