@@ -122,5 +122,14 @@ update_errand_task_results(block_number)
  }
 end note
 
+client->alice: get result from chain storage
+note right
+Chain State -> Storage 
+-> select module: abc
+-> select storage: errands(Cid): Option<Errand>
+-> input Cid: ErrandResultInfo.result_cid
+-> get result
+end note
+
 @enduml
 ```

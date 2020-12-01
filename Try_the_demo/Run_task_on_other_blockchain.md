@@ -206,4 +206,4 @@ The `tiger - 58.66%` is the classify result about a image use tensorflow.
 
 ## Resources
 
-Refer to the [substrate_demo_sequence diagram](Run_task_on_other_blockchain_sequence.md), We can get a general idea of the whole process
+Refer to the [substrate_demo_sequence diagram](Run_task_on_other_blockchain_sequence.md), we can get a general idea of the whole process
