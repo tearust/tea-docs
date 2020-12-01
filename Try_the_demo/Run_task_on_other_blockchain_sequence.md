@@ -1,4 +1,4 @@
-```
+```puml
 @startuml
 autonumber
 
