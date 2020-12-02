@@ -81,7 +81,7 @@ At the first terminal, run the following commands to run alice node:
 Or run following command if you used "build.sh" script to compile:
 
 ```
-./run.sh alice 9955 --dev --tmp --alice
+./run.sh alice 9955 --dev --tmp --alice --unsafe-ws-external --unsafe-rpc-external --rpc-cors all
 ```
 
 Note that we run with specify a custom web-socket port `9955` (default is 9944), this is because we use the next node more frequently.
@@ -130,7 +130,7 @@ the dump result may like` "IPv4Address": "192.168.176.2/20",` then the alice IP 
 2. run following command with custom alice IP address and  node identity
 
 ```
-./run.sh bob 9944 --dev --tmp --bootnodes /ip4//tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --bob
+./run.sh bob 9944 --dev --tmp --bootnodes /ip4//tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --bob --unsafe-ws-external --unsafe-rpc-external --rpc-cors all
 ```
 
 If this node runs successfully, you should see it sync to the same height as Alice node.
