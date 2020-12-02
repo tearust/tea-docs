@@ -2,7 +2,7 @@
 
 ![s1](../res/s1.jpg)
 
-TEA stands for Trusted Execution and Attestation. It also happens to be one of the favorite drinks for many software developers. That's why coffee and tea are commonly used as project names, for example Java, Coffeescript, Jasmine, Mocha, etc.
+TEA stands for Trusted Execution and Attestation. It also happens to be the favorite drink of many software developers. That's why coffee and tea are commonly used as project names, for example Java, Coffeescript, Jasmine, Mocha, etc.
 
 In this blog post, we will discover:
 - Which problems TEA is trying to solve
@@ -13,14 +13,14 @@ In this blog post, we will discover:
 
 ![s1](../res/s2.jpg)
 
-Blockchain has a short history that started about ten years ago. It can be split into three stages, that are commonly called blockchain 1.0, 2.0, and the upcoming 3.0.
+Blockchain has a short history that started about ten years ago. It can be split into three stages, commonly called blockchain 1.0, 2.0, and the upcoming 3.0.
 
 The defining project of the blockchain 1.0 era is Bitcoin. Bitcoin marks the first time in human history that decentralised trust is established. Truly, a revolution. However, Bitcoin only performs plus and minus operations, limiting its functionality to fund transfers.
 
-In the blockchain 2.0 era, Ethereum (ETH) takes the spotlight. ETH made a giant leap by introducing smart contracts that can do much more than Bitcoin’s plus/minus function. Smart contracts are Turing complete virtual machines that can run relatively complex logic. That is why they are called contracts.
-Modern smart contracts are not perfect yet; even simple logic may cost a lot of time and money. Contracts that require complex computation barely run on blockchain 2.0 platforms. 
+In the blockchain 2.0 era, Ethereum (ETH) takes the spotlight. ETH made a giant leap by introducing smart contracts that are able to do much more than Bitcoin’s plus/minus function. Smart contracts are Turing complete virtual machines that can run relatively complex logic. That is why they are called contracts.
+Modern smart contracts are not perfect yet; even simple logic may cost a lot of time and money. Contracts that require complex computation can barely run on blockchain 2.0 platforms.
 
-Use cases such as big data and AI require complex computation. Currently, they cannot be handled at scale; for that, we need blockchain 3.0 technologies.
+Use cases such as big data and AI require highly complex computation. Currently, they cannot be handled at scale; for that, we need blockchain 3.0 technologies.
 TEA is one of these third era solutions. The core items of the TEA project are decentralised trust, complex computation, and big data. As long as the issues that these topics raise are solved, blockchain technologies could be used across the board. Initially, this would have to be handled by a centralised platform.
 
 # Computer and trust
@@ -29,7 +29,7 @@ TEA is one of these third era solutions. The core items of the TEA project are d
 
 Building trust between computers is not a novel goal. There have been existing solutions in cryptographic algorithms and software and hardware technologies since the dawn of the computer age. I’ve listed a few in the picture, but there are more. While those technologies can each solve a particular part of the problem, any single technology carries significant limitations: either through known vulnerabilities or by making computation very complex—to the point that it brings more costs than benefits.
 
-As cloud computing increases in popularity, more and more data is stored and processed in a centralised manner. All this data in one place is big bait for hackers and bad actors. If they can break into one of their targets, they can get a massive return on their investment. This is reflected in the increasing amount of data breaches in recent years.
+As cloud computing increases in popularity, more and more data is stored and processed in a centralised manner. All this data in one place is big bait for hackers and bad actors. If they can break into one of their targets, they get a massive return on their investment. This is reflected in the increasing amount of data breaches in recent years.
 
 # Layered solution with token economy
 
@@ -42,21 +42,21 @@ By leveraging the token economy made possible by the blockchain, we turn the sec
 # Increasing the attacker's cost while reducing their benefit
 ![](../res/s6.jpg)
 
-The motivation of attackers is the return on investment (ROI). Although breaking into the centralised computing (such as cloud computing) architecture is very hard and costly, the benefit of a successful attempt is high enough to cover the cost. On top of this, successful attackers can then easily break into other similar centralised targets using the same method as the marginal cost of attack is lowered.
+The motivation of attackers is the return on investment (ROI). Although breaking into centralised computing (such as cloud computing) architectures is very hard and costly, the benefit of a successful attempt far exceeds the cost. On top of this, successful attackers can then easily break into other similar centralised targets using the same method as the marginal cost of attack is lowered.
 
 To thwart the attacker's aspiration, we can combine existing technologies to do two things:
 - Increase the cost of attack attempts
 - Decrease the benefit of a successful attack
 
-Once the benefit of a successful attack is lower than the total cost of such an attempt, there is a negative ROI for the attackers; they will either give up or turn to other low hanging fruit.
+Once the benefit of a successful attack is lower than the total cost of such an attempt, there is a negative ROI for the attackers. They will either give up or turn to other low hanging fruit.
 
-It there that we find the TEA project's main purpose: we combine existing technologies into a multi-layered solution to get a perfect balance between cost, security, and performance. This concept mirrors how blockchain builds decentralised trust. For example, hacking the Bitcoin ledger is technically doable, but economically improbable due to the cost. 
+It is here that we find the TEA project's main purpose: we combine existing technologies into a multi-layered solution to get a perfect balance between cost, security, and performance. This concept mirrors how blockchain builds decentralised trust. For example, hacking the Bitcoin ledger is technically doable, but economically improbable due to the cost. 
 
-Bitcoin has been running for more than ten years, and everything in Bitcoin is open-sourced. Everyone knows how to modify the Bitcoin ledger but never has it been successfully used for an attack. This is the beauty of blockchain consensus and its token economy.
+Bitcoin has been running for more than ten years, and everything in Bitcoin is open-sourced. Everyone knows how to modify the Bitcoin ledger, but never has it been successfully used for an attack. This is the beauty of blockchain consensus and token economy.
 
-When data is stored in a single known location, it becomes big bait for hackers. If we distribute data across many different nodes (we use IPFS with small modifications), each site holds a small portion of the data and is protected by different technologies. Attackers have to get all or most of the pieces of data to make an attack useful. This will significantly increase the cost of an attack, and even if the attackers can hack into one location to get a small portion of valuable data, this small portion is protected by cryptography and worth nothing unless combined with other portions of data to complete it. Attackers would still have to spend an equal or higher cost to break into other locations (or all locations) to make the data valuable. 
+When data is stored in a single known location, it becomes big bait for hackers. If we distribute data across many different nodes (we use IPFS with small modifications), each site holds a small portion of the data and is protected by different technologies. Attackers have to get all or most of the pieces of data to make an attack useful. This will significantly increase the cost of an attack, and even if the attackers can hack into one location to get a small portion of valuable data, this small portion is protected by cryptography and worth nothing unless combined with other portions of data to complete it. Attackers would still have to spend an equal or higher amount to break into other locations (or all locations) to make the data valuable. 
 
-Not to mention, by using the Zero-Knowledge algorithm, the attackers have no way of knowing if their current target is worthwhile or just valueless bait. The risk, cost, and benefit are not predictable, this can hugely suppress the attackers' motivation.
+Not to mention, by using the Zero-Knowledge algorithm, the attackers have no way of knowing if their current target is worthwhile or just valueless bait. The risk, cost, and benefit are not predictable; this can largely suppress the attackers' motivation.
 
 In this picture, we listed the technologies we used in the TEA project. We will go through them in the following slides.
 
@@ -69,15 +69,15 @@ We’ve grouped our technologies into three categories, made up of three chains:
 - Trust chain
 - Delegation chain
 
-In the TEA project, the Root of Trust (RoT) comes from two dimensions: Hardware Root of Trust (Hardware RoT) and software Root of Trust (Software RoT). The hardware RoT can be TPM of Trusted Computing Technology or CPU TEE. The software RoT is blockchain.
+In the TEA project, the Root of Trust (RoT) comes from the hardware RoT combined with the software Trust Verification (TV). The hardware RoT can be TPM of Trusted Computing Technology or CPU TEE. The software TV is processed and stored by the immutable blockchain.
 
 We leverage the blockchain's immutability to do two things:
 - Store the important trust data. Once the data is saved, there is no way to modify it
 - Use smart contracts to run governance and consensus. Token economy happens here
 
-One more thing needs to be mentioned. The blockchain in the TEA project doesn't reach consensus on the result of the computing result. Instead, it reaches consensus through PoT (Proof of Trust) with all involved nodes to ensure the entire workflow and execution environment is secure. The blockchain itself won't touch or store any secret data.
+One more thing needs to be mentioned: the blockchain in the TEA project doesn't reach consensus on the result of the computing that is performed. Instead, it reaches consensus through PoT (Proof of Trust) with all involved nodes to ensure the entire workflow and execution environment is secure. The blockchain itself won't touch or store any secret data.
 
-The trust chain definition (quoted from Wikipedia) is as follows: "In computer security, a chain of trust is established by validating each component of hardware and software from the end entity up to the root certificate." It is intended to ensure that only trusted software and hardware can be used while still retaining flexibility. In the TEA project, the Root of Trust can only come from hardware. 
+The trust chain definition, as quoted from Wikipedia, is as follows: "In computer security, a chain of trust is established by validating each component of hardware and software from the end entity up to the root certificate." It is intended to ensure that only trusted software and hardware can be used while still retaining flexibility.
 
 Currently, we accept TPM or CPU TEE as the hardware Root of Trust (RoT). We know that even the hardware RoT has vulnerabilities, so we combine the hardware trust chain with blockchain and a delegation chain to minimise the risk to an acceptable level.
 
