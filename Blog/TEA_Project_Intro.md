@@ -69,7 +69,9 @@ We’ve grouped our technologies into three categories, made up of three chains:
 - Trust chain
 - Delegation chain
 
-In the TEA project, the Root of Trust (RoT) comes from the hardware RoT combined with the software Trust Verification (TV). The hardware RoT can be TPM of Trusted Computing Technology or CPU TEE. The software TV is processed and stored by the immutable blockchain.
+In the TEA project, the Root of Trust (RoT) comes from the hardware. The RoT generates a Proof of Trust (PoT) which is then processed and stored by the blockchain. Because the blockchain is immutable, the stored PoT can always be verified and trusted.
+
+The hardware RoT can be TPM of Trusted Computing Technology or CPU TEE.
 
 We leverage the blockchain's immutability to do two things:
 - Store the important trust data. Once the data is saved, there is no way to modify it
@@ -95,9 +97,9 @@ The TEA project is based on four modern technologies.
 
 In the first place we have blockchain technology. There is a blockchain inside the TEA project. We call it tea-layer-1, internally. 
 
-It is developed on top of Substrate. Substrate is a blockchain development toolkit by Polkadot. Because TEA is based on Substrate, it will be effortless to communicate and collaborate with other blockchains in Polkadot ecosystem. But it doesn't mean TEA is limited to working with Substrate based blockchains only: TEA can work with any client blockchain or even with non-blockchain components. It is just easier when the client is Substrate based due to the inter-chain communication protocol. An additional reason for choosing Substrate is that the protocol is developed using the Rust programming language and has WebAssembly as compiling target. This technical stack is the same as TEA’s: we like Rust and WebAssembly too.
+It is developed on top of Substrate, a blockchain development toolkit by Polkadot. Because TEA is based on Substrate, it will be effortless to communicate and collaborate with other blockchains in Polkadot ecosystem. Of course, this doesn't mean that TEA is limited to working with Substrate-based blockchains only: TEA can work with any client blockchain or even with non-blockchain clients. Then again, it is  easier when the client is Substrate based due to the inter-chain communication protocol. An additional reason for choosing Substrate is that the protocol is developed using the Rust programming language and has WebAssembly as its compiling target. This technical stack is the same as TEA’s: we like Rust and WebAssembly too :)
 
-Secondly, IPFS (the inter-planetary file system) is used as our network and storage layer. We chose IPFS because it is a mature distributed storage solution with considerable community support. One of the TEA project's use cases is to add computing functionality to existing IPFS nodes. Adding a new definition to IPFS (inter-planetary functional services). The network layer of IPFS, called LibP2P, is the base layer of our delegation chain network.
+Secondly, IPFS (the inter-planetary file system) is used as our network and storage layer. We chose IPFS because it is a mature distributed storage solution with considerable community support. One of the TEA project's use cases is to add computing functionality to existing IPFS nodes, adding a new definition to IPFS (inter-planetary <em>functional services</em>). The network layer of IPFS, called LibP2P, is the base layer of our delegation chain network.
 
 In third place, we have the hardware-based trusted computing technology. This is how the Trust Chain works. In our current demo, we used a TPM chip by Nations Technologies on a Raspberry Pi as our testing environment. This doesn't mean we support TPM only, as any hardware trusted computing technologies could be applied, granted that they can deliver a Proof of Trust on which other nodes can agree. In the TEA project, we do not decide whether a node is secure or not; we provide a consensus on what most nodes agree on. In other words, TEA is neutral to all trusted-computing-technologies.
 
@@ -137,7 +139,7 @@ Before remote attestation, the testee needs to post its "claims" on the blockcha
 
 In the TEA project, most decisions are made in a decentralised manner. Every node can determine trust or non-trust on its business logic. The RA process is to attest a node's claim is honest. 
 
-Therefore TEA can be made security technologies neutral. We do not tell you if a node is trustable or not, we just tell you what it claims and whether the claim is correct or not. From there, you make your decision.
+Therefore, TEA is security technology agnostic. As long as there is consensus, any technology can be used. We do not tell you if a node is trustable or not, we just tell you what it claims and whether the claim is correct or not. From there, you make your decision.
 
 # TEA: Traditional cloud computing gone decentralised
 
