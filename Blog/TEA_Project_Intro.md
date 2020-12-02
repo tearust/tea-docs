@@ -147,7 +147,7 @@ TEA's trusted computing services is similar to traditional cloud computing servi
 
 Naturally, a decentralised cloud service would be the first business model that comes to mind. While this is an understandable assumption, we are not looking to run the next Amazon EC2 or Google Function services. We focus on the business models of the decentralised world. We do not need to buy tons of servers to build data centers. Just like Uber or Airbnb, the largest taxi company and hotel chain, which do not own any car or hotel room, we do not need to own any TEA nodes either.
 
-Anyone can download the code from our GitHub and run their TEA node anywhere. The trust does not come from a users reputation or geolocation; the trust comes from the hardware and blockchain consensus. We link all these TEA nodes together to become the world’s largest trusted computing network. Just like IPFS provides file storage, we provide inter-planetary computing services.
+Anyone can download the code from our GitHub and run their TEA node anywhere. The trust does not come from a user's reputation or geolocation; the trust comes from the hardware and blockchain consensus. We link all these TEA nodes together to become the world’s largest trusted computing network. Just like IPFS provides file storage, we provide inter-planetary computing services.
 
 Taking things one step further than Uber or Airbnb did, we decentralise the management to a DAO—this is made possible because the system runs on the blockchain. We do not need to take a 30% cut from our node owner's revenue as Uber does. 
 
