@@ -99,13 +99,13 @@ In the first place we have blockchain technology. There is a blockchain inside t
 
 It is developed on top of Substrate, a blockchain development toolkit by Polkadot. Because TEA is based on Substrate, it will be effortless to communicate and collaborate with other blockchains in Polkadot ecosystem. Of course, this doesn't mean that TEA is limited to working with Substrate-based blockchains only: TEA can work with any client blockchain or even with non-blockchain clients. Then again, it is  easier when the client is Substrate based due to the inter-chain communication protocol. An additional reason for choosing Substrate is that the protocol is developed using the Rust programming language and has WebAssembly as its compiling target. This technical stack is the same as TEA’s: we like Rust and WebAssembly too :)
 
-Secondly, IPFS (the inter-planetary file system) is used as our network and storage layer. We chose IPFS because it is a mature distributed storage solution with considerable community support. One of the TEA project's use cases is to add computing functionality to existing IPFS nodes, adding a new definition to IPFS (inter-planetary <em>functional services</em>). The network layer of IPFS, called LibP2P, is the base layer of our delegation chain network.
+Secondly, IPFS (the inter-planetary file system) is used as our network and storage layer. We chose IPFS because it is a mature distributed storage solution with considerable community support. One of the TEA project's use cases is to add computing functionality to existing IPFS nodes, adding a new definition to IPFS (inter-planetary *functional services*). LibP2P, the network layer of IPFS, is the base layer of our delegation chain network.
 
-In third place, we have the hardware-based trusted computing technology. This is how the Trust Chain works. In our current demo, we used a TPM chip by Nations Technologies on a Raspberry Pi as our testing environment. This doesn't mean we support TPM only, as any hardware trusted computing technologies could be applied, granted that they can deliver a Proof of Trust on which other nodes can agree. In the TEA project, we do not decide whether a node is secure or not; we provide a consensus on what most nodes agree on. In other words, TEA is neutral to all trusted-computing-technologies.
+In third place, we have the hardware-based trusted computing technology. This is how the Trust Chain works. In our current demo, we used a TPM chip by Nations Technologies on a Raspberry Pi as our testing environment. This doesn't mean we support TPM only, as any hardware trusted computing technology could be applied, granted that it can deliver a Proof of Trust on which other nodes can agree. In the TEA project, we do not decide whether a node is secure or not; we provide a consensus on what most nodes agree on. In other words, TEA is neutral to all trusted computing technologies.
 
 Last, but not least, is the isolated container technology. We chose WasCC WebAssembly runtime as our base. WebAssembly is a new technology that has recently gotten attention in the blockchain and cybersecurity area. WebAseembly brings us a higher level of isolation with security built-in. It also makes code small and portable to let TEA move Wasm code around the network to fit different business needs. 
 
-Once you’ve deployed your code to the TEA network, you cannot and do not need to know which TEA node hosts or runs your code. All the workflows are handled inside the trusted secure environment with zero-knowledge protection. You can see this is significantly different than traditional cloud computing, where you know where your code is being hosted and running from. On the developer's end, they will not need to learn a new programming language because WebAssembly is a compiling target rather than a programming language. Most of the modern programming languages can be compiled to WebAssembly format.
+Once you’ve deployed your code to the TEA network, you cannot and do not need to know which TEA node hosts or runs your code. All the workflows are handled inside the trusted secure environment with zero-knowledge protection. You can see this is significantly different than traditional cloud computing, where you know where your code is being hosted and runs from. On the developer's end, there is no need to learn a new programming language because WebAssembly is a compiling target rather than a programming language. Most of the modern programming languages can be compiled to WebAssembly format.
 
 ![](../res/s9.jpg)
 
@@ -115,11 +115,11 @@ So, we’ve cherry-picked four of the top modern technologies in their respectiv
 
 ![](../res/s10.jpg)
 
-The TEA project not only leverages, but also extends and enhances the aforementioned technologies. For client blockchains, the TEA project can be a layer-2 trusted computing oracle. TEA serves client blockchains by offloading complex computation to TEA's layer-2 allowing clients to focus on business logic only. These complex computations would be either too slow or too expensive to run on traditional blockchains. 
+The TEA project not only leverages, but also extends and enhances the aforementioned technologies. For client blockchains, the TEA project can be a layer-2 trusted computing oracle. TEA serves client blockchains by offloading complex computation to TEA's layer-2, allowing clients to focus on business logic only. These complex computations would be either too slow or too expensive to run on traditional blockchains. 
 
-Smart contracts can send computing tasks to the TEA network as if it were an asynchronous internal RPC call inside their blockchain. The TEA network then does the heavy lifting and finally sends the result back to the client blockchain with a series of Proof of Trust signatures. The client blockchain can easily verify those PoT to trust the outcome, and then resume the intended smart contract process. This method opens up to ability to execute a lot of complex business logic that was previously considered impossible.
+Smart contracts can send computing tasks to the TEA network as if it were an asynchronous internal RPC call inside their blockchain. The TEA network then does the heavy lifting and sends the result back to the client blockchain with a series of Proof of Trust signatures. The client blockchain can easily verify the PoT to trust the outcome, and then resume the intended smart contract process. This method opens up to ability to execute a lot of complex business logic that was previously considered impossible.
 
-# Turn IPFS (Inter Planet File System) to new definition IPFS(Inter Planet Function Services)
+# IPFS redefined
 
 ![](../res/s11.jpg)
 
@@ -127,7 +127,7 @@ IPFS is awesome! It allows you to store your code or data in the middle of nowhe
 
 Still, IPFS is just a "File System” as of now. If you need to run your code, you probably have to load the code from IPFS to some centralised cloud services (Amazon, Google, etc.) first. If you could run your code directly inside an IPFS node, you would be able to get the result directly, saving your code from an unnecessary trip to the centralised (and vulnerable) computing servers. After all, you do not really need the code; what you need is the result, right?
 
-We’ve designed a hardware TEA module that can be plugged into existing IPFS nodes. The module is protected by hardware trusted computing technologies and TEA’s software consensus. The code and data can be decrypted and run inside the trusted environment. These workflows are monitored and verified by other trusted TEA nodes, driven by the TEA consensus algorithm. In this case, you can send a request to IPFS nodes and expect the function’s result as a response instead of the source code. You can see how the File System (“FS" in IPFS) is converted to create Inter-Planetary Function Services.
+We’ve designed a hardware TEA module that can be plugged into existing IPFS nodes. The module is protected by hardware trusted computing technologies and TEA’s software consensus. The code and data can be decrypted and run inside the trusted environment. These workflows are monitored and verified by other trusted TEA nodes, driven by the TEA consensus algorithm. You can send a request to IPFS nodes and expect the function’s result as a response instead of the source code. This is how the File System (“FS" in IPFS) is converted to create Inter-Planetary **Function Services**.
 
 # Extend trusted computing beyond hardware boundaries
 
@@ -145,12 +145,12 @@ Therefore, TEA is security technology agnostic. As long as there is consensus, a
 
 ![](../res/s13.jpg)
 
-TEA's trusted computing services is similar to traditional cloud computing service, but it is decentralised. You do not need a centralised form of trust. The hardware and blockchain are the new roots of trust.
+TEA's trusted computing service is similar to traditional cloud computing service, but decentralised. You do not need a centralised form of trust, instead we use TEA's hardware and software components.
 
-Naturally, a decentralised cloud service would be the first business model that comes to mind. While this is an understandable assumption, we are not looking to run the next Amazon EC2 or Google Function services. We focus on the business models of the decentralised world. We do not need to buy tons of servers to build data centers. Just like Uber or Airbnb, the largest taxi company and hotel chain, which do not own any car or hotel room, we do not need to own any TEA nodes either.
+A decentralised cloud service is one of the first business models that comes to mind. However, we are not looking to run the next Amazon EC2 or Google Function services. We focus on the business models of the decentralised world, and do not need to buy tons of servers to build data centers. Just like Uber or Airbnb, the largest taxi company and hotel chain respectively, do not own any car or hotel room, we do not need to own any TEA nodes either.
 
-Anyone can download the code from our GitHub and run their TEA node anywhere. The trust does not come from a user's reputation or geolocation; the trust comes from the hardware and blockchain consensus. We link all these TEA nodes together to become the world’s largest trusted computing network. Just like IPFS provides file storage, we provide inter-planetary computing services.
+Anyone can download the code from our GitHub and run their TEA node from anywhere. The trust does not come from a user's reputation or geolocation; the trust comes from the hardware and blockchain consensus. We link all these TEA nodes together to become the world’s largest trusted computing network. Just like IPFS provides file storage, we provide inter-planetary computing services.
 
-Taking things one step further than Uber or Airbnb did, we decentralise the management to a DAO—this is made possible because the system runs on the blockchain. We do not need to take a 30% cut from our node owner's revenue as Uber does. 
+Taking things one step further than Uber or Airbnb did, we decentralise the management to a DAO—this is possible because the system runs on the blockchain. We do not need to take a 30% cut from our node owners' revenue as Uber does. 
 
 We will talk more about TEA’s business model in our next presentation.
