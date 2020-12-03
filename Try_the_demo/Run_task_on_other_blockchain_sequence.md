@@ -18,17 +18,18 @@ end box
 
 client->alice: request delegate
 note right
-request_delegate(sender, client, net_address, fee)
+request_delegate(sender, client, delegator, net_address, fee)
 record client information to chain
    insert into ClientsApplys(block_number, vec[(client, sender])
    insert into Clients(client, false)
    insert into ClientSender(client, sender)
+   insert into ClientDelegator(client, delegator)
    insert into ClientFee(empolyer, fee)
 end note
 
 alice-->layer1Alice: request delegate
 note right
- request_delegate(client, net_address) {
+ request_delegate(delegator, net_address) {
    Call BeMyDelegateRequest
  }
 end note
