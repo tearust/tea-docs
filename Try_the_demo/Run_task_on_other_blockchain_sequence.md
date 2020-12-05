@@ -8,6 +8,7 @@ end box
 
 box Substrate Demo Network 
 participant alice
+participant agent
 end box
 
 box  Tea Network
@@ -18,36 +19,35 @@ end box
 
 client->alice: request delegate
 note right
-request_delegate(sender, client, delegator_name, net_address, fee)
+request_delegate(delegator, delegator_name, net_address, fee)
 the client need to be an account of tea-layer1, and if reques_delegate finished,
 the client will act as an agent of substrate-demo.
 record client information to chain
-   insert into ClientsApplys(block_number, vec[(client, sender])
-   insert into Clients(client, false)
-   insert into ClientSender(client, sender)
-   insert into ClientDelegatorFee(client, fee)
-   insert into ClientNetAddress(clientt, 
-   insert into Delegates(delegator_name, clent)
+   insert into ClientsApplys(block_number, vec[(delegator, sender])
+   insert into RequestDelegatorFee(delegator, fee)
+   insert into Delegates(delegator, false)
+   insert into DelegateNetAddress(delegator, net_address)
+   insert into DelegateAccounts(delegator_name, delegator)
 end note
 
 ...
 
-alice-[#blue]>alice: <OffChainWorker> apply delegate
+agent-[#blue]>agent: <OffChainWorker> apply delegate
 rnote right
 apply_delegates(block_number)
  update_delegate_status(client, updater)
  need updater sign 
- insert into Clients(client, true)
+ insert into Delegates(client, true)
 end note
 
-alice-->layer1Alice: request delegate
+agent-->layer1Alice: request delegate
 note right
  request_delegate(delegator, net_address) {
    Call BeMyDelegateRequest
  }
 end note
 
-layer1Alice-->alice: response of BeMyDelegateRequest
+layer1Alice-->agent: response of BeMyDelegateRequest
 note left
 save_delegate_info 
  DelegateInfo 
@@ -60,12 +60,14 @@ end note
 
 client->alice: begin task
 note right
-begin_task(sender, client, delegator_name, description_cid, fee)
- insert into Tasks(block_number, vec[TaskInfo])
- insert into ClientTaskFee(client, fee)
+begin_task(client, delegator_name, description_cid, fee)
+   insert into Tasks(block_number, vec[TaskInfo])
+   insert into ClientTaskFee(client, fee)
+   insert into ClientDelegate(client, delegate)
+
 end note
 
-alice-[#blue]>alice:<OffChanWorker> send errand tasks
+agent-[#blue]>agent:<OffChanWorker> send errand tasks
 rnote right
 range tasks {
    send_task_to_tea_network(
@@ -90,7 +92,8 @@ range tasks {
  }
 end note
 
-alice->layer1Alice: send task to tea network
+agent->layer1Alice: send task to tea network
+
 alice-[#blue]>alice:<OffChainWorker> query errand task results
 rnote right
 query_errand_task_results(block_number)
