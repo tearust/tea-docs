@@ -18,13 +18,26 @@ end box
 
 client->alice: request delegate
 note right
-request_delegate(sender, client, delegator, net_address, fee)
+request_delegate(sender, client, delegator_name, net_address, fee)
+the client need to be an account of tea-layer1, and if reques_delegate finished,
+the client will act as an agent of substrate-demo.
 record client information to chain
    insert into ClientsApplys(block_number, vec[(client, sender])
    insert into Clients(client, false)
    insert into ClientSender(client, sender)
-   insert into ClientDelegator(client, delegator)
-   insert into ClientFee(empolyer, fee)
+   insert into ClientDelegatorFee(client, fee)
+   insert into ClientNetAddress(clientt, 
+   insert into Delegates(delegator_name, clent)
+end note
+
+...
+
+alice-[#blue]>alice: <OffChainWorker> apply delegate
+rnote right
+apply_delegates(block_number)
+ update_delegate_status(client, updater)
+ need updater sign 
+ insert into Clients(client, true)
 end note
 
 alice-->layer1Alice: request delegate
@@ -45,19 +58,9 @@ save_delegate_info
  save into local storate
 end note
 
-...
-
-alice-[#blue]>alice: <OffChainWorker> apply delegate
-rnote right
-apply_delegates(block_number)
- update_delegate_status(client, updater)
- need updater sign 
- insert into Clients(client, true)
-end note
-
 client->alice: begin task
 note right
-begin_task(sender, client, description_cid, fee)
+begin_task(sender, client, delegator_name, description_cid, fee)
  insert into Tasks(block_number, vec[TaskInfo])
  insert into ClientTaskFee(client, fee)
 end note
