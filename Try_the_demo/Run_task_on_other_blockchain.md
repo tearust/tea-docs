@@ -75,7 +75,7 @@ If compiled successfully, you should see an executable file named "substrate-dem
 At the first terminal, run the following commands to run alice node:
 
 ```
-./substrate-demo --dev --tmp --alice --ws-port 9955
+./substrate-demo --chain local --tmp --alice --ws-port 9955 --node-key 9a6c73e302673ad3656e2fb6a100812e0c6a1bd2686482a5df61781aca228b8a
 ```
 
 Or run following command if you used "build.sh" script to compile:
@@ -109,12 +109,12 @@ The lastest logs says the alice node identity is `12D3KooWHfMp4oTPeM8Wi2BgqXy1pb
 
 **Why** we use two node in this demo? That is because we want to demonstrate the situation that we send a task from a normal node, and collect the task result with authority node (Alice in this demo) to avoid poison data.
 
-### Start a normal node
+### Start Bob node
 
-At the second terminal, run the following command to run a normal node with bootstrap node of Alice.
+At the second terminal, run the following command to run Bob node with bootstrap node of Alice.
 
 ```
-./substrate-demo --dev --tmp --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --port 30334 --ws-port 9944 --bob
+./substrate-demo --chain local --tmp --bob --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWCfPHyRh2igKq3QFaimDU8bd2n9P9P2qmj7d11CofMcqG --port 30335 --ws-port 9966
 ```
 
 If you used "build.sh" script to compile, the following steps need to be executed:
@@ -135,6 +135,39 @@ the dump result may like` "IPv4Address": "192.168.176.2/20",` then the alice IP 
 
 If this node runs successfully, you should see it sync to the same height as Alice node.
 
+### Start agent node
+First, you need to create a keystore.
+
+1.Install subkey
+```shell script
+cargo install --force subkey --git https://github.com/paritytech/substrate --tag v2.0.0
+```
+
+2.Use subkey to generate account
+```shell script
+subkey generate --scheme Sr25519 -w 12
+Secret phrase `viable section favorite blur goose monster human check order viable auto injury` is account:
+  Secret seed:      0x65a5113976f3dc10538a3b7ad8e0da111bc990f11439d0cdd113c7f01db118df
+  Public key (hex): 0x18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257
+  Account ID:       0x18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257
+  SS58 Address:     5CdQK7PKKH7hdXxuRfbFvMhN6f1r9Kv8FuiRt8rdRBg4K2Xx
+```
+
+3.Use subkey to create keystore file
+```shell script
+subkey insert --base-path ~ --keystore-path ~/keystore --key-type demo --suri "viable section favorite blur goose monster human check order viable auto injury"
+```
+we will get a keystore file in keystore-path like: 64656d6f18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257
+
+4.Import the keystore into polkadot{.js} extension, and Deposit to delegator account of tea-layer1.
+
+5.At the third terminal, run the following command to run a agent node with bootstrap of Alice.
+
+```
+./substrate-demo --chain local --tmp  --name agent --validator --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWCfPHyRh2igKq3QFaimDU8bd2n9P9P2qmj7d11CofMcqG --port 30336 --ws-port 9966 --keystore-path ~/keystore
+```
+
+
 ### Prepare the node WebUI
 
 Next we will prepare the node WebUI to read node status and send transactions to the demo nodes, fortunately [polkadot official WebUI](http://polkadot.js.org/apps/) can help us to do this job.
@@ -145,8 +178,8 @@ Because we use the default `9944` websocket port for normal node, we can operate
 
 In the Node WebUI we creat a `requestDelegate` extrinsic first. Note there are three parameters:
 
-1. client: account that want to send a task
-2. delegator: account of [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) , we need to deposit from this account to the task delegator account
+1. client: account that want to be an agent, we need to deposit from this account to the task delegator account.
+2. delegator_name: agent name, begin task will use the delegator_name.
 3. net_address: net address of delegator in [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) (you can find it at "Prerequisites->Delegate Net Address" section above)
 4. fee: gas fee for the node that help to sent HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md)
 
@@ -154,7 +187,7 @@ Note: Remember to transfer some token to client account.
 
 ![](../res/substrate-demo-request-delegate.png)
 
-If the extrinsic executed successfully, we shoud see logs below. We can see we send a HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) and go corresponding response.
+If the extrinsic executed successfully, we should see logs below. We can see we send a HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) and go corresponding response.
 
 ```
 Nov 28 21:28:42.202  INFO begin to send http post request, url is http://81.68.250.243:8000/api/be_my_delegate?content=CjA1Rktva21YR3dod3I4UjVUWXN5ZFhzcGp4c2dxcDRzZHpRVW1ja1IyMnVUQkMyOVUSAA==
@@ -170,7 +203,8 @@ And also we can see an event about the delegate at the Network->Explorer page.
 
 Again we creat a `beginTask` extrinsic, and there are three parameters too:
 
-1. client: account that want to send a task
+1. client: account that want to send a task.
+2. delegator_name: the agent of substrate-demo.
 2. description_cid: an IPFS cid to describe the task (you can find it at "Prerequisites->Errand Json" section above) 
 3. fee: gas fee for the node that help to sent HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md)
 
