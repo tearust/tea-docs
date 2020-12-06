@@ -54,7 +54,7 @@ To short the passing parameters, we should pre-store this JSON into IPFS in the 
 QmPdh2fPtfqxA2HmgBpSAAk6hsFCQsR3rig3Z61G3wmnGd
 ````
 
-## Compile and start demo
+## Compile substrate-demo
 
 First, use git clone the demo source code:
 
@@ -70,6 +70,11 @@ Normally you can use `cargo build` to compile demo, [for some knowing issues](ht
 
 If compiled successfully, you should see an executable file named "substrate-demo" in `target/debug` directory if you build with `cargo build` command, or in `docker/target/release` directory if you use the `docker/build.sh` shell script (compile with `cargo build --release` command inner). Congratulations, then you should open two terminals and `cd` into the directory contains "substrate-demo" to complete the following steps:
 
+## Start demo
+
+We need to start three node: Alice Bob and Agent.
+We need to run Alice and Bob for POA consensus, and run a normal node as agent of substrate-demo to send http request of request_delegate and begin_task to tea-network.
+
 ### Start Alice Node 
 
 At the first terminal, run the following commands to run alice node:
@@ -78,10 +83,10 @@ At the first terminal, run the following commands to run alice node:
 ./substrate-demo --chain local --tmp --alice --ws-port 9955 --node-key 9a6c73e302673ad3656e2fb6a100812e0c6a1bd2686482a5df61781aca228b8a
 ```
 
-Or run following command if you used "build.sh" script to compile:
+Or run following command if you used "run.sh" script to run alice node:
 
 ```
-./run.sh alice 9955 --dev --tmp --alice --unsafe-ws-external --unsafe-rpc-external --rpc-cors all
+./run.sh alice 9955 --chain local --tmp --alice --unsafe-ws-external --unsafe-rpc-external --node-key 9a6c73e302673ad3656e2fb6a100812e0c6a1bd2686482a5df61781aca228b8a  --rpc-cors all
 ```
 
 Note that we run with specify a custom web-socket port `9955` (default is 9944), this is because we use the next node more frequently.
@@ -127,17 +132,32 @@ docker network inspect substrate-demo  | grep IPv4Address
 
 the dump result may like` "IPv4Address": "192.168.176.2/20",` then the alice IP address should be `192.168.176.2`.
 
-2. run following command with custom alice IP address and  node identity
+2. run following command with custom alice IP address and node identity
 
 ```
-./run.sh bob 9944 --dev --tmp --bootnodes /ip4//tcp/30333/p2p/12D3KooWHfMp4oTPeM8Wi2BgqXy1pbwkUa9dq72RmPvYAtLpf4r5 --bob --unsafe-ws-external --unsafe-rpc-external --rpc-cors all
+./run.sh bob 9966 --chain local --tmp --bob --bootnodes /ip4//tcp/30333/p2p/12D3KooWCfPHyRh2igKq3QFaimDU8bd2n9P9P2qmj7d11CofMcqG --unsafe-ws-external --unsafe-rpc-external --rpc-cors all
 ```
 
 If this node runs successfully, you should see it sync to the same height as Alice node.
 
 ### Start agent node
-First, you need to create a keystore.
+First, you need to create a keystore or use existed keystore file.
 
+#### how to use existed keystore file
+You can refer to the following three steps to create the keystore file，If you don't want to create, also can choose to use has generated keystore file: "substrate-demo/keystore/keystore/64656d6f18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257".
+
+about this existed keystore file:
+```json
+{
+    "Secret phrase":    "viable section favorite blur goose monster human check order viable auto injury` is account",
+    "Secret seed":      "0x65a5113976f3dc10538a3b7ad8e0da111bc990f11439d0cdd113c7f01db118df",
+    "Public key (hex)": "0x18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257",
+    "Account ID":       "0x18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257",
+    "SS58 Address":     "5CdQK7PKKH7hdXxuRfbFvMhN6f1r9Kv8FuiRt8rdRBg4K2Xx"
+}
+```
+
+#### how to create keystore file
 1.Install subkey
 ```shell script
 cargo install --force subkey --git https://github.com/paritytech/substrate --tag v2.0.0
@@ -159,12 +179,20 @@ subkey insert --base-path ~ --keystore-path ~/keystore --key-type demo --suri "v
 ```
 we will get a keystore file in keystore-path like: 64656d6f18f00a2590d3cd802663cba4cc0c50d1796be12fa9c5afd4e2dc1fb1d5565257
 
-4.Import the keystore into polkadot{.js} extension, and Deposit to delegator account of tea-layer1.
+#### deposit
+Import the keystore into polkadot{.js} extension by secret phrase, and Deposit to delegator account of tea-layer1.
 
-5.At the third terminal, run the following command to run a agent node with bootstrap of Alice.
+#### run agent node with keystore file
+At the third terminal, run the following command to run a agent node with bootstrap of Alice.
 
 ```
 ./substrate-demo --chain local --tmp  --name agent --validator --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWCfPHyRh2igKq3QFaimDU8bd2n9P9P2qmj7d11CofMcqG --port 30336 --ws-port 9966 --keystore-path ~/keystore
+```
+
+Or run following command with custom alice IP address and node identity：
+Before use "run.sh" to start agent node, we need to copy keystore file to "/docker/target/release".
+```
+./run.sh agent 9944 --chain local --name agent --tmp --bootnodes /ip4//tcp/30333/p2p/12D3KooWCfPHyRh2igKq3QFaimDU8bd2n9P9P2qmj7d11CofMcqG --keystore-path /build/target/release --unsafe-ws-external --unsafe-rpc-external --validator --rpc-cors all
 ```
 
 
