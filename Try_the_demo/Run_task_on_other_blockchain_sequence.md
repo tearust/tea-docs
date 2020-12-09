@@ -8,6 +8,7 @@ end box
 
 box Substrate Demo Network 
 participant alice
+participant bob
 participant agent
 end box
 
@@ -19,12 +20,11 @@ end box
 
 client->alice: request delegate
 note right
-request_delegate(delegator, delegator_name, net_address, fee)
+request_delegate(delegator, delegator_name, net_address)
 the client need to be an account of tea-layer1, and if reques_delegate finished,
 the client will act as an agent of substrate-demo.
 record client information to chain
    insert into ClientsApplys(block_number, vec[(delegator, sender])
-   insert into RequestDelegatorFee(delegator, fee)
    insert into Delegates(delegator, false)
    insert into DelegateNetAddress(delegator, net_address)
    insert into DelegateAccounts(delegator_name, delegator)
@@ -123,10 +123,26 @@ update_errand_task_results(block_number)
  range results {
    update_single_errand
    update_errand(description_cid,result_cid) {
-       update Errand status and result
-       remove from ProcessingErrands(description_cid)
+       if result is OK, insert into CompletedErrands(description_cid, Vec<Alice>)
+       if 2/3 greened of the same task result, update result of Errands. 
    }
  }
+end note
+
+bob-[#blue]>bob:<OffChainWorker> query errand task results
+rnote right
+query_errand_task_results as alice
+end note
+
+bob-->layer1Alice: http query task result
+layer1Alice-->bob: respons of task result
+note left
+get ErrandResultInfo from response as alice
+end note
+
+bob-[#blue]>bob:<OffChainWorker> update result of task
+rnote right
+update_errand_task_results as alice
 end note
 
 client->alice: get result from chain storage

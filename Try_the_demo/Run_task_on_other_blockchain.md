@@ -209,7 +209,6 @@ In the Node WebUI we creat a `requestDelegate` extrinsic first. Note there are t
 1. client: account that want to be an agent, we need to deposit from this account to the task delegator account.
 2. delegator_name: agent name, begin task will use the delegator_name.
 3. net_address: net address of delegator in [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md) (you can find it at "Prerequisites->Delegate Net Address" section above)
-4. fee: gas fee for the node that help to sent HTTP request to [TEA netwrok](http://t-rust.com/#/doc_list/What_is_TEA%3F%2FREADME.md)
 
 Note: Remember to transfer some token to client account.
 
