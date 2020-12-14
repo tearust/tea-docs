@@ -25,7 +25,7 @@ To learn more about why it is OK to be "not secure" and what is *pure* dapp mean
 
 # Start the dApp
 
-From your browser installed with Polkadot extension, click this link [http://t-rust.com:8080/ipfs/QmUFLLDr6gXUctVAL28SuWKA3wtpAwQBYbePzLKKmdE3Yb/#/](http://t-rust.com:8080/ipfs/QmUFLLDr6gXUctVAL28SuWKA3wtpAwQBYbePzLKKmdE3Yb/#/). 
+From your browser installed with Polkadot extension, click this link [http://t-rust.com:8080/ipfs/QmYqMMmmA17N7a5kDbFgddH9RggCQMK51D3egfSRZN9XDj/#/](http://t-rust.com:8080/ipfs/QmYqMMmmA17N7a5kDbFgddH9RggCQMK51D3egfSRZN9XDj/#/). 
 
 Because it is **pure** dApp, all resources need to be downloaded to your browser. The first time loading will take a few seconds. 
 
