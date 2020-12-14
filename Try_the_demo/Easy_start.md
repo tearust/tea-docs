@@ -29,7 +29,7 @@ From your browser installed with Polkadot extension, click this link [http://t-r
 
 Because it is **pure** dApp, all resources need to be downloaded to your browser. The first time loading will take a few seconds. 
 
-If you are behind the China Great Firewall, please use this Chinese local IPFS address instead: [http://81.70.96.136:8080/ipfs/QmbHfBZuLK41zf3nePiFstRTa81vAvpsf9HBQLycjw6VFb](http://81.70.96.136:8080/ipfs/QmbHfBZuLK41zf3nePiFstRTa81vAvpsf9HBQLycjw6VFb)
+If you are behind the China Great Firewall, please use this Chinese local IPFS address instead: [http://81.70.96.136:8080/ipfs/QmYqMMmmA17N7a5kDbFgddH9RggCQMK51D3egfSRZN9XDj](http://81.70.96.136:8080/ipfs/QmYqMMmmA17N7a5kDbFgddH9RggCQMK51D3egfSRZN9XDj)
 
 # Select an account
 
