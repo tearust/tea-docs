@@ -15,7 +15,7 @@ The first step is very similar to the Easy Start demo dApp. You will need to sel
 You can click "Upload the data image" and upload your local image to the delegator node.
 If you do not have an image, please download any pre-made test image from below.
 ![test img1](https://github.com/tearust/tea-docs/blob/main/res/lake.png?raw=true)
-![test img2](https://github.com/tearust/tea-docs/blob/main/res/lion.jpg?raw=true)
+![test img2](../res/lion.jpg)
 ![test img3](https://github.com/tearust/tea-docs/blob/main/res/tiger.jpg?raw=true)
 All these images are tested working with Tensorflow algorithm.
 
