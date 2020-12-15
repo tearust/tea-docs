@@ -11,6 +11,14 @@ sort:
       - name: Key_concepts.md
       - name: Use_cases.md
       - name: New_business_models.md
+  - name: Blog_and_Vlog
+    path: Blog_and_Vlog/README.md
+    children:
+      - name: Gluon_yet_another_crypto_wallet.md
+      - name: Can_trusted_computing_protect_your_digital_assets.md
+      - name: Tea_at_the_Edge_taas_concept.md
+      - name: TEA_Project_business_model.md
+      - name: TEA_Project_Intro.md
   - name: Try_the_demo
     path: Try_the_demo/README.md
     children:
@@ -39,15 +47,6 @@ sort:
       - name: Select_an_executor.md
       - name: Revenue_distribution.md
       - name: Submit_task.md
-  - name: Blog_and_Vlog
-    path: Blog_and_Vlog/README.md
-    children:
-      - name: Gluon_yet_another_crypto_wallet.md
-      - name: Can_trusted_computing_protect_your_digital_assets.md
-      - name: Tea_at_the_Edge_taas_concept.md
-      - name: TEA_Project_business_model.md
-      - name: TEA_Project_Intro.md
-
   - name: FAQ
     path: FAQ/README.md
     children:
