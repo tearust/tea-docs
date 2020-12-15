@@ -1,6 +1,7 @@
 # TEA Project
 
-![s1](../res/s1.jpg)
+Click for video
+[![](http://img.youtube.com/vi/-NgR3ySWwXg/0.jpg)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
 
 TEA stands for Trusted Execution and Attestation. It also happens to be the favorite drink of many software developers. That's why coffee and tea are commonly used as project names, for example Java, Coffeescript, Jasmine, Mocha, etc.
 
