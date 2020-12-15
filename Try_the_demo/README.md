@@ -1,34 +1,48 @@
 # The background
 ![Story time](../res/demostory2.jpg)
 
-The demo is a story about decentralized trusted computing between Alice, Bob, Charlie, and Dave. 
+Let’s demonstrate how Tea’s decentralised trusted computing works with the help of Alice, Bob, Charlie, and Dave.
+ 
 ![Story time](../res/demostory3.jpg)
-They play different roles in this story. One thing in common that they do not trust each other, but still need to cooperate to make such a business deal.
+IMAGE:
+Alice is a wildlife photographer and has recently captured some magnificent images of a lion. Hoping to earn a couple bucks, she makes it available for use on a research platform—while maintaining ownership of the actual pictures.
 
-That's why they need T-rust as the decentralized trusted computing platform to carrier the computation.
+Bob is a hardcore developer that works on image recognition models. His most recent application is a Tensorflow image recognition model compiled to web-assembly. He would like to open up his application for use, without creating the opportunity for others to steal his code.
+
+Charlie is an IPFS miner. He’s recently added a TEA module to his device, allowing him to mine both FIL and TEA tokens with the same mining machine. He wonders how the TEA module is able to receive sensitive information from clients and run computations securely.
+
+Dave is a seasoned scientist. He’s currently researching wild animal behaviour by analysing images. While he cannot analyse every picture manually, he can run an AI algorithm on wildlife pictures he’s collected from photographers.
+
+The four characters each play a different role in this story. One common thread is that to do business with each other they require a level of trust that is currently not available.
+
+This where Tea comes in: a decentralised trusted computing platform.
 
 ![Story time](../res/demostory4.jpg)
-Of course, they cannot make deal by themselves. Alice deploy her data (the picture) to T-rust, returning a Deployment_ID for her image.
-Bob did the same to his code. Charlie setup a TEA module and join the T-rust network as a IPFS+TEA double miner.
-Dave pay for the task and wait for the result
 
+Of course, they cannot make deals by themselves; they have never even heard of each other. 
+
+Alice simply uploads her pictures [Deploy data] to the Tea platform, which returns Deployment_ids for it. Bob does the same with the code for his image recognition application.
+
+And Charlie is one of the many IPFS+TEA miners in the Tea network, bringing trusted computation to the rest of the gang.
+
+Dave has been running Bob’s application for a while and needs some new material to scan. He soon finds Alice’s images and purchases some for analysis.
 
 ![Story time](../res/demostory5.jpg)
-When the task complete, Dave receives the result (and a series of proot of trust). Alice, Bob and Charlie receive they payment. 
 
+For Dave the experience is as simple as paying for the task and receiving the result, along with series of Proof of Trust verifications. And Alice, Bob, and Charlie receive their payment.
 
 ![Story time](../res/demostory6.jpg)
-During the execution of this task, everything happened inside or between TEA nodes. The TEA nodes is an HSM protected by hardware and consensus. No one (including Charlie, the owner) has any information on what is going on, no to mention outside hackers.
+The execution of Dave’s task only takes place inside or between TEA nodes. A TEA node is an HSM, protected by both hardware and consensus. No one, including Charlie (the miner and TEA node owner), can access the information on the module, let alone a hacker.
 
-Alice get paid by her picture without data leaking. None of Bob, Charlie and Dave has a copy of her picture.
+Alice gets paid for her pictures, without giving away any files. Bob, Charlie, and even Dave do not own a copy of her picture.
 
-Bob get paid for his Tensorflow algirhtm (model). None of Alice, Charlie and Dave has a copy of his code (or model).
+Bob gets paid for his Tensorflow algorithm without giving Alice, Charlie and Dave a single line of code.
 
-Charlie know nothing about what happened, but he get paid for providing the hardware and services. He has zero knowledge about the task or any data.
+Charlie is clueless about any of these activities, and gets paid for the hardware and services. He has zero knowledge about the tasks and data.
 
-Dave get the result as he expected. The proof of trust can be veriried so that he knowns the result is actually comming from the correct code and data he was requested.
+Dave gets the output he requested, and can verify through the Proof of Trust that the result is based on the correct code/algorithm and data input.
 
-This is how a typical decentralized trusted computing works!
+This is an example of how decentralised trusted computing with a cup of Tea works!
 
 # Start the demo
 Before try any of these demos, please make sure you 
