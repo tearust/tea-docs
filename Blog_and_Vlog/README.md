@@ -3,7 +3,7 @@ Click images below to watch videos
 
 - Video introduction
 
-[![](http://img.youtube.com/vi/-NgR3ySWwXg/0.jpg)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
+[![](../res/blog/WX20201215-115720@2x.png)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
 
 
 Please click to select the blog links from the category (on the left, or top depends on your viewing device)
