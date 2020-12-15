@@ -133,3 +133,5 @@ The life cycle design keeps a healthy balance between old existing nodes with ne
 [![](../res/blog/WX20201215-115720@2x.png)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
 
 Please keep reading other articles in our blog. Thanks
+
+![bear](../res/bear2.png)
