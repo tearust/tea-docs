@@ -32,6 +32,7 @@ Dave has been running Bob’s application for a while and needs some new materia
 For Dave the experience is as simple as paying for the task and receiving the result, along with series of Proof of Trust verifications. And Alice, Bob, and Charlie receive their payment.
 
 ![Story time](../res/demostory6.jpg)
+
 The execution of Dave’s task only takes place inside or between TEA nodes. A TEA node is an HSM, protected by both hardware and consensus. No one, including Charlie (the miner and TEA node owner), can access the information on the module, let alone a hacker.
 
 Alice gets paid for her pictures, without giving away any files. Bob, Charlie, and even Dave do not own a copy of her picture.
