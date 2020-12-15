@@ -39,7 +39,13 @@ sort:
       - name: Select_an_executor.md
       - name: Revenue_distribution.md
       - name: Submit_task.md
-
+  - name: Blog
+    children:
+      - name: Gluon_yet.md
+      - name: Can_trusted_computing_protect_your_digital_assets.md
+      - name: Tea_at_the_Edge_taas_concept.md
+      - name: TEA_Project_business_modelmd
+      - name: TEA_Project_intro.md
 
   - name: FAQ
     path: FAQ/README.md
