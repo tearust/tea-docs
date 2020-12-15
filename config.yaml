@@ -42,7 +42,7 @@ sort:
   - name: Blog_and_Vlog
     path: Blog_and_Vlog/README.md
     children:
-      - name: Gluon_yet.md
+      - name: Gluon_yet_another_crypto_wallet.md
       - name: Can_trusted_computing_protect_your_digital_assets.md
       - name: Tea_at_the_Edge_taas_concept.md
       - name: TEA_Project_business_model.md
