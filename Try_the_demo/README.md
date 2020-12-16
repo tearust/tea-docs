@@ -43,7 +43,7 @@ Charlie is clueless about any of these activities, and simply gets paid for the 
 
 Dave gets the output he requested, and can verify through the Proof of Trust that the result is based on the correct code/algorithm and data input.
 
-This is an example of how decentralised trusted computing with a cup of Tea works!
+This is one of many examples of how decentralised trusted computing with a cup of Tea works!
 
 # Start the demo
 Before try any of these demos, please make sure you 
