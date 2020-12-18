@@ -9,24 +9,28 @@ Watch the demo video before get your hands dirty...
 
 Let’s demonstrate how Tea’s decentralised trusted computing works with the help of Alice, Bob, Charlie, and Dave.
  
-![Story time](../res/demostory3.jpg)
-IMAGE:
+![Story time](../res/blog/demo-alice.jpg)
 Alice, a wildlife photographer, has recently captured some magnificent images of a lion. Hoping to earn a couple of bucks, she makes the images available for use on a research platform—while maintaining ownership of the actual pictures.
 
+![Story time](../res/blog/demo-bob.jpg)
 Bob is a hardcore developer that works on image recognition models. His most recent application is a Tensorflow image recognition model compiled to web-assembly. He would like to open up his application for use, without creating the opportunity for others to copy his code.
 
+![Story time](../res/blog/demo-charlie.jpg)
 Charlie is an IPFS miner. He’s recently added a TEA module to his device, allowing him to mine both FIL and TEA tokens with the same mining machine. He wonders how the TEA module is able to receive sensitive information from clients and run computations securely and privately.
 
+![Story time](../res/blog/demo-dave.jpg)
 Dave is a seasoned scientist. He’s currently researching wild animal behaviour by analysing images. While he cannot analyse every picture manually, he can run an AI algorithm on wildlife pictures he’s collected from photographers.
 
+![Story time](../res/blog/demo-no-trust.jpg)
 The four characters each play a different role in this story. One common thread is that to do business with each other they require a level of trust that is currently not available.
 
 This where Tea comes in: a decentralised trusted computing platform.
 
-![Story time](../res/demostory4.jpg)
+![Story time](../res/blog/demo-four.jpg)
 
 Of course, they cannot make deals by themselves; they have never even heard of each other. 
 
+![Story time](../res/demostory4.jpg)
 Alice simply uploads her pictures to the Tea platform, which returns Deployment_ids for it. Bob does the same with the code for his image recognition application.
 
 Charlie is one of the many IPFS+TEA miners in the Tea network, bringing trusted computation services to the rest of the gang.
