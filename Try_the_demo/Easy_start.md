@@ -4,7 +4,6 @@
 This is the easiest demo just like "Hello world". 
 
 The background story of the demo is [here](./README.md)
-![Story time](../res/demostory2.jpg)
 Please make sure you read it before get hands dirty. It helps you understand what is happening and why.
 
 
