@@ -1,3 +1,9 @@
+# TL;DR
+
+Watch the demo video before get your hands dirty...
+
+[![](../res/start-demo-video.jpg)](http://www.youtube.com/watch?v=6GYwrITSfJo "")
+
 # The background
 ![Story time](../res/demostory2.jpg)
 
