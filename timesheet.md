@@ -1,4 +1,4 @@
-|name|date|hours|work | commit hash only if you did not commit with changes| memo |
+|name|date|hours|work|hash| memo |
 |----|----|----|----|----|----|
 | Lex | 18 dec 2020 | 0.6 | Gluon presentation (finish last 2 slides + clean up after questions/comments answered) |  | [Link](https://docs.google.com/presentation/d/195TOo6ZtjLpxg1Xn42RdsRL9TyCYWZ1EtSFHGnuAO18)
 | Lex | 17 dec 2020 | 1.15 | Gluon presentation rewrite (up till last 2 slides) |  | [Link](https://docs.google.com/presentation/d/195TOo6ZtjLpxg1Xn42RdsRL9TyCYWZ1EtSFHGnuAO18)
