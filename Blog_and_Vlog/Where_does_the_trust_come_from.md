@@ -42,7 +42,7 @@ A common misconception is that hardware can be fully trusted. If a TPM chip lies
 
 This is even more evident with cheaper TPM chips (even expensive Intel SGX has been hacked). There is no way to build a system that is 100% secure unless you have an unlimited budget, so here's the real question: is hardware secure enough for most attackers not to afford hacking into it?
 
-While this is more of a technical quesion, we can also look at it from an economic perspective; how do we increase the cost of attacking while reducing the profit of a successful break-in? If you're interested to know, checkout my previous blog.
+While this is more of a technical question, we can also look at it from an economic perspective; how do we increase the cost of attacking while reducing the profit of a successful break-in? If you're interested to know, checkout my previous blog.
 
 > The first introduction video on TEA Project
 https://pushbar.medium.com/the-first-introduction-video-on-tea-project-2b1da4eff6f1
