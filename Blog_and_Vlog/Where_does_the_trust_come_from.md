@@ -23,7 +23,7 @@ But blind trust complicates things, hence the creation of blockchain which provi
 - Cryptography requires a huge amount of computation, limited by CPU power.
 - Consensus requires network communication; the bandwidth becomes the ceiling.
 
-There's been a huge progress in blockchain performance these past few years due to the improvement of consensus algorithms which allows for better utlization of cryptography and network bandwidth. However, if compared to the user experience with cloud computing, it is still far behind.
+There's been a huge progress in blockchain performance these past few years due to the improvement of consensus algorithms which allows for better utilization of cryptography and network bandwidth. However, if compared to the user experience with cloud computing, it is still far behind.
 
 ## Adding hardware as the 3rd dimension to the 2 dimension blockchain world
 
