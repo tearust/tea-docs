@@ -30,7 +30,7 @@ TEA project 除了底层基础链和二层协议之外, 还包括一些基础的
 # TEA: T$ Utility Token 
 ## T$ 的产生和分配
 
-TEA是代币的 Tick,可以简写成为 `T$`, 这是一种 Utility Token.
+TEA是代币的 Ticker,可以简写成为 `T$`, 这是一种 Utility Token.
 它类似于 Ethereum 的 Gas. 它的作用是支付为客户或者系统内部公共服务消耗的成本. 这些成本包括计算存储和网络. 与常见的云计算计费类似.
 
 ### 获得 T$的方式
