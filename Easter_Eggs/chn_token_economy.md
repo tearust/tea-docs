@@ -4,7 +4,7 @@ this document will be moved to website and docs when done
 本文介绍了 TEA Project 的代币经济学设计. 关于 TEA Project 的基础技术介绍可以参考技术白皮书. 或者看下文中一个极简版本.
 # Gist
 TEA 有三种代币.
-- TEA: TEA是代币的 Tick,可以简写成为 `T$`, 这是一种 Utility Token. 用于挖矿收益和服务费用.
+- TEA: TEA是代币的 Ticker,可以简写成为 `T$`, 这是一种 Utility Token. 用于挖矿收益和服务费用.
 - Credit: 是内部权益代币.不能离开 TEA Project之外进行流通和交易. 用于奖励长期诚信服务和违规惩罚. 这个数值是参与DAO 管理的投票权重也是征收地产税的依据.
 - Headcount: 用于控制新增矿工节点的名额. 每个新增矿工窗口期的名额是有限的. 如果有更多矿工想加入就需要通过竞拍来获得矿工资格. 
 
