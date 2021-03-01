@@ -133,13 +133,20 @@ Camellia有两种状态, 一种是自由状态, 一种是锁定状态. 自由状
 - Camellia 的占比取平方根后成为权重, 用以缓解贫富差距
 
 计算方法为 
-
-```
-Camellia_income_for_miner_i = total_camellia_in_this_block * weigh_of_miner_i / total_weight_of_all_miners
+每个矿工自己的权重绝对值
+````
 
 weight_of_miner_i = tea_mined_by_miner_i_in_this_block * locked_camellia_of_miner_i.sqrt()
 
 ```
+
+获得的 Camellia 数量
+
+```
+Camellia_income_for_miner_i = total_camellia_in_this_block * weigh_of_miner_i / total_weight_of_all_miners
+
+````
+
 
 从这个公式可以看出只有通过挖矿获得的 TEA 被用于计算权重, 通过交易获得的不能计算在内. 这样是鼓励矿工积极参与服务, 而且其结果得到共识承认. 而矿工锁定的 Camellia 需要平方根后按比例分配. 只有锁定的 Camellia 参与计算. 这样是鼓励锁仓来维护币价. 取平方根而不是直接等比分配的原因是为了减缓贫富差距.
 
