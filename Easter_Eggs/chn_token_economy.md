@@ -69,7 +69,7 @@ TEA是代币的 Ticker,可以简写成为 `T$`, 这是一种 Utility Token.
 
 在TEA 可以进行市场交易或者提供计算服务之前, 挖矿是唯一获得 TEA 的方式.
 
-## T$的交易, 和 ERC20 的 Lock&Mint , Burn&Redeem 协议
+## T$的交易, 和 ERC20 的 Lock&Mint , Burn&Redeem (LMBR) 协议
 `T$`是在 TEA 网络内部的代币. 自身不是发行在 Ethereum 上的 ERC20 代币. 因此不能直接转移到 ERC20 兼容的钱包或者交易所进行交易. 但是 TEA 提供了 Lock&Mint and Burn&Redeem Protocol 可以通过锁定 TEA Network 上的代币获得 1:1 等值的 ERC20 Token t.eth.这个代币是标准 ERC20 代币, 可以在任何支持 ERC20 的 Defi 系统上进行各种金融交易. 如果交易完毕希望赎回原先锁定的`T$`, 则需要进行一次 Burn 操作, 然后原先的 TEA 代币会返回. 除了交易费之外没有其他金融损失. 
 同样的做法适用于其他支持智能合约和多签的区块链, 比如 Polkadot 的 t.dot token
 
