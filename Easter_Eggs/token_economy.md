@@ -113,62 +113,58 @@ The number of Camellia contained in each block decreases according to the follow
 
 ## Camellia's lock-up status, equity income and taxes
 
-Camellia有两种状态, 一种是自由状态, 一种是锁定状态. 自由状态的 Camellia 不享有税收收益分红, 也不能被用于计算获得计算任务的权重和投票的权重
-Camellia has two states, one is the free state and the other is the locked state. Camellia in the free state does not obtain tax revenue dividends, nor can it be used to calculate the weight of computing tasks and the weight of voting.
+Camellia has two states, one is the free state and the other is the lock-up state. Camellia in the free state does not obtain tax revenue dividends, nor can it be used to calculate the weight of computing tasks and the weight of voting.
 
-在自由状态下, Camellia 可以自由流通. 也就是说可以参与抵押, 销售.
-In a free state, Camellia can circulate freely which means that it can be used as  collateral or be sold.
-在锁定状态下, 在承诺的时段内, Camellia 被锁定在合约内. 拥有者锁定后得到一个代币凭证. 在锁定期间的全网税收都会按照这个代币凭证的比例分配发放.
-In the locked state, Camellia is locked in the smart contract during promised time period. The owner gets a token certificate after the lock. During the lock-up period, the entire network tax will be distributed according to the proportion of this token certificate.
+In a free state, Camellia can circulate freely which means that it can be used as collateral or be sold.
 
-关于税收下文会介绍Tax will be introduced below
+In the lock-up state, Camellia is locked in the smart contract during promised time period. The owner gets a token certificate after the lock. During the lock-up period, the entire network tax will be distributed according to the proportion of this token certificate.
 
-Camellia 的获得和失去 How to earn/lose Camellia
-分配每个区块的 Camellia 的原则是The principle of allocation of each block’s Camellia is
+Tax will be introduced later.
 
-多劳多得. 和矿工挖矿所得 TEA 线性相关
-Camellia 的占比取平方根后成为权重, 用以缓解贫富差距
-计算方法为 每个矿工自己的权重绝对值
+
+## How to earn/lose Camellia
+
+The principle of allocation of each block’s Camellia is
 
 The more work, the more rewards. It has linear correlation with $T earned by miners
-Square root of Camellia's proportion becomes the weight, which is used to alleviate the gap between the rich and the poor.
+Square root of Camellia's proportion becomes the weight, which is used to mitigate the Mathew Effect (Rich get richer)
 The calculation method is the absolute value of each miner’s own weight
 
-weight_of_miner_i = tea_mined_by_miner_i_in_this_block * locked_camellia_of_miner_i.sqrt() ``` 获得的 Camellia 数量 ``` Camellia_income_for_miner_i = total_camellia_in_this_block * weigh_of_miner_i / total_weight_of_all_miners
-从这个公式可以看出只有通过挖矿获得的 TEA 被用于计算权重, 通过交易获得的不能计算在内. 这样是鼓励矿工积极参与服务, 而且其结果得到共识承认. 而矿工锁定的 Camellia 需要平方根后按比例分配. 只有锁定的 Camellia 参与计算. 这样是鼓励锁仓来维护币价. 取平方根而不是直接等比分配的原因是为了减缓贫富差距.
-weight_of_miner_i = tea_mined_by_miner_i_in_this_block * locked_camellia_of_miner_i.sqrt() ``` Number of Camellia earned ``` Camellia_income_for_miner_i = total_camellia_in_this_block * weigh_of_miner_of_all_miners_block * weigh_of_miner_i.sqrt()
-From this formula, you can see that only $T obtained through mining is used to calculate weights, and those earned through transactions cannot be counted. This is to encourage miners to actively participate in the service, and the results are recognized by consensus. Camellia locked by miners is distributed based on square root of proportion. Only the locked Camellia participates in the calculation. This is to encourage locked positions to maintain the token price. The reason for taking the square root instead of direct proportional distribution is to reduce the gap between the rich and the poor.
-所有用户除了挖矿获得分配Camellia之外还可以通过TEA内部交易获得. 因此即使不是矿工, 仍然可以拥有 Camellia只不过不能分配劳动奖励了. 非矿工拥有 Camellia 的主要动机是税收收益分红和金融套利.
-In addition to earning Camellia through mining, all users can also obtain Camellia through TEA internal transactions. Therefore, even if you are not a miner, you can still own Camellia, but those Camellia cannot distribute labor rewards. The main motivation for non-miners to own Camellia is tax income dividends and financial arbitrage.
-Camellia作为矿工诚实守信的奖励同样也用于不诚实守信的处罚. 当矿工存在作恶行为或者不当操作产生了不安全的计算环境, 被安全审计发现并共识认定不再安全可信, 则会被罚没甚至完全踢出网络. 处罚的这部分Camellia 被固定分配给检举者和参与评判的仲裁节点, 剩余部分销毁.
-Camellia, as a reward for miners' honesty and trustworthiness, is also used to penalize dishonesty and trustworthiness. When a miner commits malicious acts or improper operations that create an unsafe computing environment which is found out by a security audit and agreed that it is no longer secure and trustworthy, the miner will be penalized and even be kicked out of the system. This part of the Camellia will be allocated to the whistleblower and the arbitration node participating in the judgement, and the remaining part will be destroyed.
-因为从整体上看 Camellia 的总量有限, 增量递减. 只有可能被罚没销毁而不会无限增加. Camellia 的数量直接影响盈利能力. 所以属于稀缺资产, 有增值空间
-Because the total amount of Camellia has a limit, the increment is decreasing. It can only be fined and destroyed without increasing indefinitely. The number of Camellia directly affects profitability. It is a scarce asset and has room for appreciation.
-Camellia 作为投票权重
-只有锁定状态的 Camellia 可以用于计算投票权重.
-Camellia as voting weight
-Only Camellia that is locked can be used to calculate voting weights.
+```
+weight_of_miner_i = tea_mined_by_miner_i_in_this_block * locked_camellia_of_miner_i.sqrt()
+``` 
+ 
+Miner's Camellia income
 
-Camellia 的一个重要的作用就是在 DAO 治理中的话语权. DAO 投票的时候 Camellia 是作为权重产生的. Camellia 的另外一个作用是获得任务的机会加权.
-An important role of Camellia is voting power in DAO governance. While voting, Camellia is generated as a weight. Another role of Camellia is to the obtain task allocation weight.
-
-Camellia的任务分配权重Camellia's task allocation weight
-只有锁定状态的 Camellia 可以被用于计算分配权重. 自由状态的不可以.
-Only Camellia in the locked state rather than free state can be used to calculate the allocation weight.
-
-在共识算法中计算节点分配到任务的几率和该节点的Camellia数值的平方根成正比. 设计成为非线性比例是弥补马太效应造成的贫富差距和阶级固化.
+``` 
+Camellia_income_for_miner_i = total_camellia_in_this_block * weigh_of_miner_i / total_weight_of_all_miners
+```
 
 
+From this formula, you can see that only $T obtained through mining is used to calculate weights, and those earned through transactions cannot be counted. This is to encourage miners to actively participate in the service, and the results are recognized by consensus. Camellia locked up by miners is distributed based on square root of proportion. Only the locked Camellia participates in the calculation. This is to encourage miners to lock up to drive Camellia price up. The reason for taking the square root instead of direct proportional distribution is to reduce the gap between the rich and the poor.
 
+In addition to earning Camellia through mining, all users can also obtain Camellia through trading. Therefore, even if you are not a miner, you can still own Camellia, but those Camellia cannot distribute labor rewards. The main motivation for non-miners to own Camellia is tax income dividends and financial arbitrage.
 
+Camellia, as a reward for miners' honesty and trustworthiness, is also used to penalize dishonesty and trustworthiness. When a miner commits malicious acts or improper operations that create an unsafe computing environment which is found out by a security audit and agreed that it is no longer secure and trustworthy, the miner will be penalized and even be kicked out from the system. This part of the Camellia will be allocated to the whistle blower and the arbitration node participating in the judgement, and the remaining part will be destroyed.
 
+Because the total amount of Camellia has a limit, the inflation is decreasing. It can only be fined and destroyed without increasing indefinitely. The number of Camellia directly affects profitability. It is a scarce asset and has room for speculation.
+
+## Camellia as voting weight
+
+Only Camellia that is locked up can be used to calculate voting weights.
+
+An important role of Camellia is voting power in DAO governance. While voting, Camellia is generated as a weight. Another role of Camellia is the weight that calculates the winning rate of task competition.
+
+## Camellia's task allocation weight
+
+Only Camellia in the locked up state rather than free state can be used to calculate the allocation weight.
 
 In the consensus algorithm, the probability of a computing node being assigned to a task is proportional to the square root of the node's Camellia value. Designed as a non-linear ratio is to make up for the gap between rich and poor and class consolidation caused by the Matthew effect.
 
-对于任务中有对Camellia数值有强制要求的情况, 就需要在符合要求的范围内使用同样方式进行随机分配. 如果设定的条件过于严苛, 符合条件的节点很少, 会对用户的计算带来安全风险. 这一点我们需要提示给用户, 用户需要自行承担责任和风险.
 For tasks that have mandatory requirements for Camellia values, it is necessary to use the same method for random allocation within the range that meets the requirements. If requirements are too strict and there are few eligible nodes, the computation will cause security risks. We need to have a disclaimer of which users should take their own responsibilities and risks.
 
-Camellia 的转手总额限制Camellia's total turnover limit
+## Camellia's total turnover limit
+
 为了避免女巫攻击, 也就是通过短时间聚集大量用户数和大量资金疯狂收购 Camellia 从而达到控制选举和共识机制的风险, 我们设置了全局 Camellia 转手限制. 如果前64 个区块总共发生了全网 Camellia 总额的 1/128的话, 这个区块讲不能打包任何涉及到 Camellia 转手的交易. 这些交易会顺延到下一个区块. 如果仍然超过, 就还是需要继续等待直到不再满足提交为止. 在交易不能达成期间 Camellia 仍然继续按照时间衰减, 所以交易的数额会在打包的时候重新计算或者取消.
 
 In order to avoid witch attack, that is, to acquire Camellia frantically by gathering a large number of users and a large amount of funds in a short time to achieve the risk of controlling the election and consensus mechanism, we have set a global Camellia transfer limit. If a total of the first 64 blocks in the entire network produce 1/128 of total Camellia , this block cannot pack any transactions involving Camellia's transfer. These transactions will be postponed to the next block. If it is still exceeded, you still need to wait until the submission is no longer satisfied. When transactions are pending, Camellia will continue to decay according to time during the completion period, and the amount of the transactions will be recalculated or cancelled when packaging.
