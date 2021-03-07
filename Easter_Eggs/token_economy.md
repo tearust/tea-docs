@@ -1,7 +1,7 @@
 # Gist
 TEA has two tokens. 
 
-TEA: TEA, the ticker of the token, shortened as $T. It is a utility Token. It is used for mining revenue and service fees (aka Gas in Ethereum). It is a stable token pegging to the measurable computing resources.
+TEA: TEA, the ticker of the token, shortened as $T. It is a utility token. It is used for mining revenue and service fees (aka Gas in Ethereum). It is a stable token pegging to the measurable computing resources.
 
 Camellia：Sometimes called "Tea Tree". It is the governance token in TEA DAO. It also represents the credit score and profitability of miners. Camellia has limited supply.  
 
