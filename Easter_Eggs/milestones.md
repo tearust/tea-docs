@@ -29,7 +29,7 @@ Runtinme client is a process inside AWS parent instance. It is the module to com
 - Vsock Message Hub. Send and receive messages to and from enclave. 
 - Handle requests from Adapter and Facade. It is a dummy function at this milestone
 
-### A2.2. Tea-runtime migrates to AWS Nitro
+#### A2.2. Tea-runtime migrates to AWS Nitro
 
 When tea-runtime starts, it connect to runtime client which is outside of enclave. It receives static resources, such as environment var and manifest, loading providers and actors. 
 
@@ -61,14 +61,18 @@ All actors cannot directly query the state from layer1 blockchain. Layer1 provid
 Since there is not major changes in actors, no significant tasks for actors at this milestone
 
 # Milestone 2
+
 ## Goal
+
 Includes:
+
 - Main net start pre-mining for presale seeds. 
 - Gluon integrated miner's portal. 
 - Running test dApps in test net. Test miners can get revenue from dApps execution.
 - Staking Camellia seeds to other miners. This feature only works in pre-mining period. Will be disabled when public mining starts.
 
 Excludes:
+
 - Executing dApps in main net
 - Token exchange and LMBR. This means the miners can pre-min tokens but not sale it at this moment
 
@@ -77,6 +81,7 @@ Excludes:
 ### A1.2. Mining for public services
 
 Issue $T for miners who
+
 - Verify block
 - RA to other nodes
 - Bootstrap services
@@ -87,6 +92,7 @@ Task dispatching algorithm.
 Miners earn reward by their roles in the task. Delegator, Executor, Data owner, Code owner, etc
 
 ### A2.4 All remaining providers
+
 There are a few providers not completed in milestone1. They are all done in this milestone.
 
 ### Adapter and facade feature complete
@@ -96,13 +102,17 @@ There are a few providers not completed in milestone1. They are all done in this
 # Milestone 3
 
 ## Goal
+
 Include:
+
 - Staking mining
 - General purpose dApps running on main net
 - LMBR protocol
 - Camellia DeX
 - API and documentation for dApps development
+
 Exclude:
+
 - Training material for dApps development
 - Special capability dApps
 
@@ -116,32 +126,44 @@ Exclude:
 
 
 # Milestone 4
+
 ## Goal
+
 Include:
+
 - IDO public sale
 - DAO governance
 - Training material, tutorial, sample code of dApps development
 - Allow 3rd party capabilities , such as Tensorflow provider
 - TEA Box spec
 
+
 ## Tasks list
+
 ### Governance voting
+
 - Adjust birth_rate base value.
 - Adjust TEA burn rate
 - Adjust Camellia NFT specs prepare for new tech stacks (TEA Box, other cloud, SGX etc)
+
 ### Developer kits
+
 - Sample code
 - Tutorial
 - Online training sessions
 
 # Milestone 5
+
 ## Goal
+
 - Reference TEA Box testing
 - TEA dApps showcase
 - Update layer 2 to fit TEA Box
 
 # Milestone 6
+
 ##_Goal
+
 - TEA Box beta testing. Invite community members to join the TEA Box testing
 - Release TEA Box spec so that others can build their own
 - Research on Google Confidential Computing mining instance
