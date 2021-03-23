@@ -1,4 +1,4 @@
-# Milestone 1   
+# Milestone 1  (0 - 3 month)
 ## Goal
 Including:
 - Migrate layer 2 tea-runtime and all providers and actors to be running inside AWS Nitro Enclave
@@ -21,7 +21,7 @@ Excluding:
 | 5 | Gluon wallet shows the Camellia assets in customer's portal | Just for asset ownership purpose not ready for trading in this milestone |
 | 6 | TEA Project Technical and Token Economy White paper | |
 
-# Milestone 2
+# Milestone 2 (3 - 6 month)
 
 ## Goal
 
@@ -49,21 +49,22 @@ Excludes:
 | 5 | Instruction of deploying client dApps and test mining | This happens in test net only for preview purpose |
 | 6 | Sample client's dApps code and instruction | For invited developers only. They can try to build their own customized dApps and deploy to the test net |
 
-# Milestone 3
+# Milestone 3 (6 - 9 month)
 ## Goal
 
 Include:
 
 - Staking mining
 - General purpose dApps running on main net
-- LMBR protocol
-- Camellia DeX
+- LMBR protocol (UI)
+- Camellia DeX (UI)
 - API and documentation for dApps development
 
 Exclude:
 
 - Training material for dApps development
 - Special capability dApps
+- LMBR and DeX protocols related to other blockchains
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
