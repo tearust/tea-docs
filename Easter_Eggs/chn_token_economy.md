@@ -4,6 +4,10 @@ T 计划(the TEA  Project)是一个构建在区块链上的二层方案. 其目�
 
 有人说 TEA 是 Uber for cloud computing, 因为 TEA 自己不拥有并运行任何服务器, 而是茶农矿工自己配置 TEA Node 接入 TEA 网络并在区块链协议 Proof of Trust 的严格管理下为其他区块链客户提供可信计算服务, 而且天然就是完全去中心化的.
 
+# TEA: Trusted Execution and Attestation
+
+TEA 是英文 Trusted Execution and Attestation 的首字母缩写. 含义就是可信地执行和验证. 让代码在可信的执行环境中运行而且这个可信可以被第三方进行验证. TEA 正好是英文茶叶的意思. 所以 TEA Project 中的很多概念都沿用茶叶相关的词汇. 比如 PoT (Proof of Trust)正好是茶壶. Camellia 是茶树的意思等等. 
+
 # TEA Project 的基础技术知识极简版本
 
 TEA Project 是一个底层技术项目. 涉及的技术细节比较深奥. 有兴趣的可以去看技术白皮书. 在这里我们列出以可以读懂本文的代币经济学设计为目的的基础知识. 
