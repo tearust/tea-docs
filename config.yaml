@@ -55,8 +55,11 @@ sort:
       - name: how_to_install_polkadot_extension.md  
       - name: how_to_create_a_new_account.md
       - name: how_to_get_free_test_token_to_start.md
-
-
+  - name: 中文资料
+    path: Chs_paper/README.md
+    children:
+      - name: chn_teaser.md
+      - name: chn_token_economy.md
   
 
 
