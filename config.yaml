@@ -60,6 +60,6 @@ sort:
     children:
       - name: chn_teaser.md
       - name: chn_token_economy.md
-  
+      - name: chn_differences.md
 
 
