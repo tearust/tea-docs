@@ -59,19 +59,22 @@ sort:
   - name: 中文资料
     path: 中文资料/README.md
     children:
-      - name: chn_teaser.md
-      - name: chn_token_economy.md
-      - name: chn_differences.md
+      - name: T计划简介
+        path: /中文资料/chn_teaser.md
+      - name: 代币经济学设计白皮书
+        path: /中文资料/chn_token_economy.md
+      - name: T计划和其他项目的主要区别
+        path: /中文资料/chn_differences.md
 
-  - name: 中文资料
-    path: chn/README.md
-    children:
-      - name: chn_teaser
-        path: /chn/chn_teaser.md
-      - name: chn_token_economy
-        path: /chn/chn_token_economy.md
-      - name: chn_differences
-        path: /chn/chn_differences.md
+  # - name: 中文资料
+  #   path: chn/README.md
+  #   children:
+  #     - name: chn_teaser
+  #       path: /chn/chn_teaser.md
+  #     - name: chn_token_economy
+  #       path: /chn/chn_token_economy.md
+  #     - name: chn_differences
+  #       path: /chn/chn_differences.md
 
 
   # - name: 测试中文目录
