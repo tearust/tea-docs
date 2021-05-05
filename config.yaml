@@ -56,10 +56,19 @@ sort:
       - name: how_to_create_a_new_account.md
       - name: how_to_get_free_test_token_to_start.md
   - name: 中文资料
-    path: 中文资料/README.md
+    path: chn/README.md
     children:
-      - name: chn_teaser.md
-      - name: chn_token_economy.md
+      - name: chn_teaser
+        path: /chn/chn_teaser.md
+      - name: chn_token_economy
+        path: /chn/chn_token_economy.md
       - name: chn_differences.md
+        path: /chn/chn_differences
+
+  # - name: 测试中文目录
+  #   path: test_chinese/readme.md
+  #   children:
+  #     - name: 第一个中文文件
+  #       path: /test_chinese/first.md
 
 
