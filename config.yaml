@@ -10,7 +10,7 @@ sort:
       - name: TEA_vs_wasm.md
       - name: Key_concepts.md
       - name: Use_cases.md
-      - name: New_business_models.md
+      - name: Token_economy.md
   - name: Blog_and_Vlog
     path: Blog_and_Vlog/README.md
     children:
