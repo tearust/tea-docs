@@ -1,4 +1,4 @@
-# For what reason TEA's website and dApp shows "Not Secure" in the browser
+# For what reason TEA's dApp shows "Not Secure" in the browser
 
 Short answser is we do not need https, because we do not transfer any secrete in plain text between you and anyone else.
 
