@@ -83,7 +83,7 @@ The position of stake slots means different “weights” when distributing reve
 ## Trading window and stake slot size
 
 To minimize the system design, we predefined the trading window and slot size. However, these numbers can be updated by DAO or changed when the TEA main net starts. These are the placeholder numbers.
-Each slot worth $T1000 regardless of the position. There is a trading window every 1000 blocks. For example, when the block height is 1000, 2000, 3000… n*1000, the investors can stake and unstake the slot at these blocks. Investors can only stake or unstake a full slot ($T1000).
+Each slot worth $T1000 (this number is subject to change before the mainnet launch) regardless of the position. There is a trading window every 1000 blocks. For example, when the block height is 1000, 2000, 3000… n*1000, the investors can stake and unstake the slot at these blocks. Investors can only stake or unstake a full slot ($T1000).
 
 ## Risk of staking
 
@@ -126,3 +126,31 @@ Let’s turn back to the TEA economy. $T is USD. Holding $T in your Gluon wallet
 If you are smart and not too greedy, you can probably earn a lot from investing your $T in the TEA economy rather than sell them in the market. This helps “lock” the $T and maintain a stable $T token price. Especially in the early stage of the TEA eco-system.
 
 There are a lot of detailed designs on the TEA token economy. I am trying to design an ideal token economy based on what I learn from economics.
+
+# Mining economy: How all of us make money? 
+## Miners' two questions
+If the TEA project were Uber for cloud computing, miners are drivers. The incentive to the drivers is the fuel to drive the TEA token economy. Unlike centralized company can pay salaries or own those nodes, in the blockchain world, a carefully designed token economy can keep the system running and create speculation to boost growth. 
+
+Rather than the big dream of the TEA project, what miners care about is just ROI. Just two questions from miners:  
+How much tokens I can mine on a particular investment (hardware, maintenance, time)
+Will the token pricing increase and maintain the value?
+
+## Green mining? or no, green farming!
+Comparing with other crypto-mining projects, the TEA project is very "green". It doesn't burn huge energy with greedy processors, and it doesn't need to fill up hard drive spaces. It can run on small, inexpensive IoT machines. So the hardware is no longer an issue and source of cost. The majority of the cost comes from the Camellia NFT. 
+
+## Positive infinity loop
+For miners to get camellia seeds, an auction is required, and miners must pay TEA as currency. When new camellia seeds are generated and sold through the bidding, the DAO burns the TEA paid by the bidder. Because the supply of the seeds is heavily controlled and limited,  the price could increase sharply as long as more miners want to buy seeds. Miners want to purchase the seeds simply because mining TEA is profitable, which means the TEA price is high. The TEA price is going high because TEA supply drops. TEA supply drops because DAO burns TEA, and the initial harvest outcome is low (Camellia needs time to grow). DAO burns TEA because miners want to buy the seeds. This circulation becomes an infinity loop. As long as it can cold-start, it would run as expected. Now let's see how it could start?
+
+## Cold start
+In the beginning, there are no TEA tokens in the TEA blockchain. There are only frozen Camellia seeds (the NFT). Based on the logic settings, there are only a very few seeds are defrosted at the beginning. They belong to the early investors. They start mining and harvest TEA at a relatively low outcome rate because the camellia needs time to grow. The TEA supply is minimal at this point, and all the TEA owners are early investors. They are supposed to know the value of TEA and Camellia. Otherwise, they won't invest in the TEA Project. Since they know, they are not likely to dump the TEA in the market. Instead, they would invest their harvest TEA to more staking slots and start more mining nodes to plant their camellia seeds. The logic is that they can occupy the best staking slots position, which is scarce over a long period. For example, if you got the insider message that a train station will be built somewhere, most likely, you will buy the surrounding land before everyone else knows. If most of the early TEA tokens are used in reinvest, there would be limited supply in the market. No doubt the TEA price will go high, not to mention the investors have tons of money to buy more TEA tokens from the market.
+
+Interestingly enough that if the TEA price goes high, the more profitable for the TEA farming business. If the TEA farming is profitable, more miners would like to jump the TEA farming, but they need TEA to buy Camellia seeds. So the TEA price goes higher and higher. 
+
+## What if someone dumps?
+Even most of the early investors are rational and will reinvest. There is no way to prevent someone from trying to dump TEA in the market. As I mentioned above, at the early stage, the harvest outcome of TEA is minimal. There should not be too much TEA farmed and sold on the market. It would be much easier for the market maker to buy in the keep the price healthy. As long as the price can keep at a healthy level and increase gradually, those who sold the TEA previously would regret their irrational behavior. Therefore, the dump can be digested by the majority of miners.
+
+## Leverage existing IPFS miners
+Building a new miners community is very hard. The TEA project won't create such a new community from scratch. Leveraging the existing community is the key. The TEA project can bring value to them. For example, IPFS miners can merge mining the FIL and TEA. TEA makes IPFS into "Interplanetary Function as a Service" rather than a pure file system. TEA dApps need code and data storage on IPFS, which brings real use case to IPFS. Other smart contract platforms, DOT, ETH, can offload their computing load to TEA. This offloading is not a diversion of their profit but creates more rich computing demands that are originally not doable in their blockchain. In return, more dApps run on their blockchain generates more revenue. TEA is not trying to compete to or diverse profit from other partners, but to create new demands benefits all.
+
+## Eventually, the demand and usage of TEA token is the key
+No matter how well we design the miners' economy to boost the TEA initially, it is still a short-term solution. In the long run, the key is the demand for usage of TEA tokens. The TEA project team has started working on the so-called Rich dApps that run on TEA networks. Building the ecosystem, especially leveraging the existing FIL, ETH, DOT ecosystem, is the team's main goal. The TEA Project team has started looking for cooperation with other major players to build the fusion ecosystem. One example is if we add the computing module to the IPFS. The IPFS miners can merge mine both FIL and TEA. The dApps also need to store data and code on IPFS, bringing more real use cases for IPFS. This is a win-win-win situation. 
