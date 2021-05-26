@@ -6,6 +6,8 @@
 Token economy design is neither easier nor less important than technical design in terms of a blockchain project. As a code monkey, I learned a lot about economics in recent years, but I still feel shaky when designing the TEA token economy. Thankful I got a lot of help from our community members, such as “Blue Fox”.
 Today, I will talk about the challenges I was facing and how we plan to overcome them in my future blogs.
 
+> You can skip the detail and jump to the last session **miners economy** of this article to learn "How TEA can cold start and make miners and all of us rich". 
+
 ## Roles in the TEA ecosystem that need to deal with
 
 Miners(or farmers): They buy or rent physical or virtual TEA mining machines. They earn reward from the execution of tasks the TEA consensus assign to them. The reward is paid in TEA token, $T for short.
