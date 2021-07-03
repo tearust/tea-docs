@@ -1,0 +1,90 @@
+{
+  "main": {
+    "id": "b1bbe26d4cc62c39",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9ee8617d1a23664",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "273ddad0d49837b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5206e90bb36ef90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6dc5724428f260f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b4f4269ddcb7ca79",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6ef5eac31b624130",
+    "type": "split",
+    "children": [
+      {
+        "id": "f698d2e0a76e4ff1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4063e3d4ddf58fb5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b9ee8617d1a23664",
+  "lastOpenFiles": [
+    "test/index.md",
+    "test/a.md"
+  ]
+}

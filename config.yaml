@@ -77,10 +77,10 @@ sort:
   #       path: /chn/chn_differences.md
 
 
-  # - name: 测试中文目录
-  #   path: test_chinese/readme.md
+  # - name: test
+  #   path: test/readme.md
   #   children:
-  #     - name: 第一个中文文件
-  #       path: /test_chinese/first.md
+  #     - name: aaa
+  #       path: /test/a.md
 
 
