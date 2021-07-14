@@ -7,7 +7,7 @@ and
 
 >"The DWeb, say proponents, is about giving people a choice: the same services, but decentralised and not creepy. It promises control and privacy, and things can’t all of a sudden disappear because someone decides they should."
 
-If you didn't understand what he said back in 2018, you probably understand it now. Our existing internet is broken, and the TEA Project is trying to fix it.
+If you didn't understand what he said back in 2018, you probably understand it now. Our existing Internet is broken, and the TEA Project is trying to fix it.
 
 ![fix the net](https://github.com/tearust/tea-docs/blob/main/res/fix-the-net.png?raw=true)
 
@@ -18,7 +18,7 @@ There have been so many new projects released recently intent on fixing parts of
 - Trusted computing allows an originally untrusted node to become trusted through remote attestation. This elevated node is now trustable to store and transmit sensitive information. 
 - WebAssembly has expanded beyond the boundary of web browsers. It can run on servers under a securely designed runtime.
 
-Each of them fixed a specific problem and made huge strides towards a full-featured dApp platform. However, each of them also contains unsolved problems making dApps impractical on their platforms.
+Each of them fixed specific problems that looked promising for developing fully-featured dApps. However, each of them have unsolved problems making dApps impractical on their platforms.
 - A file system is a necessary pre-condition for building a world computer, but it's not enough. Code is just a common type of data if it's not being executed in a CPU.
 - Smart contracts currently cannot run complex algorithms. Attempts to do so have shown smart contracts to be too slow or too expensive as they lack the processing power of modern cloud computers. A layer-2 solution would be needed to offload the computation tasks as long as it could provide a similar trust level as the layer-1 blockchain.
 - Trusted computing has been around for many years, but the limiting paradigm of **one-computer** = **one-metal-box** has set a hard boundary restraining its expansion. It needs the help of blockchain and other emerging technologies to expand beyond its current barriers.
