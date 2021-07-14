@@ -1,4 +1,4 @@
-# Decentralization movement - Internet is broken, we are trying to fix it!
+# Decentralization movement - The Internet is broken, and we are trying to fix it!
 From [Zoë Corbyn](https://www.theguardian.com/profile/zoe-corbyn)'s 2018 article [Decentralisation: the next big step for the world wide web](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle), 
 >"The proponents of the so-called decentralised web – or DWeb – want a new, better web where the entire planet’s population can communicate without having to rely on big companies that amass our data for profit and make it easier for governments to conduct surveillance. "
 
@@ -7,25 +7,23 @@ and
 
 >"The DWeb, say proponents, is about giving people a choice: the same services, but decentralised and not creepy. It promises control and privacy, and things can’t all of a sudden disappear because someone decides they should."
 
-If you did not understant what he said back in 2018, you probably totally understand it now. Our existing internet is broken, we are trying to fix it.
+If you didn't understand what he said back in 2018, you probably understand it now. Our existing internet is broken, and the TEA Project is trying to fix it.
 
 ![fix the net](https://github.com/tearust/tea-docs/blob/main/res/fix-the-net.png?raw=true)
 
 # The existing cures and remaining problems
-There are so many new projects released the recent years. They fixed parts of the broken internet. Such as:
-- IPFS provides a peer-2-peer file system which a store files in decentralzied manner.
-- Blockchain, especially Blockchain 2.0 (since ETH), provides a world computer that smart contracts can run in decentralized manner.
-- Trusted computing lets us to trust an originally untrusted node to access sensitive information by doing remote attestation.
-- WebAssembly expend beyond the boundary of web browsers. It can run on servers under a securely designed runtime.
+There have been so many new projects released recently intent on fixing parts of the broken Internet. These innovations have included:
+- IPFS provides a peer-2-peer file system that stores files in a decentralized manner.
+- Blockchain, especially the Blockchain 2.0 era ushered in by Ethereum, provides a world computer where smart contracts can run in a decentralized manner.
+- Trusted computing allows an originally untrusted node to become trusted through remote attestation. This elevated node is now trustable to store and transmit sensitive information. 
+- WebAssembly has expanded beyond the boundary of web browsers. It can run on servers under a securely designed runtime.
 
-Each of them fixed a specific problem, and made a huge improvement towards a full featured dApp platform. However, each of them also contains unsolved problems blocking dApp becoming practical.
-- File System is a necessary pre-condition to build a world computer above, but not enough. Code is just a common type of data if not executed in CPU.
-- Smart contracts nowaday cannot run complex algorithm. It is either super slow or expensive. Still far from what we can do today with cloud computing. A layer-2 solution needs to offload the computation tasks as long as they can provide similar trust level as blockchain does.
-- Trusted computing have been around for so many years, but the boundary of single metal box limited its expending. It needs to extend with blockchain and other new technologies and beyond.
-- WebAssembly is still at its early stage. It needs practical use cases to get popular. 
+Each of them fixed a specific problem and made huge strides towards a full-featured dApp platform. However, each of them also contains unsolved problems making dApps impractical on their platforms.
+- A file system is a necessary pre-condition for building a world computer, but it's not enough. Code is just a common type of data if it's not being executed in a CPU.
+- Smart contracts currently cannot run complex algorithms. Attempts to do so have shown smart contracts to be too slow or too expensive as they lack the processing power of modern cloud computers. A layer-2 solution would be needed to offload the computation tasks as long as it could provide a similar trust level as the layer-1 blockchain.
+- Trusted computing has been around for many years, but the limiting paradigm of **one-computer** = **one-metal-box** has set a hard boundary restraining its expansion. It needs the help of blockchain and other emerging technologies to expand beyond its current barriers.
+- WebAssembly is still in its early stages. It needs practical use cases to become more popular. 
 
-# TEA, thinking differently
+# TEA Project: thinking differently
 
-To build a dApp platform, it is impossible to use a single layer of tools. Combine all the latest technologies together, we can probably solve the problems and fix the internet.
-
-Please keep reading Next Page (TODO) about how TEA project glues them together into a pure dApp platform: the T-rust
+It is impossible to use a single layer of tools to build a dApp platform. Combining all the latest technologies together, we can probably solve the various problems and fix the Internet. The TEA Project [[How_TEA_fix_internet|glues them together]] into a pure dApp platform.
