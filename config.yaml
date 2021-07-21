@@ -2,8 +2,8 @@ sort:
   - name: What_is_TEA?
     path: What_is_TEA?/README.md
     children:
-      - name: Broken_internet_needs_a_fix.md
-      - name: How_TEA_fix_internet.md
+      - name: Fixing_a_Broken_Internet.md
+      - name: How_TEA_Fixes_the_Internet.md
       - name: TEA_vs_IPFS.md
       - name: TEA_vs_blockchain.md
       - name: TEA_vs_Trusted_computing.md
