@@ -8,7 +8,7 @@ Today, I will talk about the challenges I was facing and how we plan to overcome
 
 > You can skip the detail and jump to the last session **miners economy** of this article to learn "How TEA can cold start and make miners and all of us rich". 
 
-## Roles in the TEA Ecosystem That Need to be Addressed
+## Roles in the TEA Ecosystem That Need to Be Addressed
 
 - **Miners (or farmers):** They buy or rent physical or virtual TEA mining machines. They earn reward from the execution of tasks the TEA consensus assigns to them. The reward are paid in T token, [//TEA] for short.
 - **Camellia:** The name comes from the plant that tea is harvested from. In our TEA Project, Camellia is an NFT, CML for short. A TEA mining machine has to have an associated CML NFT to become an "active" mining node. CML can be traded as it has value. It also has a life cycle: it's born from a seed, grows into a tree, and eventually dies.
