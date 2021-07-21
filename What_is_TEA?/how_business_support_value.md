@@ -1,26 +1,29 @@
-# Token model; How does the business support value/price? How does this model motivate the business?
+# Token Model: How Does the Business Support Value / Price? 
 ## Token Model
-TEA Project has two type of tokens: 
-TEA (Tea) is a Utility token used to calculate fuel. Its value is anchored in the consumption of computing resources; consuming a TEA will always result in a fixed consumption (CPU time, network traffic and storage) computing service.
-CML (Camellia) is a NFT. It is a necessary scarce resource to participate in the TEA project mining (Called tea picking). This NFT records various attributes of TEA Node, including processing capacity, credit history, life cycle, etc. CML has a life cycle - from seed germination, and growth, to eventually aging and withering. CML is a token with investment value and scarcity.
+The TEA Project has two types of tokens: 
+1. The T token is a utility token used to calculate fuel. Its value is anchored in the consumption of computing resources; consuming a T token will always result in a fixed consumption of computing services (CPU time, network traffic and storage).
+2. CML (Camellia) is an NFT. It's a necessary scarce resource to participate in the TEA project mining (also called T picking). This NFT records various attributes of a TEA node, including processing capacity, credit history, life cycle, etc. CML has a life cycle - from seed germination and growth to eventually aging and withering away. CML is a token with investment value and scarcity.
 
-CML needs to be planted on the mining machine to generate income; this process is called tea picking. Earned TEA can be used to bid for seeds in order to expand production, or invest in other CMLs for passive income. They can be sold through trading.
+CML needs to be planted on the mining machine to generate income; this process is called T picking. Earned T can be used to bid for seeds to expand production or invest in other CMLs for passive income. They can also be sold through trading.
 
-Because CML (including seeds) can be traded, it retains its value. Since the token represents the ability to pick tea, they can be used for credit loans (rather than over-collateral of Defi), which means that future income can act as a collateral to obtain current income TEA.
+CML (including seeds) can be traded, and these transactions help establish its price. Since the token represents the ability to pick tea, it can be used as the basis for credit loans. This can be an attractive option compared to the over-collateralized loan requirements typical of Defi. Using CML to take out loans collateralizes its future income potential to obtain current income in the TEA ecosystem.
 
-## How will the business support token value in the long run?
+## How Will the Market Demand Support Token Value in the Long Run?
 
-The values of TEA and CML will need to be supported by business needs of decentralized cloud computing.
+The values of TEA and CML will need to be supported by businesses needing decentralized cloud computing. TEA can provide oracle price feed services as well as cloud computing services for traditional Internet customers.
 
-Not only can TEA provide services similar to computing Oracle for other blockchains, it can also provide cloud computing services for traditional Internet customers.
+However, high levels of demand for trusted cloud computing services may take a long time to develop. Both IPFS, which has been running for many years and Dfinity's recent entry, ICP, are still waiting for the advent of the Web3 era. Before this era comes, everyone needs to rely on the miner economy to incentivize development in these nascent Web3 projects.
 
-However, high demands for trusted cloud computing may take a long time to reach. Both IPFS, which has been running for many years and the latest Dfinity, news sto wait for the advent of the Web3 era. Before this era comes, everyone needs to rely on the miner economy to incentivize the development.
-## How does miners' economy support token prices in the short term?
+## How Does the Miners' Economy Support Token Prices in the Short Term?
+The inherent design of TEA's miner economy is the same as those providing token price support for FIL, CHIA, and ICP. In the token design of the TEA Project, the miners' FOMO is specifically accounted for in the token design of the TEA project. For example:
 
-This logic is the same as the token price support of FIL, CHIA, and ICP. In the token design of the TEA project, Miners FOMO is specifically added in the token design of the TEA project. For example:
+It takes a certain time for CML to germinate and grow from seeds. This time delay prevents a large number of CML-enabled TEA mining machines from coming online at the initial stage. This helps prevent these machines from producing a large amount of T tokens that would flood the system and create sell-off pressure.
 
-It takes a certain time for CML to germinate and grow from seeds. This avoids a large number of liquid TEA in the initial stage of the system from selloff pressure
-CML and seeds are scarce resources. They need to be obtained through auctions. Auctions consume (burn) TEA. As CML matures, its price and value will increase. Because of this, early investment (buying seeds and cultivating them) will allow the investor to gain an advantage in future competition
-TEA in a free flow state without gains and cannot be used for voting. It is similar to storing cash at home with possible depreciation. Investing TEA in CML will help maintain and increase its value, which is similar to purchasing stocks using cash. 
-The return of investing in CML depends on its positions. The investment position is also a scarce resource. A wise investor should grab the bottom position (highest return)  of the early-stage CML. Once invested, it should not be easily taken out to avoid others occupying this position. This design encourages long-term stable lock-up investment.
-Since mining is not large in the early stage, most miners (called tea farmers) may be willing to put the harvested TEA into reproduction or invest it; as a result, small amounts of TEA has already gotten early scarcity. Due to the menial selloff pressure, the cost of maintaining market value is not large, and the price is easy to control. As long as there is a certain amount of funds to raise prices in early stage markets, a virtuous circle of tea-picking investment, reproduction, and tea-picking can be formed. The TEA and CML for sale on the market will always be in a state of scarcity and insufficient supply to maintain a positive FOMO cycle
+CML and seeds are scarce resources. They need to be obtained through auctions. Auctions consume (burn) T tokens. As CML matures, its price and value will increase. Because of this, the investment of buying seeds and cultivating them will allow early investors to gain an advantage versus future market entrants.
+
+The T token in its free-flowing state cannot be used for voting or gaining value through staking. It's similar to storing cash at home and dealing with its inevitable depreciation. Investing T in CML will help maintain and increase its value, similar to purchasing stocks using cash. 
+
+### Mining T With CML Incentivizes 
+The return for investing in CML depends on the position at which the investor entered. A wise investor should grab the bottom slot with their CML for the highest early-stage mining return. Once invested, the system disincentivizes investors moving out their funds as others would jump in to occupy these valuable bottom positions. This design implies that the investment position is also a scarce resource and encourages a long-term stable investment lock-up.
+
+Since mining rewards are not large in the early stages, most miners (called T farmers) might instead put their harvested T tokens into staking or investing them in special projects. These supply pressures help the T token achieve an early level of scarcity. The lack of sell-off pressure helps the T token maintain its market value. Early-stage investors support the T token price, and a virtuous circle of investment, staking, and T mining can be formed. The TEA and CML for sale on the market will always be in a state of scarcity and have insufficient supply to maintain a positive FOMO cycle.
