@@ -3,15 +3,15 @@
 
 
 
-Token economy design is neither easier nor less important than technical design in terms of a blockchain project. As a code monkey, I learned a lot about economics in recent years, but I still feel shaky when designing the TEA token economy. Thankful I got a lot of help from our community members, such as “Blue Fox”.
-Today, I will talk about the challenges I was facing and how we plan to overcome them in my future blogs.
+Token economy design is neither easier nor less important than technical design in a blockchain project. As a code monkey, I learned a lot about economics in recent years, but I still feel shaky when designing the TEA token economy. Thankfuly, I got a lot of help from our community members such as "Blue Fox."
+Today, I will talk about the challenges I was facing and how we plan to overcome them.
 
 > You can skip the detail and jump to the last session **miners economy** of this article to learn "How TEA can cold start and make miners and all of us rich". 
 
-## Roles in the TEA ecosystem that need to deal with
+## Roles in the TEA Ecosystem that need to deal with
 
-Miners(or farmers): They buy or rent physical or virtual TEA mining machines. They earn reward from the execution of tasks the TEA consensus assign to them. The reward is paid in TEA token, $T for short.
-Camellia: The name comes from the plant that tea harvests from. In our TEA Project, Camellia is an NFT, CML for short. A TEA mining machine has to have a CML associate to become an “active” mining node. CML can be traded as it has value. It also has its life cycle. It was born from seed. It grows and eventually dies.
+- **Miners (or farmers):** They buy or rent physical or virtual TEA mining machines. They earn reward from the execution of tasks the TEA consensus assign to them. The reward is paid in TEA token, $T for short.
+- **Camellia: The name comes from the plant that tea harvests from. In our TEA Project, Camellia is an NFT, CML for short. A TEA mining machine has to have a CML associate to become an “active” mining node. CML can be traded as it has value. It also has its life cycle. It was born from seed. It grows and eventually dies.
 Investors(or landlords): They do not want to deal with the hassle of maintaining a TEA mining machine. They are pure capitalists. They stake their $T to a Camellia owned by a miner. They receive revenue share in $T from this camellia as a shareholder.
 DAO: The decentralized autonomous organization that governs the ecosystem. Assume it is a Utopian-Capitalism-type democracy government. Members vote using their stake to make decisions.
 Last but not least, $T is not a role. It is a utility token. Its value is pegged to measurable computing consumption.
