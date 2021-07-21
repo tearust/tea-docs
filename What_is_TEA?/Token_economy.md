@@ -1,4 +1,4 @@
-# Challenges in TEA token Economy Design
+# Challenges in TEA Token Economy Design
 ![money monkey](https://miro.medium.com/max/770/0*wHuoeWVaAxxfRVRU.png)
 
 
@@ -8,7 +8,7 @@ Today, I will talk about the challenges I was facing and how we plan to overcome
 
 > You can skip the detail and jump to the last session **miners economy** of this article to learn "How TEA can cold start and make miners and all of us rich". 
 
-## Roles in the TEA Ecosystem that need to deal with
+## Roles in the TEA Ecosystem That Need to be Addressed
 
 - **Miners (or farmers):** They buy or rent physical or virtual TEA mining machines. They earn reward from the execution of tasks the TEA consensus assigns to them. The reward are paid in T token, [//TEA] for short.
 - **Camellia:** The name comes from the plant that tea is harvested from. In our TEA Project, Camellia is an NFT, CML for short. A TEA mining machine has to have an associated CML NFT to become an "active" mining node. CML can be traded as it has value. It also has a life cycle: it's born from a seed, grows into a tree, and eventually dies.
@@ -31,7 +31,7 @@ Today, I will talk about the challenges I was facing and how we plan to overcome
 
 Although these are way beyond what a code-monkey is supposed to deal with,, as a crypto entrepreneur, these are issues I have to deal with. 
 
-# [//TEA] - the Stable Utility Token for Decentralized Trusted Computing
+# T - the Stable Utility Token for Decentralized Trusted Computing
 Miners need incentives to run nodes. $T is their reward.
 
 ![$T](https://miro.medium.com/max/563/0*Wd-1de7pQVidERlC.png)
@@ -117,7 +117,7 @@ There are many benefits that derive from the fact that Camellia dies.
 
 Imagine that people never die, what our human society will be like today?
 
-# What is the TEA Project’s Investment Value Given the Camellia NFT Will Die and [//TEA] is a Stable Token?
+# What is the TEA Project’s Investment Value Given the Camellia NFT Will Die and T is a Stable Token?
 
 We've discussed earlier that Camellia is an NFT that dies. To put the CML and [//TEA] economy in context, let’s take a look at how our real-life economy runs.
 
@@ -154,5 +154,5 @@ Most of the early investors are rational and will reinvest. But there is no way 
 ## Leverage Existing IPFS Miners
 Building a new community of miners is very hard. The TEA project won't create such a new community from scratch. Leveraging the existing communities is the key. The TEA project can bring value to them. For example, IPFS miners can merge mine FIL and TEA. TEA makes IPFS into "Interplanetary Function as a Service" rather than a pure file system. TEA dApps need code and data storage on IPFS, which brings a real use case to IPFS. Other smart contract platforms like DOT and ETH can offload their computing load to TEA. This offloading is not a diversion of their profit but creates more rich computing demands that are originally not doable in their blockchain. In return, more dApps run on their blockchain and generate more revenue. TEA is not trying to compete to or diverse profit from other partners, but to create new demand that benefits all.
 
-## Eventually, the Demand and Usage of the [//TEA] Token is the Key
+## Eventually, the Demand and Usage of the T Token is the Key
 No matter how well we design the miners' economy to boost [//TEA] initially, it's still a short-term solution. In the long run, the key rests in the demand for the usage of [//TEA] tokens. The TEA project team has started working on so-called rich dApps that run on the TEA network. Building the ecosystem, especially leveraging the existing FIL, ETH, and DOT ecosystem, is the team's main goal. The TEA Project team has started looking for cooperation with other major players to build the fusion ecosystem. One example is if we add the computing module to IPFS. IPFS miners can merge mine both FIL and TEA. The dApps also need to store data and code on IPFS, bringing more real use cases for IPFS. This is a win-win-win situation. 
