@@ -1,7 +1,7 @@
 # Decentralization is one of the cures of current internet problem.
 
 
-In [Decentralisation: the next big step for the world wide web](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle), the author [Zoë Corbyn](https://www.theguardian.com/profile/zoe-corbyn) explained why. So I will focus on "How".
+In [Decentralisation: the next big step for the world wide web](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle), the author [Zoë Corbyn](https://www.theguardian.com/profile/zoe-corbyn) explained why. So I will focus on "how".
 
 No matter you open a web browser or a mobile app, what you can see running in front of you are just clients. The majority of the work loads actually happening on servers. Developer write code, then upload to some rental servers inside some giants data center buildings. You send your request to the server then server run the code, give you the response, finally show on your screen. This is a typical request-response model. Even you are chatting with you friend over an instant messaging app, the traffic most likely through a server somewhere in between. I wrote a blog post explain the 101 of cloud computing [here](https://medium.com/@pushbar/nste1-of-n-what-happened-after-you-click-a-submit-button-79f84b8c4f3e). You can read it in case that you are very new to internet technologies.
 
