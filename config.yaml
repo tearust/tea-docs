@@ -10,7 +10,6 @@ sort:
       - name: TEA_vs_WASM.md
       - name: Key_Concepts.md
       - name: Use_Cases.md
-      - name: Token_Economy.md
   - name: Whitepaper
     path: Whitepaper/README.md
     children:
