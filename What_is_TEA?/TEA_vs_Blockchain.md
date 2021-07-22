@@ -1,39 +1,35 @@
-# TEA is layer-2 solution for blockchain
+# TEA Can Function as a Layer-2 Solution for Blockchains
 
-TEA project ties to blockchain closely. A lot of essential consensus algorithm runs inside our layer-1 component - the blockchain we build using Polkadot's substrate. 
+The TEA project is built with Polkadot's substrate. Its essential consensus algorithm runs inside of our layer-1 blockchain component. TEA's layer-1 blockchain can function like a layer-2 oracle that runs on top of existing blockchains and act as a computation oracle for them. 
 
-However, we do not consider T-rust is a blockchain itself. It is more like a layer-2 oracle on top of existing blockchain because the main purpose of T-rust is not to run a self blockchain, but to run a computation oracle for other blockchains. 
+## TEA as a Computation Oracle For Other Blockchains
+Smart contracts form the logical layer running inside of blockchains. You can use anything that happened previously in the block as input parameters for a smart contract function. But if some data happens outside of the blockchain, smart contracts need a way to trust this event. An [oracle](https://academy.binance.com/en/articles/blockchain-oracles-explained) is needed as the trusted input source. There are many kinds of oracles. TEA is a computation oracle that takes input from the blockchain, runs complex algorithms outside the chain, and then sends the computation result back to the chain. 
 
-## T-rust as a computation oracle to blockchains
-Smart contracts are the logic running in a blockchain. You can use anything happened previous in the block as input perameters for a smart contract function, but if some facts happened outside of the blockchina, smart contracts have no way to know or trust. Thus, an Oracle(https://academy.binance.com/en/articles/blockchain-oracles-explained) is needed as the trusted input source. This Oracle has nothing to do with the database or the company. There are many kinds of oracles. TEA is the computation oracle which takes input from the blockchain, run complex algorithm out of the chain, then send the computation result back to the chain. 
+There are some good reasons why you don't do the computing inside blockchain:
+- Complicated algorithms cannot run in smart contracts due to computational cost and time.
+- Computational tasks often require additional hardware support such as a GPU or an AI TPU.
+- Some functions need to run against big data which is not practical to run in blockchain nodes.
+- Some functions need external data input from the real world. 
 
-The reason why do not do the computing inside blockchain lays in the following facts
-- Complicated algorithm cannot run in smart contract due to cost and time it may spend
-- Some computational task required additional hardware's support. Such as GPU or AI TPU etc
-- Some function needs to run against big data which not practical to run in blockchain nodes.
-- Some function need external data input from the real world. 
-
-
-## Blockchain is the client while T-rust is the server
+## Blockchain is the Client, and TEA is the Server
 ![relationship-between-layer1-and-2](https://github.com/tearust/tea-docs/blob/main/res/layer1-and-layer2.png?raw=true)
 
-See the diagram above. The TEA nodes runs above other blockchains. Any blockchain can send a computational oracle request in a blockchain event and receive the result along with PoT (proof of trust) in a tx at the later time.
+The diagram above shows how TEA nodes run on top of other blockchains. Any blockchain can send a computational oracle request in a blockchain event and receive the result along with PoT (Proof of Trust) data in a tx at a later time.
 
-The request (we call it a task) then submitted to the T-rust network. One of qualified executor will run the task under the remote attestation by other qualified TEA nodes. The result then return back to the blockchain in the format of transaction. Once the blockchain received the answer, it can verify the PoT (proof of Trust) then continue the smart contract logic.
+The request (we call it a task) is then submitted to the TEA network. One of the qualified executors will run the task under remote attestation by other qualified TEA nodes. The result is then returned back to the blockchain in the format of a transaction. Once the blockchain receives the answer, it can verify the PoT data returned and continue the smart contract logic.
 
-T-rust has its own layer-1 blockchain (not shown in the diagram). It is for internal use. the main purposes of TEA layer-1 is for
-- Consensus on Proof of Trust
-- Token incentive logic
-- Key config and stats storage
+The TEA Project has its own layer-1 blockchain (not shown in the diagram). This internal use layer-1 blockchain has the following purposes:
+- Consensus on Proof of Trust.
+- Token incentive logic.
+- Key config and stats storage.
 
-Based on this concept, we can consider blockchain is the client while T-rust is the server. 
+Based on this concept, we can consider blockchain as the client while the TEA Project is the server. 
 
-## Verify PoT between chains
-As a client, there are two conerns using an external oracle
-- The result is exactly the computating result from the specific code and input data
-- No data breaching during the whole process
+## Verify PoT Between Chains
+As a client, there are two concerns when using an external oracle.
+- The result should be the exact computational result from the specific code and input data.
+- There should be no data breach during the entire process.
 
-TEA layer1 is a blockchain running parallel with the client blockchain. Inter-chain communication allow the client send verification request and get back the confirmation. 
+TEA layer-1 is a blockchain running parallel with the client's blockchain. Inter-chain communication allows the client to send verification requests and get back confirmations. 
 
-TEA layer1 is build using Polkadot Substrate. Any blockchains compatible with Polkadot can easily integrate with T-rust at the first stage. Chains from all other platform will be integrated at a future time.
-
+TEA's layer-1 is built using Polkadot's Substrate. Any blockchains compatible with Polkadot can easily integrate with the TEA Project in our early stages. Chains from all other platforms will be integrated at a future date.
