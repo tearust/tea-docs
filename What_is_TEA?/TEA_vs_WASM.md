@@ -1,71 +1,67 @@
-# Tea vs WebAssembly
+# TEA and WebAssembly
 
-WebAssembly (WASM). Do not get fooled by its name, [Webassembly, Neither Web, Nor Assembly, but Revolutionery](https://www.javascriptjanuary.com/blog/webassembly-neither-web-nor-assembly-but-revolutionary) is a good read or [watch](https://www.youtube.com/watch?v=UtjoaTfbdcA) in case it is new to you. 
+WebAssembly (WASM) is a newly designed portable and virtual ISA. There are many features worth a separate lengthy post, but let's focus on some of its security features.
 
-It is a newly designed, portable virtual ISA. There are so many features we can talk about but let's just list a few features related to security:
+## WASM Security Features
 
-- Isolation
-- Linear memory
-- Table of functions
-- Interface (WASI)
-- Type
+- Isolation.
+- Linear memory.
+- Table of functions.
+- Interface (WASI).
+- Type.
 
+Let's look at a small example to see how these security features come together. A typical application has access to some system resources such as read/write folder privileges and socket connections. If the executable has access to these system services, then its entire process has access. Developers usually use 3rd party open source libraries in their projects. If any of those libraries have vulnerabilities, the hacker can control the process to read/write some security information and send it back through the network. Do developers check every line of open source library they import to their project? That's probably not possible for most projects of any size. If the code is running inside a TEE (Trusted Execution Environment), and the code itself is malicious, then the TEE can't help. But this is a scenario where WASM can provide some protection.
 
-There are more features worth a separate long blog to talk about. I will just give you one small example for now.
+## Putting the WASM Runtime Inside TEE Sounds Like a Good Idea
 
-If an application has access to some system resources (such read/write a folder, socket connection, etc.), the whole process has access. Developers usually use 3rd party open source library in the project. If any of those libraries have vulnerable, the hacker can control the process to read/write some security information then send it back through the network. Do developers check every line of open source library they import to his project? Probably not, or cannot. Then even the code is running inside TEE, the code itself is an evil, TEE cannot help. But Wasm can help with this. Thanks, awesome WASI team! For detail, please wait for my future blog on this.
+We already have TPM, TEE, and WASM; how about putting them all together?
+If the WASM runtime executes inside TEE, outsiders (even the OS) cannot access any secrets inside. For the TPM/HSM solution, the computing machine is protected by the TPM, so we know it's what it's claiming to be. For the TEE solution, the CPU chips provide protection via manufacturer validation. The node itself is the client or a CDN node or IPFS node that stores the data.
 
-## Since Wasm is portable, can we leave data where it was, we send bytecode over?
-Wasm is designed to be portable and secure. It could (very likely) to be used as a general-purpose edge computing compile target.
+Developers no longer need to deploy the server function code to cloud computing service providers. They upload their static resources (app binary or HTML/CSS/JS/WASM) to IPFS or a CDN. Client apps do not need to upload their user data to the cloud server. They just send request data to nearby computing nodes that cache code. The node makes the computing inside its TEE and returns the result with proof of trust (PoT) data. The client machine can also become a compute node if equipped with TEE. Because there is PoT data, everyone can verify this compute result, and the process can be trusted by remote attestation.
 
-Nowadays, when we typically deploy server code to cloud computing datacenter, then client upload their data to the same server. When code and data meet together, the CPU does the computing, then the result is sent back to the client. Nothing wrong for today's small data size. What if in the future, the data to be computed is huge enough to be sent over the backbone network? When 5G becomes popular, the last-mile bandwidth become much bigger, and AI need tons of data, will our backbone or datacenter handle the traffic? Probably not. Why do not we leave the data where it was, but send the code (algorithm or function) to the data. The data and code met together and computed not at the datacenter, but where data was stored. The code usually is much smaller than the data in this scenario. We not only save the backbond bandwidth but also reduce latency from the client's experience.
+## Since WASM is Portable, Can We Leave Data Where It is and Send Bytecode Over?
 
-Wait for a minute, it won't be useful until we can solve the trust issue. What is the trust issue? Well, we can trust AWS, so the result from the AWS server can be trusted. But we cannot simply trust any random client or edge computing node. If there is no way to protect the security of data or code, chances are (a)the result may not be correct, or (b)the sensitive data leaking or both.
+WASM is designed to be portable and secure. It could (very likely) be used as a general-purpose edge computing compile target. When we typically deploy server code to cloud computing data centers, clients upload their data to the same server. When code and data meet up, the CPU does the computing, and the result is sent back to the client. That setup is acceptable for small amounts of data. What if the data to be computed is large enough to be sent over the backbone network? When 5G becomes popular, the last-mile bandwidth becomes much more considerable. Given that AI needs lots of data to parse, will our backbone or data center be able to handle that much traffic? Probably not. Instead, we can leave the data where it is but send the code (algorithm or function) to the data. The data and code meet together and are computed not at the data center but where data is stored. The code usually is much smaller than the data in this scenario. We not only save the backbone bandwidth but also reduce latency from the client's experience.
 
-## Put wasm runtime inside TEE sounds a good idea
+This is all wonderful, but none of it will be useful until we're able to solve our trust issue. What is the trust issue? Well, we can trust Amazon, so we can trust the result from the AWS server. But we cannot simply trust any random client or edge computing node. If there is no way to protect the security of data or code, the chances are that **a)** the result may be incorrect or **(b)** the sensitive data could leak.
 
-We already have TPM, TEE, Wasm, how about we put them together?
-Wasm runtime executes inside TEE so that we know outsiders (even the OS) cannot access the secret inside. For the TPM/HSM solution, the computing machine is protected by the TPM so that we know it is what it claimed to be. For the TEE solution the CPU chips provide the protection via manufacturer validation. The node itself is the client or a CDN node or IPFS node, which stored the data.
+## All-in-one Solution: A HSM to Put Everything Inside, Plug & Play
 
-Developers no longer need to deploy the server function code to cloud computing service providers. They upload their static resources (app binary or HTML/CSS/js/wasm) to IPFS or CDN. Client apps do not need to upload their user data to the cloud server, it just sends requests to nearby computing node which caches code. The node makes the computing inside its TEE and returns the result with proof of trust (PoT). The client machine also can also become a compute node if equipped with TEE. Because there is a PoT, everyone can verify this compute result and process can be trusted by remote attestation.
+Not all CDNs or IPFS miners' boxes are equipped with all the hardware they need to join the TEA network. A good business idea would involve making a small plug-and-play HSM (Hardware Secure Module) that contains everything a miner would need. Miners plug it into their IPFS box, and voila! The storage node becomes an edge computing node! Besides mining Filecoin, this machine can mine [//TEA] as well.
 
-## All-in-one solution: A HSM to put everything inside, plug and play
-Not all CDN or IPFS miners' boxes are equipped with what we need. A valid business idea probably would be to make a small plug-and-play HSM (Hardware Secure Module) which contains everything we need. Miners just plug it in the IPFS box; the storage node soon becomes an edge computing node! Besides mining Filecoin, it can mine "ComputeCoin" as well.
+More information on the relevant hardware-related topics ( HSM, TEE, and TPM) is explained in [TEA vs Trusted Computing](TEA_vs_Trusted_Computing.md).
 
-The hardware related topic, such as HSM or TPM, is explained in [TEA vs Trusted Computing](TEA_vs_trusted_computing.md).
+# TEA is Based on waSCC, an Awesome WASM Runtime on the Server
 
-# TEA is based on waSCC, an awesome WASM runtime on the server
-
-WaSCC, [wascc.dev](https://wascc.dev), is a dynamic, elastically scalable WebAssembly host runtime for securely connecting actors and capability providers. TEA use wsSCC (with small modifications) as wasm runtime inside TEA modules. You can see the TEA node internal diagram to see where the runtime is positioned.
+WaSCC, [wascc.dev](https://wascc.dev), is a dynamic, elastically scalable WebAssembly host runtime for securely connecting actors and capability providers. TEA uses waSCC (with small modifications) as the
+WASM runtime inside TEA modules. You can check the TEA node internal diagram to see where the runtime is positioned.
 
 ![tea-node-internet-arch](https://github.com/tearust/tea-docs/blob/main/res/tea-node-arch.png)
 
 ## Security
 
-WaSCC is well structure and design. If you read the wsSCC documents, you should get the idea why wsSCC is very secure. Beyond that, we add some additional security features.
+WaSCC is well structure and designed. If you read the wsSCC documents, you should get an idea of why wsSCC is very secure. Beyond that, the TEA Project adds some additional security features.
 
-When TEA node boots, hardware TPM chips verify everything including the hash of runtime binary. It will report what the hash of the current running runtime executable. Suppose some TEA node is running a different runtime that not recognized by the consensus of blockchain. It will be marked "suspicious" and later removed from the TEA network. "Remove" not physical remove. It just means "isolated" or "quarantine". No damage a bad TEA node can make in such case.
+When a TEA node boots, hardware TPM chips verify everything, including the hash of the runtime binary. It will report the hash of the current running runtime executable. Suppose some TEA node is running a different runtime that's not recognized by the consensus of the blockchain. It will be marked "suspicious" and later removed from the TEA network. "Remove" in this sense means that the code becomes "isolated" or "quarantined." This prevents bad TEA nodes from causing damage.
 
-Most of TEA consensus logic runs either in the layer-1 blockchain as smart contacts or the wasm actors in the tea-runtime. Every actors and provider will be verified by runtime before loading. This verification is not waSCC built-in signature verification, but a hash stored in TPM chips and blockchain. Again if any actor or provider hash doesn't match its claim on blockchain or TPM records, this node may be quarantined.
+Most of TEA consensus logic runs either in the layer-1 blockchain as smart contacts or as WASM actors in the TEA runtime. The runtime will verify every actor and provider before loading. This verification is not waSCC's built-in signature verification but a hash stored in TPM chips and on the blockchain. This node may be quarantined if any actor or provider's hash doesn't match its claim on blockchain or TPM records.
 
-Once the boot and init completed. Other TEA nodes can verify by running a remote attestation process. The truth comes from the TPM and blockchain. Any component doesn't match claim will be detected.
+Once the boot and init have completed, other TEA nodes can verify by running a remote attestation process. The truth comes from the TPM and the blockchain. Any component that doesn't match what's claimed will be detected.
 
-If the TEA node choose to use CPU TEE instead of TPM. The validation is done by the CPU manufacturer. We can still use TPM to enforce the correct code is loaded, however the sensitve data is processed inside CPU's enclave. More about trusted computing please read [this](TEA_vs_trusted_computing.md).
+If the TEA node chooses to use CPU's TEE instead of the TPM, the validation is done by the CPU manufacturer. We can still use TPM to ensure the correct code is loaded, but the sensitive data will be processed inside the CPU's enclave. More about trusted computing is available [here](TEA_vs_Trusted_Computing.md).
 
 ## Provisioning
+The drawback of WASM's stability is that there are limited opportunities to update the runtime. The runtime binary can even be "hardened" to the hardware, as is the case with SoC (Software on Chip). When the TEA node starts, it read the records from the blockchain, gets the CID of each actor and provider, and downloads these actors and providers from a connected IPFS server. This sign makes to pre-install runtime without any "moving parts." All moving parts can be obtained from IPFS by CIDs from the blockchain. Always the latest version and secure.
 
-Since the runtime itself is stable so that in the future we may have a scarce chance to update runtime. The runtime binary can even be "hardened" to the hardware as SoC (Software on Chip) in the future. When the TEA node starts, it read the records from the blockchain, then get the CID of each actor and providers. Download these actors and providers from connected IPFS server. This sign makes to pre-install runtime without any "moving parts". All moving parts can be obtained from IPFS by CIDs from the blockchain. Always the latest version and secure.
+## TEA Upgrades
+A TEA module exists as physical hardware owned by its owner, but what runs inside of it is not controlled by the owner. Any individual or company can't control it. It is instead run the blockchain governance, specifically a [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization). A committee is elected to make decisions that are enforced by smart contracts. 
 
-## Upgrade
+Once a new version of an actor passes the smart contract validation, the CID of this actor will be announced on the blockchain. Based on the grayscale algorithm, TEA nodes will be required to upgrade tier by tier. The upgrading TEA node gets the CID from the blockchain, downloads the actor's binary from IPFS, refreshes and reloads it into memory. Once the new upgraded configuration passes the other TEA nodes' remote attestation, this TEA node will then be activated to serve on the network again.
 
-Although TEA modules is physically owned by its owner, What is supposed to run inside are not controlled by the owner. Any individual or company can not control it. It is by the blockchain governance. The concept is called [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization). A committee is elected to make such decision and enforced by smart contracts. Once a new version of an actor passes the smart contract validation. The Cid of this actor will be announced on the blockchain. Based on the grayscale algorithm, TEA nodes will be required to upgrade tier by tier. The upgrading TEA node gets the Cid from blockchain, download the actor binary from IPFS, refresh and reload into memory. Once the upgrade new configuration passes other TEA nodes' remote attestation, this TEA node is active to serve again.
+## Platform Independent
 
-## Platform independent
+Platform independence is an original feature of WASM. TEA integrates the WASM runtime on our platform because we want the TEA platform to run on almost any kind of CPU architecture. A commonly asked question is why doesn't the TEA Project use Intel SGX technology as its TEE. A simple answer is that we believe that trusted computing needs to run on different kinds of architecture, not just on a specific brand. Edge computing, IoT, and AI all require different kinds of technologies compared to those used in PCs, Macs, and servers. The future of CPU architectures could be very fragmented, not to mention the new kid in the block: RISC-V. TEA's use of WASM gives it platform independence and flexibility to run on the CPU architectures of the future.
 
-This is original the feature of WASM. We reclaim here because we want the T-rust platform can run in most kinds of CPU architecture. A commonly asked question is why we do not use Intel SGX technology as our TEE. A simple answer is we believe the trusted computing needs to run on different kinds of architecture, not only a specific brand. Especially edge computing, IoT, AI all requires different kinds of technologies that those used in PC/Mac/Servers. The future of CPU architecture could be very fragment, not to mention the new kid in the block: RISC-V. We design for tomorrow, not today.
+## WASM Resources
 
-
-
-
-
-
+WASM is also known as WebAssembly, but don't be fooled by its name. Some good WASM resources include [Webassembly, Neither Web, Nor Assembly, but Revolutionery](https://www.javascriptjanuary.com/blog/webassembly-neither-web-nor-assembly-but-revolutionary) is a good read or the following introductory [video on YouTube](https://www.youtube.com/watch?v=UtjoaTfbdcA) for those new to WASM. 

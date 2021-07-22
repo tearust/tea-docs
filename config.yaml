@@ -5,12 +5,12 @@ sort:
       - name: Fixing_a_Broken_Internet.md
       - name: How_TEA_Fixes_the_Internet.md
       - name: TEA_vs_IPFS.md
-      - name: TEA_vs_blockchain.md
-      - name: TEA_vs_Trusted_computing.md
-      - name: TEA_vs_wasm.md
-      - name: Key_concepts.md
-      - name: Use_cases.md
-      - name: Token_economy.md
+      - name: TEA_vs_Blockchain.md
+      - name: TEA_vs_Trusted_Computing.md
+      - name: TEA_vs_WASM.md
+      - name: Key_Concepts.md
+      - name: Use_Cases.md
+      - name: Token_Economy.md
   - name: Whitepaper
     path: Whitepaper/README.md
     children:
