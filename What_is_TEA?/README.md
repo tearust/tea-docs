@@ -2,7 +2,7 @@
 [![](../res/blog/WX20201215-115720@2x.png)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
 
 ## TL;DR
-- Read [2minutes.md](./2minutes.md) to get the 10000 feet overview.
+- Read [2minutes.md](./2_Minute_Teaser.md) to get the 10000 feet overview.
 - Watch the video introduction above.
 - Watch the Nov 2020 demo video on the home page or on [YouTube](http://www.youtube.com/watch?v=6GYwrITSfJo). This gives an example of what TEA can do.
 - Still interested? Please please keep reading below.
