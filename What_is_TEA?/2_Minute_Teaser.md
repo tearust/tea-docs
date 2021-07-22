@@ -1,0 +1,15 @@
+As we enter the Web 3.0 era, the TEA Project aims to solve the need for decentralized trust while performing complex computations on large data sets. The TEA Project is a decentralized cloud computing platform that hosts "Rich dApps." These Rich dApps have high scalability while also being decentralized and server-less, running on a distributed network of TEA mining nodes. The TEA Project aims to combine the power of cloud computing with the privacy of a decentralized blockchain solution.
+
+In the TEA Project, dApps run Web Assembly code on layer-2 within hardware-protected enclaves. TEA's root of trust comes from miners' hardware that forms the distributed nodes of the TEA network. Each mining machine has an embedded TPM chip that generates Proof of Trust (PoT) data. This PoT data is stored on TEA's layer-1 blockchain. 
+
+TEA stands for **T**rusted **E**xecution and **A**ttestation, and it has a unique method of reaching a trustable consensus. The TEA Project uses consensus not to confirm the result of the dApp's code; it instead uses consensus to verify the execution environment where the code was run. TEA's philosophy is that **if the execution environment, code, and input data are trusted, then the execution result can also be trusted.**
+
+Client blockchains can use TEA as a layer-2 to offload complex computations onto the TEA network. The client blockchain can verify the PoT data on TEA's layer-1 blockchain to verify that the returned execution result is trustable.
+
+TEA's layer-1 is based on the Substrate framework from [Parity Technologies](https://www.parity.io/technologies/substrate). As a Substrate blockchain, TEA is natively compatible with the Polkadot network. TEA's layer-1 is also flexible enough to work with any other blockchain.
+
+TEA Project's layer-2 is based on IPFS. Any current IPFS miner can begin participating in the TEA network by adding a TEA hardware security module (such as a Raspberry Pi with a TPM chip). The TEA Project effectively adds computing services on top of IPFS.
+
+TEA project has two tokens; TEA and Camellia. TEA token is a stable utility token as gas, while the Camellia token is an NFT that's necessary for bringing a TEA mining node online.
+
+The TEA Project offers the security of the blockchain combined with the scalability of cloud computing. It also offers privacy and censorship-resistance to its users without sacrificing decentralization. Visit us at [TeaProject.org](https://teaproject.org) to learn more.
