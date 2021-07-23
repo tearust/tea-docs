@@ -14,10 +14,10 @@ sort:
     path: Whitepaper/README.md
     children:
       - name: Legal_Disclaimer.md
-      - name: Section1.md
-      - name: Section2.md
-      - name: Section3_Solution.md
-      - name: Section4_Components.md
+      - name: Introduction.md
+      - name: Problem_Statement.md
+      - name: Our_Solution.md
+      - name: TEA_Components.md
       - name: Tokenomics.md
       - name: Product_Roadmap.md
       - name: Appendix_A.md
