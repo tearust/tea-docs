@@ -24,18 +24,18 @@ You will need the TEA Project's NFT known as Camellia (CML) to start mining on t
 
 Testers will be able to see their CML coupons in their tea wallet when the new epoch starts.
 
-## Steps to Start G in TEA
+## Steps to Start Generating TEA Yield
       
 For this early preview stage, we have a faucet to top up your TEA tokens. It’s quite generous for now at 100 TEA, but it will eventually become a legitimate low-emission faucet that only gives .01 TEA. The point of the faucet is to cover transaction fees for those new to the platform.
       
 ### Mining TEA
 The two ways to generate TEA are either to farm or to stake. To begin mining, you would plant a CML seed into a TEA mining machine to generate TEA tokens. These machines are all virtual for right now, merely simulated machines in place of real miners. Look for the little icon here in your CML seed's row to plant your seed into a miner:
 
-![](https://teaproject.org/res/demo-mining-plant.png)
+![](/img/demo-mining-plant.png)
 
 The miner ID & IP will accept anything at this stage (again, these are imaginary machines):
 
-![](https://teaproject.org/res/demo-mining-machine-details.png)
+![](/img/demo-mining-machine-details.png)
 
 ### Staking TEA
 
@@ -43,8 +43,8 @@ Staking is a method of generating revenue without requiring the user to have a m
 
 Users can stake either 1 CML or [//TEA]1000 per staking slot. To start staking, select the "Mining Camellia" link in the header. Click on the **Stake** button for any miner you want to stake with:
 
-![](https://teaproject.org/res/demo-cml.png)
+![](/img/demo-cml.png)
 
 You can either select one of your non-staked and defrosted CML for staking, or leave the CML unselected and the system will automatically take [//TEA]1000 for your staked amount. The slot index is a slippage tolerance setting and can be safely ignored for now:
 
-![](https://teaproject.org/res/demo-staking.png)
+![](/img/demo-staking.png)
