@@ -1,15 +1,17 @@
-# prerequisits
+# Creating a New Wallet Account 
 
-You will need Polkadot Extension in your browser to create new account. If have not install one, please go to "[How to install Polkadot Extension](https://github.com/tearust/tea-docs/blob/main/FAQ/how-to-install-pokda-dot-extension.md)" first.
+## Prerequisites
+
+You will need Polkadot Extension in your browser to create new account. If have not installed one, please read the instruction on [how to install the Polkadot extension](https://teaproject.org/#/doc_list/%2FFAQ%2Fhow_to_install_polkadot_extension.md).
 
 # Steps
-![click +](http://tearust.com/img/extension1.png)
+![Click +](https://teaproject.org/img/extension1.png)
 
 
-![click create new account](http://tearust.com/img/extension2.png)
+![Click create a new account](https://teaproject.org/img/extension2.png)
 
 
-Follow instruction generate your new key pairs. 
+Follow the instructions to generate your new key pairs. 
 
-Please keep your private key as a top securet. Although tokens in this account are fake money, they can be used in test net only. It is good practice to consider every private key as secure as possible.
+Please keep your private key secret. Tokens in this account are fake money and can only be used on the testnet. But it's still good practice to keep your private key as secure as possible.
 
