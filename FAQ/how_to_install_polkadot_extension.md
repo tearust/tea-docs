@@ -1,12 +1,4 @@
-Polkadot extension supports the following browsers so far.
+## Create a Polkadot Wallet
 
-Chrome or Firefox, or any compatible browser based on Chrome, such as Brave.
+Install the polkadot{.js} extension available for the [Chrome](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd), [Brave]([Chrome](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd), or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/) browsers. Other browsers compatible with Chrome should be compatible with the Polkadot extension, check [github](https://github.com/polkadot-js/extension) for more information. The Pokadot extension does not allow for full wallet capabilities, but is focused on only managing your accounts and providing signing capabilities to apps requesting access.
 
-# Installation
-
-Which browser you are using?
-
-- [Chrome Store](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd)
-- [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/)
-
-For more information please visit [github](https://github.com/polkadot-js/extension)

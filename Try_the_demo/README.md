@@ -6,18 +6,9 @@ Here is a video tutorial for using the wallet in the preview stage:
 
 Below are the steps described in the video in more detail.
 
-## Create a Polkadot Wallet
+[[how_to_install_polkadot_extension]]
 
-- Install the polkadot{.js} extension available for the [Chrome](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd), [Brave]([Chrome](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd), or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/) browsers.  The Pokadot extension does not allow for full wallet capabilities, but is focused on only managing your accounts and providing signing capabilities to apps requesting access.
-
--   Create a new account:
-
-
-![](http://tearust.com/img/extension1.png)
-
-
-
-![](http://tearust.com/img/extension2.png)
+[[how_to_create_a_new_account]]
 
 ## Sign Up For CML Seed Coupons
 You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. Fill out the [investor registration form](https://docs.google.com/forms/d/e/1FAIpQLSdNyJVmRjyYImTtTJ3AEzk8y6s3ZfCnoxMEzfbyYi_vVdIIzg/viewform) to sign up for redeemable seed coupons. You'll be able to select how many A / B / C coupons you want (up to 5 of each group).
