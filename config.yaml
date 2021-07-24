@@ -8,7 +8,6 @@ sort:
       - name: TEA_vs_Blockchain.md
       - name: TEA_vs_Trusted_Computing.md
       - name: TEA_vs_WASM.md
-      - name: Key_Concepts.md
       - name: Use_Cases.md
   - name: Whitepaper
     path: Whitepaper/README.md
@@ -53,9 +52,6 @@ sort:
       - name: Easy_start.md
       - name: Use_your_own_picture.md
       - name: Deploy_your_own_code.md
-      - name: Select_an_executor.md
-      - name: Revenue_distribution.md
-      - name: Submit_task.md
   - name: FAQ
     path: FAQ/README.md
     children:
