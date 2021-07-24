@@ -6,9 +6,9 @@ Here is a video tutorial for using the wallet in the preview stage:
 
 Below are the steps described in the video in more detail.
 
-[[how_to_install_polkadot_extension]]
+[[Installing_Polkadot_Extension]]
 
-[[how_to_create_a_new_account]]
+[[Creating_a_New_Wallet_Account]]
 
 ## Sign Up For CML Seed Coupons
 You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. Fill out the [investor registration form](https://docs.google.com/forms/d/e/1FAIpQLSdNyJVmRjyYImTtTJ3AEzk8y6s3ZfCnoxMEzfbyYi_vVdIIzg/viewform) to sign up for redeemable seed coupons. You'll be able to select how many A / B / C coupons you want (up to 5 of each group).

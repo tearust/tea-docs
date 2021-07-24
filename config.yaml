@@ -56,8 +56,8 @@ sort:
     path: FAQ/README.md
     children:
       - name: why_not_secure.md
-      - name: how_to_install_polkadot_extension.md  
-      - name: how_to_create_a_new_account.md
+      - name: Installing_Polkadot_Extension.md
+      - name: Creating_a_New_Wallet_Account.md
 
   - name: 中文资料
     path: 中文资料/README.md
