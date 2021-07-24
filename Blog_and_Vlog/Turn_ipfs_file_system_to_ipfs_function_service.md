@@ -59,22 +59,7 @@ There are many business logic that can be achieved here.
 
 You can see, TEA not only protect your data but also make your data *profitable!*
 
-The process of uploading your encrypted data is called “Deployment” in T-rust.
-
-Let’s reuse this diagram again:
-
-
-![](../res/blog/1_AlcMa8MEW_D-xr9Mr_yk5Q.png)
-
-Before the sensitive data leaving your comfort zone (eg, your browser), the data is encrypted by a random key. We call the key K1, the data D1. D1 is stored in IPFS worry-free because it has been encrypted. The K1 will never be exposed to the public in its whole lifetime. It will be stored inside in TEA modules’ memory without persistent storage, or transferred between TEA modules using secure channels.
-
-The process of distributing K1 is called “Repin”. The TEA modules who owns a copy of K1 is called “Pinner”. The first Pinner is called “Initial Pinner” or “Delegator”.
-
-If you own a TEA module yourself, you should select it as your delegator. If you do not, you can select any public available TEA modules online. Usually, I would recommend you choose one from well-known high credit-score bootstrap TEA modules because they are generally more reliable.
-
-![](../res/blog/1_BdWR14O9VyyOv5zafEEtag.png)
-
-When the initial pinner received your K1. It will generate a Deployment_ID to this K1/D1 pair. You will get the Deployment_ID as it refers to the K1/D1 pair. The Initial pinner will broadcast to the IPFS network (Kad via LibP2P) that it owns this deployment as well as post an event to layer 1 blockchain. Other TEA modules either get this information from layer1 blockchain or get the deployment_id from other channels( eg. dApps). If that pinner would like to own K1 as well, it becomes a “wanna-be pinner”. The wanna-be pinner IPFS DHT Findprovs to find who always “pinned” this deployment_id. If found, ask to “repin”. The Pinner need to carefully run a remote attestation to make sure that the wanna-be pinner is qualified. The qualification logic can be predefined by you. Basically, only hardware protected TEA modules can be considered. After the remote attestation passed, the pinner will send the K1 and deployment_id’s private key to the wanna-be pinner. The wanna-be pinner is no longer a wanna-be, it becomes a real pinner. It can broadcast to the Kad libP2P that he is pinner of this deployment_id too.
+[[Repin]]
 
 There are financial motivations behind the process. For more on the business model please [read this document](http://t-rust.org/#/doc_list/Business_model%2FREADME.md).
 
