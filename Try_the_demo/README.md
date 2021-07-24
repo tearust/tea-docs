@@ -33,7 +33,7 @@ The two ways to generate TEA are either to farm or to stake. To begin mining, yo
 
 ![](https://teaproject.org/res/demo-mining-plant.png)
 
--     The miner ID & IP will accept anything at this stage (again, these are imaginary machines):
+The miner ID & IP will accept anything at this stage (again, these are imaginary machines):
 
 ![](https://teaproject.org/res/demo-mining-machine-details.png)
 
