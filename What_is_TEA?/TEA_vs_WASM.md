@@ -36,7 +36,7 @@ More information on the relevant hardware-related topics ( HSM, TEE, and TPM) is
 WaSCC, [wascc.dev](https://wascc.dev), is a dynamic, elastically scalable WebAssembly host runtime for securely connecting actors and capability providers. TEA uses waSCC (with small modifications) as the
 WASM runtime inside TEA modules. You can check the TEA node internal diagram to see where the runtime is positioned.
 
-![tea-node-internet-arch](https://github.com/tearust/tea-docs/blob/main/res/tea-node-arch.png)
+![tea-node-internet-arch](https://teaproject.org/res/tea-node-arch.png)
 
 ## Security
 
