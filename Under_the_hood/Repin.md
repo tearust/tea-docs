@@ -1,5 +1,5 @@
 # Pinning and Re-Pinning in Practice
-For TEA miners to execute your code and data, it needs to be made available to them in a secure manner. The TEA network's secure transmission of client code and data through its network is called **pinning** and **re-pinning**. Let's look at how this process is kept secure by looking at an example case.
+For TEA miners to execute your code and data, it needs to be made available to them in a secure manner. The TEA network's secure transmission of client code and data through its network is called **pinning** and **re-pinning**. Let's look at how this process is kept secure by examining a sample deployment.
 
 ## Client Sends Code / Data to the TEA Network
 

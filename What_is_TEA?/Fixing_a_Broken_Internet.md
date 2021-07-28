@@ -1,17 +1,17 @@
 # Decentralization movement - The Internet is broken, and we are trying to fix it!
 From [Zoë Corbyn](https://www.theguardian.com/profile/zoe-corbyn)'s 2018 article [Decentralisation: the next big step for the world wide web](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle), 
->"The proponents of the so-called decentralised web – or DWeb – want a new, better web where the entire planet’s population can communicate without having to rely on big companies that amass our data for profit and make it easier for governments to conduct surveillance. "
+> "The proponents of the so-called decentralised web – or DWeb – want a new, better web where the entire planet’s population can communicate without having to rely on big companies that amass our data for profit and make it easier for governments to conduct surveillance. "
 
 and 
 
 
->"The DWeb, say proponents, is about giving people a choice: the same services, but decentralised and not creepy. It promises control and privacy, and things can’t all of a sudden disappear because someone decides they should."
+> "The DWeb, say proponents, is about giving people a choice: the same services, but decentralised and not creepy. It promises control and privacy, and things can’t all of a sudden disappear because someone decides they should."
 
 If you didn't understand what he said back in 2018, you probably understand it now. Our existing Internet is broken, and the TEA Project is trying to fix it.
 
 ![fix the net](https://github.com/tearust/tea-docs/blob/main/res/fix-the-net.png?raw=true)
 
-# The existing cures and remaining problems
+# The existing cures and remaining problems||||||||||=
 There have been so many new projects released recently intent on fixing parts of the broken Internet. These innovations have included:
 - IPFS provides a peer-2-peer file system that stores files in a decentralized manner.
 - Blockchain, especially the Blockchain 2.0 era ushered in by Ethereum, provides a world computer where smart contracts can run in a decentralized manner.
