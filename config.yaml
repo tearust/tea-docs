@@ -8,16 +8,15 @@ sort:
       - name: TEA_vs_Blockchain.md
       - name: TEA_vs_Trusted_Computing.md
       - name: TEA_vs_WASM.md
-      - name: Key_Concepts.md
       - name: Use_Cases.md
   - name: Whitepaper
     path: Whitepaper/README.md
     children:
       - name: Legal_Disclaimer.md
-      - name: Section1.md
-      - name: Section2.md
-      - name: Section3_Solution.md
-      - name: Section4_Components.md
+      - name: Introduction.md
+      - name: Problem_Statement.md
+      - name: Our_Solution.md
+      - name: TEA_Components.md
       - name: Tokenomics.md
       - name: Product_Roadmap.md
       - name: Appendix_A.md
@@ -35,11 +34,7 @@ sort:
   - name: Try_the_demo
     path: Try_the_demo/README.md
     children:
-      - name: Easy_start.md
-      - name: Advanced_demo.md
-      - name: Deploy_data_run_adhoc_code.md
-      - name: Deploy_code_run_adhoc_data.md
-      - name: Run_your_own_TEA_node.md
+      - name: Useful_Info_for_Miners.md
   - name: Business_model
     path: Business_model/README.md
     children:
@@ -57,16 +52,12 @@ sort:
       - name: Easy_start.md
       - name: Use_your_own_picture.md
       - name: Deploy_your_own_code.md
-      - name: Select_an_executor.md
-      - name: Revenue_distribution.md
-      - name: Submit_task.md
   - name: FAQ
     path: FAQ/README.md
     children:
       - name: why_not_secure.md
-      - name: how_to_install_polkadot_extension.md  
-      - name: how_to_create_a_new_account.md
-      - name: how_to_get_free_test_token_to_start.md
+      - name: Installing_Polkadot_Extension.md
+      - name: Creating_a_New_Wallet_Account.md
 
   - name: 中文资料
     path: 中文资料/README.md

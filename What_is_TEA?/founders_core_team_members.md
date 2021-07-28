@@ -14,7 +14,7 @@ Software engineer Jacky Li graduated from the Dalian University of Technology. H
 Software engineer Mingzhi Yan graduated from Wuhan University. He was the team lead of the Elastos team responsible for the blockchain protocol. Prior to TEA Project, he was engaged in artificial intelligence and multi-party secure computing research and development at Yuncong Technology.
 
 ## George Pornaras
-Content marketer George Pornaras graduated from the University of Wisconsin, Madison with a degree in English. His past experience includes writing B2B content for cloud computing hosts, GPU mining, and participating in the genesis block events for Uniswap's UNI and Alchemix's ALCX token. He most recently worked as part of a dual China-United States remote team at Luminus, a manufacturer of LED lights.
+Content marketer George Pornaras graduated from the University of Wisconsin, Madison with a degree in English. His past experience includes writing B2B content for cloud computing hosts, GPU mining, and beta testing crypto projects like DEUS and Uniswap's initial liquidity pool. He most recently worked as part of a dual China-United States remote team at Luminus, a manufacturer of LED lights.
 
 
 Except for Zhang Zhijun who is still working full time at the World Bank,  all team members are working full time on the TEA Project. 
