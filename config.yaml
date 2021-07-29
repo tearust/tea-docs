@@ -53,9 +53,9 @@ sort:
   - name: FAQ
     path: FAQ/README.md
     children:
-      - name: why_not_secure.md
       - name: Installing_Polkadot_Extension.md
       - name: Creating_a_New_Wallet_Account.md
+      - name: Why_TEA_Dapps_Show_as_Not_Secure.md
 
   - name: 中文资料
     path: 中文资料/README.md
