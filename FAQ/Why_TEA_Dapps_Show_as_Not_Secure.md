@@ -1,32 +1,30 @@
-# For what reason TEA's dApp shows "Not Secure" in the browser
+# Why Does TEA's dApp Show as "Not Secure" in the Browser
 
-Short answser is we do not need https, because we do not transfer any secrete in plain text between you and anyone else.
+The short answser is that we don't need https because we don't transfer any secrets in plain text between you and anyone else.
 
-In most browser, if a webserver runs an https server, it is considered "secure". If a server runs an http server, it is considered "Not Secure". 
+In most browsers, if a webserver runs an https server, it's considered "Secure". If a server runs an http server, it's considered "Not Secure". 
 
-Https encrypted all the traffic between browser and server. Any sniffer in between cannot get the content. Only browser and server can decrypt the content.
+Https encrypts all the traffic between the browser and the server. Any sniffer in between cannot get the content, and only the browser and the server can decrypt the content.
 
-But why doens't TEA need https?
+But why doesn't TEA need https? Let's explore the longer answer.
 
-Let's move to the long answer.
+## Traditional Cloud Apps Assume Servers Can Be Trusted, But We Don't
+In traditional centralized cloud computing, the basic assumption is that the server can be trusted. So https is invented to prevent a sniffer interloping in the middle between client and server. Https encrypts in transit, making the content available once it reaches the server.
 
-## Traditional cloud apps assume server can be trust, but we do not
-In the traditional centralized cloud computing era, the basic assumption is that server can be trusted. So https is invented to prevent sniffer in the middle between client and server. No matter how secure https is, the content is available once it reaches the server.
+In the decentralized TEA world, we don't assume the server is innocent. As long as information reaches a server, the hacker can read the secrete content stored there. 
 
-In the decentralized TEA world, we do not have such an assumption. we have to assume that server is owned by a hacker. As long as the information reaches such a server, the hacker can read the secrete content on the server. 
+This is the reason privacy breaching happens almost every day. I am not saying the service providers are bad guys. I'm saying that as long as hackers can break into the server, they can get whatever information on the server as long as it's not encrypted.
 
-This is the reason privacy breaching happens almost every day. I am not saying the service providers are bad guy. I am saying as long as hacker can break into the server, he can get whatever information on the server as long as not encrypted.
+In TEA, we don't trust the server. We do trust the small hardware protected modules inside of the server. We call this a TEA module. All the information outside of the TEA module is not secure. Secrets are decrypted only when they enter the TEA module, and encrypted again when leaving the TEA module. 
 
-In TEA, we do not trust the server, but we trust a small hardware protected modules inside the server. We call it the TEA module. All the information outside of the TEA module is not secure. Secrete is decrypted only when it enter the TEA module, and encrypted again when leaving the TEA module. 
+For the TEA Project to maintain a secure network, making sure the server stays protected amounts to protecting a much smaller target - the TEA module. Smaller targets have a smaller attack surface and are easier to secure.
 
-In this case, protecting the server turns to protecting a much smaller target - the TEA module. Smaller target has less attack surface, so it is much easier to get protected, and more secure.
+## TEA DApps Live on IPFS, Not the Server.
+When you click the demo dApp, you actually connect to one of the IPFS servers from all over the world. You don't care which IPFS node it is since they're all the same to the end user. You ask the IPFS server to download the html / js / css code to you. You then run the code on your browser. The whole process has nothing to do with any web server as the dApp runs on your own browser.
 
-## TEA dApps live on IPFS, not on server.
-When you click the demo dApp, you actually connect to one of the IPFS servers all over the world. You do not care which IPFS node since they are all the same to end user. You ask the IPFS server to download the html js css code to you. Then run the code on your browser. The whole process has nothing to do with any web server. The dApp runs on your own browser.
+## But Where Do Computationally Intense Apps Run?
+We don't run computationally intensive apps (eg. the Tensorflow algorithm) in your browser. It actually runs on one of the TEA nodes running somewhere in the world. Again, you don't care and don't need to know which one actually runs your code. The blockchain consensus protects your data security and ensures the answer is correct. You can read more in the "Under the Hood" section in our sidebar to get more details.
 
-## But where the Tensorflow algorithm runs?
-Good question, we are not going to run the computation intensive Tensorflow algorithm on your browser. It actually runs on one of the TEA nodes all of the world. Again, you do not care and do not need to know which one actually runs your code. The blockchain consensus protects your data security and ensure the answer is correct. You can read more on the "Under the hood" section to get more detail.
-
-## How did my secrete safely transfer to TEA module?
-Because we do not trust server, all the secrete need to encrypted end to end. It is similar to https, just not between your browser and server, but between browser and the TEA module. Only TEA module can decrypt the content using a hardware protected key.
+## How Do My Secrets Safely Transfer to TEA Modules?
+Because we don't trust servers, all the secrets need to encrypted end to end. It's similar to https, just that instead of being encrypted between your browser and server, it's done between the browser and the TEA module. Only TEA modules can decrypt the content using a hardware-protected key.
 
