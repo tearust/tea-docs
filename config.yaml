@@ -50,8 +50,6 @@ sort:
       - name: Repin.md
       - name: Trust_chain.md
       - name: Easy_start.md
-      - name: Use_your_own_picture.md
-      - name: Deploy_your_own_code.md
   - name: FAQ
     path: FAQ/README.md
     children:
