@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-You'll need Polkadot Extension in your browser to create a new wallet account. If haven't installed it yet, you can follow these instructions on [how to install the Polkadot extension](https://teaproject.org/#/doc_list/%2FFAQ%2Fhow_to_install_polkadot_extension.md).
+You'll need Polkadot Extension in your browser to create a new wallet account. If haven't installed it yet, you can follow these instructions on [how to install the Polkadot extension](https://teaproject.org/#/doc_list/%2FFAQ%2FInstalling_Polkadot_Extension.md).
 
 # Steps To Create Your Wallet Account
 ![Click +](https://teaproject.org/img/extension1.png)
