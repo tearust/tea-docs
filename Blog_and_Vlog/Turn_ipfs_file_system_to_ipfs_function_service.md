@@ -61,7 +61,7 @@ You can see how TEA not only protects your data but also makes your data *profit
 
 [[Repin]]
 
-There are financial motivations behind the process. For more on the business model please [read this document](http://t-rust.org/#/doc_list/Business_model%2FREADME.md).
+There are financial motivations behind the process. For more on the business model please [read this document](https://teaproject.org/#/doc_list/%2FWhat_is_TEA%3F%2Fhow_business_support_value.md).
 
 Those pinner TEA modules actually have a copy of K1 in their secure memory, and the D1 in IPFS. So long as someone needs to consume D1, it can easily use IPFS DHT Findprov deployment_id to find who the pinners are. Those pinners would become the executor in the next step.
 
@@ -112,9 +112,3 @@ Every NFT is the identity of a physical TEA module. It has a life cycle like eve
 ![](../res/blog/1_geYaelG6PNV-jaEZCdj7zg.png)
 
 The life cycle design keeps a healthy balance between old existing nodes with newborn nodes. This helps ensure that everyone has an equal chance to win in this game.
-
-# Introduction video of TeaProject
-
-[![](../res/blog/WX20201215-115720@2x.png)](http://www.youtube.com/watch?v=-NgR3ySWwXg)
-
-Please keep reading other articles in our blog. Thanks
