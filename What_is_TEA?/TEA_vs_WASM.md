@@ -33,8 +33,7 @@ More information on the relevant hardware-related topics ( HSM, TEE, and TPM) is
 
 # TEA is Based on waSCC, an Awesome WASM Runtime on the Server
 
-WaSCC, [wascc.dev](https://wascc.dev), is a dynamic, elastically scalable WebAssembly host runtime for securely connecting actors and capability providers. TEA uses waSCC (with small modifications) as the
-WASM runtime inside TEA modules. You can check the TEA node internal diagram to see where the runtime is positioned.
+[WaSCC](https://wascc.dev), is a dynamic, elastically scalable WebAssembly host runtime for securely connecting actors and capability providers. TEA uses waSCC (with small modifications) as the WASM runtime inside TEA modules. You can check the TEA node internal diagram to see where the runtime is positioned.
 
 ![tea-node-internet-arch](https://teaproject.org/res/tea-node-arch.png)
 
@@ -64,4 +63,4 @@ Platform independence is an original feature of WASM. TEA integrates the WASM ru
 
 ## WASM Resources
 
-WASM is also known as WebAssembly, but don't be fooled by its name. Some good WASM resources include [Webassembly, Neither Web, Nor Assembly, but Revolutionery](https://www.javascriptjanuary.com/blog/webassembly-neither-web-nor-assembly-but-revolutionary) is a good read or the following introductory [video on YouTube](https://www.youtube.com/watch?v=UtjoaTfbdcA) for those new to WASM. 
+WASM is also known as WebAssembly, but don't be fooled by its name. Some good WASM resources include [Webassembly, Neither Web, Nor Assembly, but Revolutionary](https://www.javascriptjanuary.com/blog/webassembly-neither-web-nor-assembly-but-revolutionary) is a good read or the following introductory [video on YouTube](https://www.youtube.com/watch?v=UtjoaTfbdcA) for those new to WASM. 

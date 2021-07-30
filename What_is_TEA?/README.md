@@ -22,7 +22,7 @@
 - [How are the initial tokens distributed?](./initial_token_distribution.md)
 - [What is TEA's governance structure?](./governance_structure.md)
 - [Why did you say the Internet is broken?](./Broken_internet_needs_a_fix.md)
-- [How could TEA fix the Internet?](./How_TEA_fix_internet.md)
+- [How could TEA fix the Internet?](./How_TEA_Fixes_the_Internet.md)
 - [More details about the TEA token economy.](./Token_economy.md)
 - [Can you give us some use cases?](./Use_cases.md)
 
