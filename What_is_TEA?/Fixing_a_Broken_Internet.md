@@ -26,4 +26,4 @@ Each of them fixed specific problems that looked promising for developing fully-
 
 # TEA Project: thinking differently
 
-It is impossible to use a single layer of tools to build a dApp platform. Combining all the latest technologies together, we can probably solve the various problems and fix the Internet. The TEA Project [[How_TEA_fix_internet|glues them together]] into a pure dApp platform.
+It is impossible to use a single layer of tools to build a dApp platform. Combining all the latest technologies together, we can probably solve the various problems and fix the Internet. The TEA Project glues them together into a pure dApp platform. You can read more about the fix here: [[How_TEA_Fixes_the_Internet]].
