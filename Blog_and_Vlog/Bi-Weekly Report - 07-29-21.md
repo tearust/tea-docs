@@ -2,6 +2,7 @@
 ### New Full-Time Team Member
 
 The TEA Project welcomes our 4th full-time team member, George Pornaras. George is a content marketer who has broad experience across TEA's tech stack including cloud computing and GPU mining. He'll be working on updating the Teaproject.org website and promoting the TEA Project through social media.
+[George Pornaras(Intro video)](https://drive.google.com/file/d/1BhwC4QqUYlKwC81P2J1xBPkGy3-kI06C/view?usp=sharing)
 
 ### New Community Moderators
 
