@@ -1,4 +1,4 @@
-# Basics-Founder's Motivation, Core Members Resume
+# Basics - Founder's Motivation, Core Members' Resumes
 ## Kevin G. Zhang
 The founder, Kevin G Zhang, graduated from Tsinghua University and currently lives in Silicon Valley, USA. In 2015, when he was the CTO of Silicon Valley startup iHealth Labs, he discovered a market need that couldn't be met. At that time, iHealth Labs already had a large number of patients’ medical data. However, it was barely used due to the strict regulations protecting medical data and the inability of the Internet infrastructure at that time to protect it in transit. That became the starting point for Kevin's idea of establishing a trusted computing environment to protect patient privacy data. 
 
@@ -16,7 +16,7 @@ Software engineer Mingzhi Yan graduated from Wuhan University. He was the team l
 ## George Pornaras
 Content marketer George Pornaras graduated from the University of Wisconsin, Madison with a degree in English. His past experience includes writing B2B content for cloud computing hosts, GPU mining, and beta testing crypto projects like DEUS and Uniswap's initial liquidity pool. He most recently worked as part of a dual China-United States remote team at Luminus, a manufacturer of LED lights.
 
-
+## The TEA Project Has Full-Time & Part-Time Contributors
 Except for Zhang Zhijun who is still working full time at the World Bank,  all team members are working full time on the TEA Project. 
 
 Since the TEA Project is an open source project, there are a large number of part-time and community developers as well as other roles participating. These people are not listed in the core team, however, their IDs can be found on Github.
