@@ -21,7 +21,7 @@ Testers will be able to see their CML coupons in their tea wallet when the new e
 For this early preview stage, we have a faucet to top up your TEA tokens. It’s quite generous for now at 100 TEA, but it will eventually become a legitimate low-emission faucet that only gives .01 TEA. The point of the faucet is to cover transaction fees for those new to the platform.
       
 ### Mining TEA
-The two ways to generate TEA are either to farm or to stake. To begin mining, you would plant a CML seed into a TEA mining machine to generate TEA tokens. These machines are all virtual for right now, merely simulated machines in place of real miners. Look for the little icon here in your CML seed's row to plant your seed into a miner:
+The two ways to generate TEA are either to mine or to stake. To begin mining, you would plant a CML seed into a TEA mining machine to generate TEA tokens. These machines are all virtual for right now, merely simulated machines in place of real miners. Look for the little icon here in your CML seed's row to plant your seed into a miner:
 
 ![](./img/demo-mining-plant.png)
 
