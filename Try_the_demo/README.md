@@ -29,6 +29,7 @@ Unpack the zip archive.
 - Start the browser wallet. From your command line terminal, run the following two commands when in the downloaded **tea-browser-wallet-master** folder :
 
 `npm i`
+
 `npm run start`
 
 ![](https://teaproject.org/res/Try_the_demo-node_start.png)
