@@ -18,7 +18,7 @@ The absolute path in full http url is ok too. Example `![snap2](https://github.c
 For those video or image with links, see example `[![](../res/start-demo-video.jpg)](http://www.youtube.com/watch?v=6GYwrITSfJo "")`
 
 # TEA token sign
-Use [/TEA]
+Use [//TEA]
 
 # Obsidian links
 All obsidian links are supported use [[]] 
