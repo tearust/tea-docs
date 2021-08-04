@@ -35,13 +35,6 @@ sort:
     path: Try_the_demo/README.md
     children:
       - name: Useful_Info_for_Miners.md
-  - name: Business_model
-    path: Business_model/README.md
-    children:
-      - name: Double_loops.md
-      - name: Life_cycle.md
-      - name: Birth_control.md
-      - name: Public_services.md
   - name: Under_the_hood
     path: Under_the_hood/README.md
     children:
