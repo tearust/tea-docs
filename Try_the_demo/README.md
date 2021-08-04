@@ -32,11 +32,11 @@ Unpack the zip archive.
 
 `npm run start`
 
-![](https://teaproject.org/res/Try_the_demo-node_start.png)
+![](../res/Try_the_demo-node_start.png)
 
 - You should now to be able to access the browser wallet using localhost with given port in your web browser:
 
-![](https://teaproject.org/res/Try_the_demo-wallet-localhost.png)
+![](../res/Try_the_demo-wallet-localhost.png)
 
 ## Sign Up For CML Seed Coupons
 You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. Fill out the [investor registration form](https://docs.google.com/forms/d/e/1FAIpQLSdNyJVmRjyYImTtTJ3AEzk8y6s3ZfCnoxMEzfbyYi_vVdIIzg/viewform) to sign up for redeemable seed coupons. You'll be able to select how many A / B / C coupons you want (up to 5 of each group).
@@ -50,11 +50,11 @@ For this early preview stage, we have a faucet to top up your TEA tokens. It’s
 ### Mining TEA
 The two ways to generate TEA are either to mine or to stake. To begin mining, you would plant a CML seed into a TEA mining machine to generate TEA tokens. These machines are all virtual for right now, merely simulated machines in place of real miners. Look for the little icon here in your CML seed's row to plant your seed into a miner:
 
-![](./Try_the_demo/img/demo-mining-plant.png)
+![](..res/Try_the_demo/demo-mining-plant.png)
 
 The miner ID & IP will accept anything at this stage (again, these are imaginary machines):
 
-![](./img/demo-mining-machine-details.png)
+![](..res/Try_the_demo/demo-mining-machine-details.png)
 
 ### Staking TEA
 
@@ -62,8 +62,8 @@ Staking is a method of generating revenue without requiring the user to have a m
 
 Users can stake either 1 CML or [//TEA]1000 per staking slot. To start staking, select the "Mining Camellia" link in the header. Click on the **Stake** button for any miner you want to stake with:
 
-![](../FAQ/img/demo-cml.png)
+![](..res/Try_the_demo/demo-cml.png)
 
 You can either select one of your non-staked and defrosted CML for staking, or leave the CML unselected and the system will automatically take [//TEA]1000 for your staked amount. The slot index is a slippage tolerance setting and can be safely ignored for now:
 
-![](../FAQ/img/demo-staking.png)
+![](..res/Try_the_demo/demo-staking.png)
