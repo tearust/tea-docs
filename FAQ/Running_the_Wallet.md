@@ -1,5 +1,5 @@
 ## Running the Wallet
-You currently have 2 options for running the TEA browser wallet:
+There are 2 options for running the TEA browser wallet:
 
 1. **Remote.** You can access the browser wallet using a remote host. We will eventually be remotely hosting the client wallet at [wallet.teaproject.org](https://wallet.teaproject.org). It is currently accessible at either http://198.199.82.222/ or http://68.183.182.174/ 
 
