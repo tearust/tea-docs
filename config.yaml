@@ -59,7 +59,8 @@ sort:
         path: /中文资料/chn_token_economy.md
       - name: T计划和其他项目的主要区别
         path: /中文资料/chn_differences.md
-
+      - name: T计划市场战略的三部曲
+        path: /中文资料/go2market.md
   # - name: 中文资料
   #   path: chn/README.md
   #   children:
