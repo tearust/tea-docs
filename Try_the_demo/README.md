@@ -11,32 +11,7 @@ Below are the steps described in the video in more detail.
 
 - [Creating a New Wallet Account](../FAQ/Creating_a_New_Wallet_Account.md)
 
-## Running the Wallet
-You have 3 options for running the TEA browser wallet:
-
-1. **Remote.** You can access the browser wallet at the remote host http://68.183.182.174/
-2. **IPFS.**  _IPFS CID_
-3. **Local.** The TEA Project is decentralized, allowing you to run the browser wallet locally on your machine without the aid of any central servers. 
-
-- To get started, you should first have Node.js installed on your computer. The [official repo](https://nodejs.org/en/download/) should be sufficient for most users, though [Windows](https://github.com/coreybutler/nvm-windows) and [Mac](https://formulae.brew.sh/formula/node) users might wish to install using a package manager. 
-
-- Visit https://github.com/tearust/tea-browser-wallet/ and download the repo:
-
-![](../res/Try_the_demo/Try_the_demo-Tea-Browser-Wallet-download.png)
-
-Unpack the zip archive.
-
-- Start the browser wallet. From your command line terminal, run the following two commands when in the downloaded **tea-browser-wallet-master** folder :
-
-`npm i`
-
-`npm run start`
-
-![](../res/Try_the_demo/Try_the_demo-node_start.png)
-
-- You should now to be able to access the browser wallet using localhost with given port in your web browser:
-
-![](../res/Try_the_demo/Try_the_demo-wallet-localhost.png)
+[[Running_the_Wallet]]
 
 ## Sign Up For CML Seed Coupons
 You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. Fill out the [investor registration form](https://docs.google.com/forms/d/e/1FAIpQLSdNyJVmRjyYImTtTJ3AEzk8y6s3ZfCnoxMEzfbyYi_vVdIIzg/viewform) to sign up for redeemable seed coupons. You'll be able to select how many A / B / C coupons you want (up to 5 of each group).
