@@ -61,6 +61,8 @@ sort:
         path: /中文资料/chn_differences.md
       - name: T计划市场战略的三部曲
         path: /中文资料/go2market.md
+      - name: T计划的矿工经济学
+        path: /中文资料/miner_tokenomics.md
   # - name: 中文资料
   #   path: chn/README.md
   #   children:
