@@ -5,7 +5,7 @@ There are 2 options for running the TEA browser wallet:
 
 2. **Local.** The TEA Project is decentralized, allowing you to run the browser wallet locally on your machine without the aid of any central servers. 
 
-- To get started, you should first have Node.js installed on your computer. The [official repo](https://nodejs.org/en/download/) should be sufficient for most users, though [Windows](https://github.com/coreybutler/nvm-windows) and [Mac](https://formulae.brew.sh/formula/node) users might wish to install using a package manager. Just make sure that the Node version is greater than 14.
+- To get started, you should first have Node.js installed on your computer. The [official repo](https://nodejs.org/en/download/) should be sufficient for most users, though [Linux](https://nodejs.org/en/download/package-manager/), [Windows](https://github.com/coreybutler/nvm-windows), and [Mac](https://formulae.brew.sh/formula/node) users can also install Node using a package manager. Just make sure that the Node version installed is greater than 14.
 
 - Visit https://github.com/tearust/tea-browser-wallet/ and download the repo:
 

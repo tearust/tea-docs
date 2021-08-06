@@ -1,5 +1,5 @@
   # Using the Mining Wallet - Preview 1
-The mining wallet is accessible at [http://68.183.182.174/](http://68.183.182.174/).  
+The mining wallet is accessible at [wallet.teaproject.org](https://wallet.teaproject.org/).  
 
 Here is a video tutorial for using the wallet in the preview stage:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YneSF3ltxCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
