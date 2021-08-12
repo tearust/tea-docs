@@ -11,7 +11,7 @@ Below are the steps described in the video in more detail.
 
 - [Creating a New Wallet Account](../FAQ/Creating_a_New_Wallet_Account.md)
 
-[[Running_the_Wallet]]
+- [Running the Wallet](../FAQ/Running_the_Wallet.md)
 
 ## Sign Up For CML Seed Coupons
 You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. Fill out the [investor registration form](https://docs.google.com/forms/d/e/1FAIpQLSdNyJVmRjyYImTtTJ3AEzk8y6s3ZfCnoxMEzfbyYi_vVdIIzg/viewform) to sign up for redeemable seed coupons. You'll be able to select how many A / B / C coupons you want (up to 5 of each group).
