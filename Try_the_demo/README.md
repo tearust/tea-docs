@@ -2,7 +2,10 @@
 The mining wallet is accessible at [wallet.teaproject.org](https://wallet.teaproject.org/).  
 
 Here is a video tutorial for using the wallet in the preview stage:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YneSF3ltxCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gppp9c2UnR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A transcript of the video is [available here](https://teaproject.medium.com/video-guide-tea-project-mining-contest-4017465711e6).
 
 Below are the steps described in the video in more detail.
 
@@ -14,13 +17,11 @@ Below are the steps described in the video in more detail.
 - [Running the Wallet](../FAQ/Running_the_Wallet.md)
 
 ## Sign Up For CML Seed Coupons
-You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. Fill out the [investor registration form](https://docs.google.com/forms/d/e/1FAIpQLSdNyJVmRjyYImTtTJ3AEzk8y6s3ZfCnoxMEzfbyYi_vVdIIzg/viewform) to sign up for redeemable seed coupons. You'll be able to select how many A / B / C coupons you want (up to 5 of each group).
+You will need the TEA Project's NFT known as Camellia (CML) to start mining on the network. The investor registration form for our latest epoch is available [on our Github wiki](https://github.com/tearust/teaproject/wiki/Checklist:-Mining-Contest,-Preview-1) to sign up for redeemable CML seed coupons.
 
 Testers will be able to see their CML coupons in their tea wallet when the new epoch starts.
 
 ## Steps to Start Generating TEA Yield
-      
-For this early preview stage, we have a faucet to top up your TEA tokens. It’s quite generous for now at 100 TEA, but it will eventually become a legitimate low-emission faucet that only gives .01 TEA. The point of the faucet is to cover transaction fees for those new to the platform.
       
 ### Mining TEA
 The two ways to generate TEA are either to mine or to stake. To begin mining, you would plant a CML seed into a TEA mining machine to generate TEA tokens. These machines are all virtual for right now, merely simulated machines in place of real miners. Look for the little icon here in your CML seed's row to plant your seed into a miner:
