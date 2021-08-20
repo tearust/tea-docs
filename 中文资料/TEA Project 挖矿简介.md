@@ -36,9 +36,7 @@ Leader board - 挖矿竞赛排名，用户可以看到所有矿工的挖矿收�
 图一：Plant的小图标为种植按钮
 ![](../res/Try_the_demo/demo-mining-plant.png)
 
-在目前阶段，矿机ID（Miner ID) & IP 可以为任意值。
-
-图二：矿机ID（Miner ID) & IP 可以为任意值
+图二：在目前阶段，矿机ID（Miner ID) & IP 可以为任意值
 ![](../res/Try_the_demo/demo-mining-machine-details.png)
 
   2）质押 ： 除了种植茶树种子到矿机中，质押是另一种产生TEA收益的方式。有些用户出于各种原因不愿意自己去种植茶树或没有茶树种子可种，他们可以将自己的茶树种子或者TEA质押到已经被种植的茶树上，分享该茶树的收益。在Mining Camellia里面可以看见目前已经被种植的茶树，点击stake进行质押。
