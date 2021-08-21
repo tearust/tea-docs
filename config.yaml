@@ -64,6 +64,8 @@ sort:
         path: /中文资料/go2market.md
       - name: T计划的矿工经济学
         path: /中文资料/miner_tokenomics.md
+      - name: 挖矿竞赛简介(2.1赛季)
+        path: /中文资料/mining_contest_epoch_2.1.md
   # - name: 中文资料
   #   path: chn/README.md
   #   children:
