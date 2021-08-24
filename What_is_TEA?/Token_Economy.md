@@ -1,12 +1,10 @@
 # Challenges in TEA Token Economy Design
 ![money monkey](https://miro.medium.com/max/770/0*wHuoeWVaAxxfRVRU.png)
 
-
-
 Token economy design is neither easier nor less important than technical design in a blockchain project. As a code monkey, I learned a lot about economics in recent years, but I still feel shaky when designing the TEA token economy. Thankfully, I got a lot of help from our community members such as "Blue Fox."
 Today, I will talk about the challenges I was facing and how we plan to overcome them.
 
-> You can skip the detail and jump to the last session **miners economy** of this article to learn "How TEA can cold start and make miners and all of us rich". 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qnZAsosHOTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Roles in the TEA Ecosystem That Need to Be Addressed
 
