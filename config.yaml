@@ -25,6 +25,7 @@ sort:
   - name: Blog_and_Vlog
     path: Blog_and_Vlog/README.md
     children:
+      - name: Bi-Weekly-Report-08-27-21.md
       - name: Bi-Weekly-Report-08-13-21.md
       - name: Bi-Weekly-Report-07-29-21.md
       - name: Gluon_yet_another_crypto_wallet.md
