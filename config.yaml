@@ -25,6 +25,7 @@ sort:
   - name: Blog_and_Vlog
     path: Blog_and_Vlog/README.md
     children:
+      # - name: Epoch_3_What_is_new.md
       - name: Bi-Weekly-Report-08-27-21.md
       - name: Bi-Weekly-Report-08-13-21.md
       - name: Bi-Weekly-Report-07-29-21.md
