@@ -161,5 +161,3 @@ As long as you make some TEA from mining or simply from incurring COFFEE debt, u
 
 ## YTB TApps contest
 Contestants can choose to invest in a YouTube videos TApp and then use their social influence to increse the value of their YTB Tapps investment. They can use curation marketing and their social media influence to pump up the views by sharing the YouTube link and spreading its popularity on social media.
-
-
