@@ -57,7 +57,7 @@ You can see how much Genesis TEA Loan debt you have outstanding in your wallet:
 ## Top up is back
 During epoch 2, several contestants fell into trouble when their remaining TEA was too low to make any transactions. Although it's always best to avoid running out of gas on the way to the gas station, sometimes it still happens. To help those who've fallen below the appromimate .0003 TEA balance necessary to make transactions, we've added back the **top up** button. You can click the top up button to get 0.1 TEA. It won't make you rich, but it'll at least help you drive to the gas station!
 
-[[Pasted image 20210829123656.png]]
+![[Pasted image 20210829123656.png]]
 
 ## Mining machines are no longer free. Contestants will use COFFEE to buy one
 You will now not only need to pay the 1000 TEA stake (or 1 staked CML) to start mining, epoch 3 will also require paying COFFEE to buy a mining machine. Going forward, this is what's needed to start a mining machine during epoch 3:
