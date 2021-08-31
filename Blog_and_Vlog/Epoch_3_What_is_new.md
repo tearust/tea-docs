@@ -156,7 +156,7 @@ Dumb mining means you start a mining CML but do not host any TApps. In this case
 
 As long as you make some TEA from mining or simply from incurring COFFEE debt, use your TEA to invest in the bonding curve of TApps. If you invest in the correct TApp, it will make much more than COFFEE's compound interest. Of course, if you don't choose wisely, that will affect your standing on the leader board. Your total asset value is calculated based on how many TApp tokens you own multiplied by the current token price. Because the market cap of your bonding curve tokens is part of how your assets are evaluated on the leader board, it's very important to choose your YTB TApp wisely.
 
-## Tips and tricks for new epoch 3
+## Tips and tricks for epoch 3
 Many of you have probably gained many tips and tricks from epoch 2. Most of them are still valid for epoch 3, but some of the strategies will need changing. 
 
 For example, the YTB TApps are now part of the contest and the YouTube video's tokens that you invest in are a core part of your assets. Contestants can use a content curation strategy to increase the value of the YouTube video's TApp they've invested in. They can do this by using their social media influence to pump up the views by sharing the YouTube link and spreading its popularity on social media. This is how someone can use their social influence to increase the value of their YTB Tapp investment.
