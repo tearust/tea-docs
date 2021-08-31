@@ -1,5 +1,4 @@
-# Epoch 3.0 vs Epoch 2.1 
-### Changes in Financial Services
+# Changes in Financial Services
 
 ## Anyone can join at any time
 In epoch 2.1, only those who registered before the epoch started could join the contest. Now in epoch 3.0, anyone can join the contest at any time. 
