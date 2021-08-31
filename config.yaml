@@ -38,8 +38,7 @@ sort:
     path: Try_the_demo/README.md
     children:
       - name: Useful_Info_for_Miners.md
-      - name: Demo_2020
-        path: Demo_2020/README.md
+      - name: Demo_2020/README.md
   - name: Under_the_hood
     path: Under_the_hood/README.md
     children:
