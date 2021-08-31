@@ -4,46 +4,46 @@
 ## 任何人在任何时间都可以参加比赛
 在 epoch 2.1, 只有在epoch开始之前注册的用户可以参加比赛。在epoch 3.0,任何人可以在任何时间参加比赛。
 
-预先注册的唯一优势是注册用户将以固定价格获得 CML 优惠券（但不像 epoch 2.1 那样免费）。
+预先注册的唯一优势是注册用户将以固定价格获得 CML 优惠券（CML 优惠券不再免费）。
 
 ## CML 优惠券不再免费
-在比赛开始前注册的，仍然可以申请 CML 优惠券。但是用户在兑换优惠券时需要支付COFFEE。价格如下:
+在比赛开始前注册的，仍然可以申请 CML 优惠券。但是用户在兑换优惠券时需要支付 COFFEE。价格如下:
 
-- 类型 A: 2000 COFFEE
-- 类型 B: 1000 COFFEE
-- 类型 C: 500 COFFEE
+- 种子类型 A: 2000 COFFEE
+- 种子类型 B: 1000 COFFEE
+- 种子类型 C: 500 COFFEE
 
 
-用户只能 **一次性** 兑换所有优惠券。例如，您不能在保持其他 CML 优惠券不变的情况下兑换一种 C 型种子。因此，当您填写注册表时，请确保您可以为每种类型的种子预先支付那么多的COFFEE费用。所有参赛者都可以以下面讨论的利率借用COFFEE。
+用户只能 **一次性** 兑换所有优惠券。例如，您不能在保持其他 CML 优惠券不变的情况下兑换一种 C 型种子。因此，当您填写注册表时，请确保您可以为每种类型的种子预先支付那么多的 COFFEE 费用。所有参赛者都可以用下面讨论到的利率借用 COFFEE。
 
-## 所有转移交易都将被禁掉
-您不能在不同账户之间转移资金或优惠券。这是为了防止作弊和避免使用多个帐户。
+## 所有转移交易都将被禁止
+您不能在不同账户之间转移资金或优惠券。这是为了防止作弊和避免一个人使用多个帐户参赛。
 
-**所有资金转账交易都列在区块链上。任何违反禁止转移规则的人都将被取消资格并从奖励列表中删除。**
+**所有资金转账交易都列在区块链上。任何违反禁止转账规则的人都将被取消资格并从奖励列表中删除。**
 
 ## 没有初始资金（但可以无限地使用 Genesis Loans of COFFEE）
 ![](../Blog_and_Vlog/Pasted%20image%2020210829121628.png)
 
-您不会像在 epoch 2 挖矿比赛期间那样获得任何初始资金。但您现在可以不受限制地借用 COFFEE。当您需要资金时，您可以借用 COFFEE，然后按现行汇率将其转换为 TEA。但请注意，这是一种债务：COFFEE 每 100 个区块的复合利率为 0.2%（这个数字可能会发生变化。）如果您在这个时期积累资产的同时没有做好债务管理，您可能最终会负余额！
+您不会像在 epoch 2.1 挖矿比赛期间那样获得任何初始资金。但您现在可以不受限制地借用 COFFEE。当您需要资金时，您可以借用 COFFEE，然后按现行汇率将其转换为 TEA。但请注意，这是一种债务：COFFEE 每 100 个区块的复合利率为 0.2%（这个数字可能会发生变化。）如果您在比赛期间积累资产的同时没有做好债务管理，您可能最终会负债！
 
-## 参赛者必须还清COFFEE债务，才有资格获得最终奖励
+## 参赛者必须还清 COFFEE 债务，才有资格获得最终奖励
 
-每个人都需要在 epoch 结束时还清所有的 COFFEE 债务。不这样做会导致被取消比赛奖励的资格。鉴于大多数人可能会在比赛临近结束时急于还清 COFFEE 债务，当许多人试图获得必要的 COFFEE 进行还债时，汇率可能会很高。 **考虑比其他人更早地还清 COFFEE 债务是明智的做法。**
+每个人都需要在 epoch 结束时还清所有的 COFFEE 债务。否则将被取消比赛奖励的资格。鉴于大多数人可能会在比赛临近结束时急于还清 COFFEE 债务，此时 COFFEE 的汇率可能会很高。 **考虑比其他人更早地还清 COFFEE 债务是明智的做法。**
 
 ## COFFEE 有信用利率和债务利率
 
-在 epoch 2.0 中，没有 COFFEE 债务。如果您的帐户余额中有 COFFEE，您可以坐收复利。现在，由于您可以借 COFFEE，因此也会有债务利率。债务方与信贷方具有相同的复合利率。初始利率设置为每 100 个区块 0.2%。与 epoch 2 的 0.5% 初始速率相比，这要低得多。但由于这是一个复合利率，随着时间的推移，这个数字可能会导致账户余额不断攀升。借用 COFFEE 时，请注意您的贷款余额。
+在 epoch 2.1 中，没有 COFFEE 债务。如果您的帐户余额中有 COFFEE，您可以坐收复利。现在，由于您可以借 COFFEE，因此也会有债务利率。债务方与信贷方具有相同的复合利率。初始利率设置为每 100 个区块 0.2%。比 epoch 2.0 的 0.5% 初始利率低得多。但由于这是一个复合利率，随着时间的推移，这个数字可能会导致账户余额不断攀升。借用 COFFEE 时，请注意您的贷款余额。
 
 ## DAO 可能会对 COFFEE 利率进行调整
 
-DAO 可能会在比赛期间更改该值。我们会提前在群中通知任何利率变化。
+DAO 可能会在比赛期间更改利率。我们会提前在群中通知任何利率变化。
 
 ## 请特别留意这是复利 
 
 复利在开始时可能看起来只是一个小数字，但随着时间的推移，它可能会将您的负债余额变成一个可怕的数字。所以务必做好债务控制。
 
 ## Genesis TEA Loan 的可变利率由 AMM 曲线决定
-在 epoch 3.0 中，您仍然可以使用冻结的 CML 种子作为 Gensis Loan 的抵押品。在 epoch 2 挖矿比赛中这个抵押贷款的利率为 0.1% 。现在，利率将根据 Genesis Loan 流动池中剩余的 TEA 决定。这是使用 AMM 曲线计算的。这意味着流动池中剩余的 TEA 越少，利率就越高。利率将是一个灵活的复利利率，每 100 个区块重新计算一次。因此，无论您贷款时的利率是多少，您支付的当前利率都是最近 100 块重新计算的利率。
+在 epoch 3.0 中，您仍然可以使用冻结的 CML 种子作为 Gensis Loan 的抵押品。在 epoch 2.1 挖矿比赛中这个抵押贷款的利率为 0.1% 。现在，利率将根据 Genesis Loan 流动池中剩余的 TEA 决定。这是使用 AMM 曲线计算的。这意味着流动池中剩余的 TEA 越少，利率就越高。利率将是一个变化的复利利率，每 100 个区块重新计算一次。因此，无论您贷款时的利率是多少，您支付的当前利率都是最近 100 块重新计算的利率。
 
 ![](../Blog_and_Vlog/Pasted%20image%2020210829123140.png)
 
@@ -60,44 +60,45 @@ DAO 可能会在比赛期间更改该值。我们会提前在群中通知任何�
 ![](../Blog_and_Vlog/Pasted%20image%2020210829132950.png)
 
 ## 充值功能
-在 epoch 2 中，一些参赛者因为剩余的 TEA 太低而无法进行任何交易而陷入困境。尽管最好避免在去加油站的路上耗尽汽油，这种情况有时仍然会发生。为了帮助用户摆脱这种困境（比如TEA 余额低于 0.0003），我们重新添加了**充值**按钮。您可以点击充值按钮获得0.1 TEA。它不会让您变得富有，但它至少会帮助您能把车开到加油站！
+在 epoch 2.1 中，一些参赛者因为剩余的 TEA 太低而无法进行任何交易而陷入困境。尽管最好避免在去加油站的路上耗尽汽油，这种情况有时仍然会发生。为了帮助用户摆脱这种困境（比如TEA 余额低于 0.0003），我们重新添加了**充值**按钮。您可以点击充值按钮获得0.1 TEA。它不会让您变得富有，但它至少会帮助您能把车开到加油站！
 
 ![](../Blog_and_Vlog/Pasted%20image%2020210829123656.png)
 
 
 ## 矿机不再免费。参赛者需要使用 COFFEE 购买矿机
-在 epoch 3 中，开始挖矿时，您不但需要质押 1000 TEA  (或者质押一个种子 CML) , 你还需要使用 COFFEE 购买矿机。以下是在 epoch 3 中启动挖矿需要的条件：
+在 epoch 3.0 中，开始挖矿时，您不但需要质押 1000 TEA  (或者质押一个种子 CML) , 你还需要使用 COFFEE 购买矿机。以下是在 epoch 3.0 中启动挖矿需要的条件：
 
 - 解冻的种子 CML 种到矿机中。
 - 1000 TEA 或者 1 个 CML (解冻或者未解冻的种子都可以) 作为矿机第一个质押位置的质押物.
 - 需要支付矿机的 COFFEE 。
 
-矿机价格取决于被种植的 CML 种子的类型。我们目前要求类型 A CML 支付 2000 COFFEE，类型 B CML 支付 1000 COFFEE，类型 C CML 支付 500 COFFEE。矿机不可重复使用。如果你从矿机上卸载 CML，那台矿机也不见了。
+矿机价格取决于被种植的 CML 种子类型。我们目前要求类型 A CML 支付 2000 COFFEE，类型 B CML 支付 1000 COFFEE，类型 C CML 支付 500 COFFEE。矿机不可重复使用。如果你从矿机上卸载 CML，那台矿机也不见了。
 
-# Epoch 3 联合曲线投资
+# Epoch 3.0 联合曲线投资
 
-在 epoch 2 中，矿工有两种方式可以赚取 TEA：自己挖矿或质押另一个挖矿的 CML。
+在 epoch 2.1 中，矿工有两种方式可以赚取 TEA：自己挖矿或质押另一个挖矿的 CML。
 
-在 epoch 3 中，除了挖矿和质押之外，还有两种新的方式来获得 TEA 收入：
+在 epoch 3.0 中，除了挖矿和质押之外，还有两种新的方式来增加 TEA 收入：
 
 - 您可以通过 TApp 的联合曲线购买其代币从而成为该项目的投资者，这就类似风险投资家投资一个项目。
 - 您可以使用您正在挖矿的 CML 托管 TApp 来赚取托管费。就像亚马逊向您收取云托管费一样，当您是提供云基础设施的矿工时，您将获得这笔费用。
 
- 在 epoch 3 中，每个 TApp 将代表一个特定的 YouTube 视频。获胜视频（观看次数最多的视频）将获得 1500 美元的额外奖金，将分配给该TApp所有代币持有者。
+ 在 epoch 3.0 中，每个 TApp 将代表一个特定的 YouTube 视频。获胜视频（观看次数最多的视频）获得 1500 美元的额外奖金，将分配给该TApp所有代币持有者。
 
 ## 投资 TApps 
-在 epoch 3 中, 新增加了 TApps 页面.
+在 epoch 3.0 中, 新增加了 TApps 页面.
 
 ![](../Blog_and_Vlog/Pasted%20image%2020210829133646.png)
 
 在这个页面，您可以看见现有的 TApps，每个TApp后面的按钮用于投资或者托管该TApp。
 
 **投资**意味着您将成为该 TApp 的股东，就像您购买公司的股票一样。
+
 不同之处在于您是从称为 **联合曲线** 的智能合约中购买的。您向联合曲线支付 TEA 并获得特定的 TApp 代币。例如，在上面那个截屏中，如果您支付 TEA 购买它们，您将拥有 **DDF** 和 **TYB** 代币作为您的资产。代币的价格由 AMM 根据每个代币的联合曲线计算。一般来说，越早投资，价格越低。
 
 ![](../Blog_and_Vlog/Pasted%20image%2020210829135156.png) (此图中, n > 1, 但是我们假定 n = 1/2 and m = 1 和 0.7)
 
-在 epoch 3 中, 我们使用基础的联合曲线 ![](../Blog_and_Vlog/Pasted%20image%2020210829134248.png)
+在 epoch 3.0 中, 我们使用基础的联合曲线 ![](../Blog_and_Vlog/Pasted%20image%2020210829134248.png)
 
 **a** 为买入曲线为 1，卖出曲线为 0.7。积分 ![](../Blog_and_Vlog/Pasted%20image%2020210829134521.png)用于计算资金池和储备池的 TEA 金额。
 
@@ -107,67 +108,72 @@ DAO 可能会在比赛期间更改该值。我们会提前在群中通知任何�
 
 ## 卖出你的投资
 
-与传统的订单薄市场不同，您在出售投资代币时不需要有买家。你实际上是把它卖给联合曲线。卖出价格基于预定义的规则，即**卖出曲线是买入曲线的 70%**。如果您购买代币并立即出售，您将损失 30%。 这部分资金将进到 TApps 所有者的资金池。
+与传统的订单薄市场不同，您在出售投资代币时不需要有买家。您实际上是把它卖给联合曲线。卖出价格基于预定义的规则，即**卖出曲线是买入曲线的 70%**。如果您购买代币并立即出售，您将损失 30%。 这部分资金将进到 TApps 所有者的资金池。
 
 ![](../Blog_and_Vlog/Pasted%20image%2020210829140043.png)
 
-## Dividend (consumer usage) and expense(paying the hosting fee)
+## 股息（消费者使用）和费用（支付托管费）
 
-The income and expense of the TApp will go directly to and from the bonding curve as well. The TApp here is a simple DAO that is managed by code and not by the app developers. The bonding curve will automatically calculate how to distribute revenue to shareholders or take tokens from a wallet to pay for expenses.
+TApp 的收入和支出也将直接从联合曲线进出。这里的 TApp 是一个简单的 DAO，它由代码管理，而不是由该应用程序开发人员管理。联合曲线将自动计算如何将收入分配给股东或从钱包中取出代币来支付费用。
 
-![[Pasted image 20210829135046.png]]
+![](../Blog_and_Vlog/Pasted%20image%2020210829135046.png)
 
-When a consumer pays to use this YTB TApp, the funds will be distributed based on the bonding curve's predefined logic. This also hold true for the expenses, such as paying for hosting fees.
+当消费者付费使用此 YTB TApp 时，资金将根据联合曲线的预定义逻辑进行分配。这也适用于费用，例如支付托管费。
 
-The bonding curve is constantly changing. Every consume and expense event will make the price change a little. This is how a typical AMM (Automatic Market Maker) application works to attract venture capital.
+联合曲线是不断变化的。每个消费和费用支付事件都会使价格发生一点变化。这就是典型的 AMM（自动做市商）应用程序吸引风险投资的方式。
 
-![[Pasted image 20210829135617.png]]
+![](../Blog_and_Vlog/Pasted%20image%2020210829135617.png)
 
-Once you've invested in any TApps, you can see them in your Assets page under the **My investment in TApps** tab:
+一旦你投资了任意一个 TApp，你将会在Asset 页面上 **我的TApps投资**标签下面看到：
 
-![[Pasted image 20210829134905.png]]
+![](../Blog_and_Vlog/Pasted%20image%2020210829134905.png)
 
-## What if I have no idea about bonding curves and fancy equations?
-It's not important that you understand all the nuances of the bonding curve in order to use it effectively just as you don't need to know how an engine works to drive a car. Very few people in the world totally understand how Wall Street works but they still use their financial services every day. Of course, those who understand the important aspects of the financial system are in a better position to make more money. 
+## 如果我对联合曲线和那些花俏的数学公式一窍不通怎么办？
+ 
+了解联合曲线的所有细节以及如何有效使用它并不重要，就像您驾驶一辆汽车而不需要知道发动机如何工作一样。世界上很少有人完全了解华尔街的运作方式，但每天仍然很多人使用他们的金融服务。当然，那些深刻了解金融体系的人会大概率赚更多的钱。
 
-If you don't yet understand how the bonding curve works to set prices, try to buy or sell a TApp's token and notice how the price changes. Sooner or later you'll get the gist of how the bonding curve price correlates with supply. Bonding curves are becoming an increasingly important part of more and more crypto projects, so learning about them now will put you ahead of those Wall Street people. 
+如果您还不了解联合曲线如何设定价格，可以尝试买入和卖出 TApp 的代币并注意观察价格如何变化。进而你会理解联合曲线的价格是如何与供应量相关联的。联合曲线正在成为越来越多加密货币项目重要的组成部分，因此现在去了解它将使您领先于华尔街上的金融专家。
 
-# Epoch 3: hosting TApps = hosting income
-TApps need to be hosted in mining machines to run. This is exactly what the TEA Project is designed for - to make a decentralized cloud computing platform. 
+# Epoch 3.0: 托管 TApps = 托管收入
 
-If your mining machine starts without hosting any TApp, it just makes the basic RA (Remote Attestation FaaS public service fee). That amout is very little, not even enough to cover the COFFEE interest you paid for the loan amount to buy your machine. So to prevent financial insolvency, you have to find a more profitable usage of your mining machine, which is to host TApps and earn a hosting income. That is the better way to utilize your mining machine.
+如果你的矿机启动时没有托管任何TApp，它只能做基本的RA（远程认证FaaS公共服务费）。这笔钱很少，甚至不足以支付您贷款 COFFEE 来购买矿机的利息。所以为了防止破产，您必须让您的矿机产生额外收益。托管TApps 赚取托管收入则是利用矿机的更好方式。
 
-## Host / unhost TApp
-![[Pasted image 20210829140839.png]]
+## 托管/取消托管 TApp
 
-In the TApp list, you can host or unhost TApps for your mining CML. There are few important rules you will need to know.
+![](../Blog_and_Vlog/Pasted%20image%2020210829140839.png)
 
-### Performance requirement and remaining performance
+在您的TApp 列表中，可以用你正在挖矿的矿机托管或者取消托管 TApp。这里您需要了解一些重要的规则。
 
-Your CML has to have enough **remaining performance** to cover the cost of the TApp's **Host performance requirement**.  Because your CML has limited performance, the TApps it can possibly host are also limited. With this limitation, you should be smart enough to choose the TApps that make the most out of your CML's performance.
+### 性能要求和剩余性能
 
-### Current /Max hosts
+您的 CML 必须有足够的 **剩余性能** 来支付 TApp 的**主机性能要求** 的成本。由于您的 CML 的性能有限，一个 TApp 可以被托管的矿机也有限。基于这个限制，您应该明智地选择托管能够充分利用您的 CML 性能的 TApp。
 
-For most TApps, as long as the hosting CML reaches a minimum threshold, the application performance will be good enough. More hosting CMLs for the TApp won't increase performance past a point and sometimes might even cause the performance to degrade. So every TApp has to have an upper limit called **Max hosts**. 
+### 当前/最大托管矿机数
 
-Another consideration is the cost of hosting. The more hosts a TApp has, the more the TApp will need to pay for its hosting fee. So if there's a popular and profitable TApp in the list, you'll need to rush to host it before it reaches the max hosts number.
+对于大多数 TApps 而言，只要托管 CML 矿机数达到最低阈值，应用程序的性能就会足够好。为 TApp 托管更多的 CML 矿机不会一直提高性能，有时甚至可能导致性能下降。所以每个 TApp 都必须有一个托管矿机的上限，称为 **Max hosts**。
 
-In epoch 3, we simply set **Max hosts** to a fixed value. In real life, these numbers are constantly changing due to the scale changes as required by the TApp.
+另一个考虑因素是托管成本。 TApp 拥有的主机越多，TApp 需要支付的托管费就越多。因此，如果您在TApp 列表中发现热门且有利可图的 TApp，您需要其在达到最大托管机数之前赶紧托管它。
 
-## YTB TApp simulator
-The TApps for epoch 3 will be simulated TApps each based on a YouTube video that covers some aspect of the TEA Project. We have a non-playing character (NPC) called **sudo** who will create 3 video TApps, and pay TEA as a consume action every day based on the view numbers on YouTube. The sudo account will check YouTube view numbers at a moment in time each day. The one who has the largest increase will win the TEA for that day.
+在 epoch 3.0 中，我们简单地将 **Max hosts** 设置为一个固定值。在现实中，这些数字由于 TApp 要求的规模变化而不断变化。
 
-- The sudo account notes who has the largest gain in views compared to 24 hours ago and notes down the increased view count (let's call it **delta**) of the winner for that day.
-- The sudo account pays one TEA for each increased view of the winner (**delta** TEA in total) using the "consume" function every day. For example, let's say video A has the most views in the past 24 hours. It was at 100 views yesterday but now is at 180 views today. Sudo will consume 80 TEA into video A's TApp bonding curve.
 
-## Tips and tricks for new epoch 3
-Many of you have probably gained many tips and tricks from epoch 2. Most of them are still valid for epoch 3, but some of strategies will need changing. You can learn about and share your best contest strategies over at our [mining contest strategy discussion](https://github.com/tearust/teaproject/discussions/31).
+## YTB TApp 模拟器
 
-## Hosting and investments makes much more than dumb mining
+epoch 3.0 中的 TApp 将是模拟 TApp，每个 TApp 是介绍 TEA 项目的 YouTube 视频。我们有一个叫 **sudo** 的非参与角色（NPC），他会创建 3 个视频 TApp，并根据 YouTube 上的观看次数每天支付 TEA 作为消费动作。 sudo 帐户每天都会及时检查 YouTube 观看次数。涨幅最大的将赢得当天的TEA。
 
-Dumb mining means you start a mining CML but do not host any TApps. In this case, the CML will only run the public services like RA which makes very little money. To be more competitive, try hosting TApps to earn the hosting fee.
+- sudo 帐户记录与 24 小时前相比观看次数增加最多的视频，并记下当天获胜者的观看次数增加值（我们称之为 **delta**）。
+- sudo 帐户每天使用“消费”功能为获胜者每增加一次观看次数（**delta** TEA）支付一个 TEA。例如，假设视频 A 在过去 24 小时内的观看次数最多：昨天是 100 次观看，今天是 180 次观看。 Sudo 将消耗 80 TEA 进入视频 A 的 TApp 联合曲线。
 
-As long as you make some TEA from mining or simply from incurring COFFEE debt, use your TEA to invest to the bonding curve of TApps. If you invest in the correct TApp, it makes much more than the compound interest. Of course, if you don't choose wisely, that will affect your standing on the leader board. Your total asset valuation is calculated based on how many TApp tokens you own multiplied by the current token price. Because the market cap of your bonding curve tokens is part of how your assets are evaluated onn the leader board, it's very important to choose your YTB TApp wisely.
+## epoch 3.0 的一些玩法技巧和窍门
 
-## YTB TApps contest
-Contestants can choose to invest in a YouTube videos TApp and then use their social influence to increse the value of their YTB Tapps investment. They can use curation marketing and their social media influence to pump up the views by sharing the YouTube link and spreading its popularity on social media.
+您们中的许多人可能已经从 epoch 2.1 挖矿比赛中获得了许多技巧和窍门。其中大部分在 epoch 3.0 中仍然有效，但有些策略需要改变。您可以在我们的 [挖矿竞赛策略讨论](https://github.com/tearust/teaproject/discussions/31) 中了解和分享您的最佳竞赛策略。
+
+## 托管和投资比苦哈哈地挖矿更挣钱
+
+dumb mining 意味着您开始 CML 挖矿但不托管任何 TApp。在这种情况下，CML 将只能运行像 RA 这样的公共服务，收入有限。为了更具竞争力，您可以尝试托管 TApps 以赚取托管费。
+
+只要您通过挖矿或仅仅通过借的 COFFEE 来得到一些 TEA，就可以用您的 TEA 投资于 TApp 的联合曲线。如果您投资的 TApp 表现良好，它带给您的的收益将远超复利。当然，如果你选择不明智，那会影响你在排行榜中的位置。您的总资产估值是根据您拥有的 TApp 代币数量乘以当前代币价格计算得出的。由于您的联合曲线代币的市值是您的资产在排行榜上的评估方式的一部分，因此明智地选择您的 YTB TApp 非常重要。
+
+## YTB TApps 比赛
+
+参赛者可以选择投资 YouTube 视频 TApp，然后利用他们的社交影响力来增加其 YTB Tapps 的投资价值。他们可以利用策展营销及其社交媒体影响力，通过分享 YouTube 链接在社交媒体上传播提高知名度进而提高观看次数。
