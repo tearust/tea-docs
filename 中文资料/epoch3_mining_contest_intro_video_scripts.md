@@ -1,3 +1,9 @@
+点击观看 Youtube 视频. 下面是中英文文稿
+
+[![Jg8tkBqA2ww](https://img.youtube.com/vi/Jg8tkBqA2ww/0.jpg)](https://www.youtube.com/watch?v=Jg8tkBqA2ww)
+
+
+
 Hey everyone，I wanted to give you a preview of our TEA browser wallet as we approach the epoch 3 mining contest. 
 大家好，在我们即将开始 epoch 3 挖矿竞赛时，我想向您展示我们的 TEA 浏览器钱包 。
 
