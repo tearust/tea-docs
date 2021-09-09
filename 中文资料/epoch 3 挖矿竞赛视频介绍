@@ -31,3 +31,41 @@
 说到排行榜，我们可以通过查看您在此处拥有的资产（包括您的预计挖矿收入）、您的账户余额（
 包括您的 TApp 代币价值）等， 我们减去您的债务得出您的账户总价值。排行榜前 20 名将分享本次竞赛的奖金奖励 。最后，我祝您在这次挖矿比赛中一切顺利。
 
+英文
+Hey everyone，I wanted to give you a preview of our TEA browser wallet as we approach the epoch 3 mining contest. Now if you sign up early using our landing page and you click on through to the form, you can select how many A coupons, B and C coupons you'll want for the CML seeds. Now if you join the contest late, you can still buy CML seeds over on the marketplace. And you won't be at much of a disadvantage because for those who got the CML coupons such as this account right here, you now have to pay money to use these coupons.
+So you'll want to first start off by borrowing some COFFEE. Now COFFEE has initially a 20000 debt limit, so right here I have approximately 4000 left on this account because I've already borrowed sixteen thousand. Once you've borrowed 20,000 COFFEE the debt ratio kicks in and your assets must not dip below 50% of the debt if you want any more coffee funding.
+So let's go ahead and redeem these coupons. I'll sign into my polkadot wallet. And you'll notice that my COFFEE went down from 6000 to 4000. And you can see the various CML types you have: C, B, and A seeds here. And each type of seed has a different potential: the A seeds are the most powerful, followed by B and then the C seeds. And you notice currently they're at 0 (power) but as they mature in their timeline they'll start approaching their peak performance.
+Now if we try to plant one of these seeds into a mining machine you will see that this will cost 500 COFFEE and also you will need 1000 TEA for the initial staking slot. And if you need some TEA for your initial staking slot you can exchange some of your COFFEE for TEA using these buttons over here. Now there's four different ways you can make money from your CML seeds.
+The first and easiest way applies for both frozen and defrosted seeds. Now to see whether your
+seed is frozen or whether it's defrosted you can look into this column here. If it shows zero
+and it shows this icon that it's plantable, that means it's defrosted. You'll notice that currently this is the only seed right now that is still in the frozen state. Now the only thing you can do for a frozen seed is to deposit it for a loan. Now you can read the loan agreement.
+Basically you have to pay interest on the loan and if you don't pay the interest i think it's about
+a three-day period during our accelerated epoch then you'll lose the collateral for your loan.
+So I will go ahead and take out a TEA genesis loan for this camellia seed because frozen seeds
+they really don't do you much good when they're just sitting in your wallet. Now after you've taken out the loan you can head over to this tab and see your various collateral for your loans.
+And the TEA obviously goes into your balance. Now we have an extra option. We used to have it
+where you can only pay off the loan, that was the last epoch. Now we can actually pay the interest. So right now there's barely any interest, I could just pay off the interest and that will
+turn over the loan let's say if it was getting close to the end that means that would extend it
+for another three days. So that's actually going to be a preferable option as you're waiting for
+these seeds to defrost so that you can do some of the other options. So let's go ahead and take
+a look at what are some other things you can do once these seeds are in fact defrosted. Now
+of course you can always do the same thing you can deposit it for a loan, but that's probably
+going to be your least profitable scenario for these defrosted seeds. The first is you're going
+to be able to plan it into a mining machine, and that opens up a lot of different areas. So
+for the miner Id you can put in anything you want same for the IP. These are just any old number will do because we're not really mining, this is a simulation and this explains it more down here.
+Then you click plant and that'll get the process started. Again remember that it's going to take
+500 COFFEE and 1000 TEA for your initial stake and there you can see that we've started our
+mining on this camellia 443. 
+So the second thing you can do with a camellia seed that's defrosted is let's say that you don't really want to plant a seed yet. You want to maybe if you think you can make more money by staking it in a different mining machine. So you'll head over to take a look at everyone else's mining and maybe you'll want to find a particular machine oh look what we found in an A machine that has only one staker. So why don't we go ahead and try staking one of our seeds into that machine, so we can go ahead and select that seed and we don't have to worry about slippage at this point and confirm. And that will go ahead and put that seed into a staking slot so that we start earning some of the income from this mining machine.
+So if we take a look up here we can see that our camellia seed is staked on the second slot in this mining machine. Now if you look at the TApps you'll notice that each t app is able to be hosted
+according to two requirements: one is that you can't exceed the maximum number
+of allowed hosts. For instance this one right here let's say I want to host this. It says five out of five, what does that mean? Well if i go to host it says that, oh here it says right here, "this
+TApp no longer accepts new hosts." So that will tell you when a particular TApp is at
+its maximum number of hosts. Pardon the jump cut. I'm actually coming back in at a different epoch because I forgot to explain one important detail. Now I'm in vitalik's account right now and if I go over to his assets you can see that he has one C camellia seed that's mining and you can see its current power is 2960. So if we go over to TApps and vitalik might be saying "okay i have 2960 power. What kind of TApps can I host?" So this is the minimum host performance requirement and you can see here this one here at 2000 so if i choose to host this one, you see
+a remaining performance of 2960. Since that one requires 2 000 i should be okay. So let's see I go click the host button and it should go through. So okay now let's try, let's say i get ambitious and i want to host this one right here let's see what happens. Now I have only 960 remaining. So what's happening is that whatever your performance is for your camellia seed whenever you host a TApp, that minimum host requirement is being subtracted from your existing performance. So with only 960 left, I have no option to host this TApp. My only option of these would be to host
+this one right here this 500. I would meet that requirement so I can host that TApp.
+And that would be all the t apps that I can host. Speaking of the leaderboard, we can take a look
+at how this is actually calculated by seeing that you have your assets over here including your
+projected mining income your account balances including your TApp token values. We subtract
+out your debt to come up with your account value. And the top 20 on the leaderboard will share in the rewards for this epoch. And with that I wish you all the best of luck during this mining contest.
+
