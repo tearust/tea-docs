@@ -26,6 +26,7 @@ sort:
     path: Blog_and_Vlog/README.md
     children:
       - name: Epoch_3_What_is_new.md
+      - name: Bi-Weekly-Report-09-16-21.md
       - name: Bi-Weekly-Report-08-27-21.md
       - name: Bi-Weekly-Report-08-13-21.md
       - name: Bi-Weekly-Report-07-29-21.md
@@ -33,7 +34,6 @@ sort:
       - name: Can_trusted_computing_protect_your_digital_assets.md
       - name: Turn_ipfs_file_system_to_ipfs_function_service.md
       - name: Tea_at_the_Edge_taas_concept.md
-      - name: TEA_Project_business_model.md
   - name: Try_the_demo
     path: Try_the_demo/README.md
     children:
