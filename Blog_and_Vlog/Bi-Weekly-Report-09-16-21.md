@@ -5,11 +5,11 @@ Eager to improve on our last mining contest, we've happy to announce that our ep
 - More contestants on board with participation up 50%.
 - Higher USDT rewards.
 - More YouTube videos promoting the contest. We've invited two YouTubers, [Goalorious](https://www.youtube.com/channel/UCATk5kugWqzwe80NIXwGIyQ) and [Common Sense Crypto](https://www.youtube.com/channel/UCoa0ZuZZgvTRSBSCrHZ8Fuw), to promote our epoch 3 contest. Their videos were also featured as TApps in the competition.
-- New TApps join the network as a source of income for miners to host and for token speculators to invest in.
+- New TApps join the network as a source of income for miners to host and for token speculators to invest in. The TApps in epoch 3 were simulated to test the token business model. With the business model proven, we are now ready to release real, functioning TApps in the next epochs.
 
 ## TApps are Growing
 
-Epoch 3 introduced TApps into the TEA ecosystem as simple YouTube apps that used video views as a proxy for usage. Epoch 4 will go beyond that and launch our first TApp on the TEA network. This inaugural TApp will be called **TEA Party**, a messaging app for users on the TEA network. Its first use will be primarily for users to advertise their sales listings on the marketplace. We're excited to see how players use the TEA Party app and find new ways to communicate with each other to increase their profitability.
+Epoch 3 introduced TApps into the TEA ecosystem as simple YouTube apps that used video views as a proxy for usage. These were enough to allow users to buy and sell into the bonding curve as well as expense and consume events to alter the supply. The next two epochs will go beyond a simulation and launch our first TApp on the TEA network. This inaugural TApp will be called **TEA Party**, a messaging app for users on the TEA network. Its first use will be primarily for users to advertise their sales listings on the marketplace. We're excited to see how players use the TEA Party app and find new ways to communicate with each other to increase their profitability.
 
 ## Even More to Come in Epochs 4 & 5
 
