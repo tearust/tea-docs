@@ -14,7 +14,7 @@ COFFEE debt (and its limits) COFEE 债务 （和限额）
 
 Epoch 4 创收方式：挖矿，投资，创建TApps 
 
-TApps 是 epoch 4 的主要收入来源。 epoch 4 有两种主要类型的 TApps，都使用 TEAfluencer 社交媒体 TApp 模板：YouTube 和 Twitter。 YouTube TApp 是使用 YouTube 视频 ID 作为其种子创建的，而 Twitter TApp 是基于 Twitter 主题标签创建的。
+TApps 是 epoch 4 的主要收入来源。 epoch 4 有两种主要类型的 TApps，都使用 TEAfluencer 社交媒体 TApp 模板：YouTube 和 Twitter。 YouTube TApp 是使用 YouTube 视频 ID 作为其种子创建的，而 Twitter TApp 是基于 Twitter 主题标签创建的。参赛者如果想创建TApp，请在TEA Project群里留言，提供你的polkadot 地址和想使用的Youtube或者Twitter。
 
 什么是 YouTube 或 Twitter TApp？
 
