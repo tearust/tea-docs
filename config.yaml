@@ -73,6 +73,8 @@ sort:
         path: /中文资料/epoch3Preview.md
       - name: 挖矿竞赛第三季演示视频和文案
         path: /中文资料/epoch3_mining_contest_intro_video_scripts.md
+      - name: 挖矿竞赛第四季
+        path: /中文资料/epoch4.md
   # - name: 中文资料
   #   path: chn/README.md
   #   children:
