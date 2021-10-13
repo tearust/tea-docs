@@ -48,7 +48,7 @@ Clicking that button prints out the patient’s index card onto conveyor belt #1
 
  ![](./index_card_enters_conveyor_belt.png)
 
-The timestamp of when this index card was sent is added to the display, and the **Print Receipt** button for that column becomes active:
+The timestamp of when this index card touches down on the conveyor belt is reported back to the iPad which displays the timestamp in the appropriate column. After that, the **Print Receipt** button for that column becomes active:
 
  ![](./_print+send-conveyor-1-timestamp.png) 
 
@@ -58,7 +58,7 @@ To help show how receipts work, let’s imagine that the doctor next clicks **Pr
 
  ![](./_print+send-conveyor-2-click.png)
 
-This prints the patient’s index card to conveyor belt #2 and generates a **sent** timestamp for that conveyor belt that’s recorded in the appropriate column:
+This prints the patient’s index card to conveyor belt #2. Once the card is printed, conveyor belt #2 sends this timestamp back to the iPad which is recorded in the appropriate column:
 
  ![](./_print+send-conveyor-2-timestamp.png)  
 
@@ -75,17 +75,17 @@ The receipt itself will have a timestamp but, like a grocery receipt also has a 
 
 Every doctor is different in how they send in patient assessments. This can affect the number of patient index cards and the number of receipts that are printed.
 
-- **(possibly only once?)** There may be times when a doctor is absent-minded or in a hurry and doesn’t push **Print + Send** for one of the conveyor belts.
+- There may be times when a doctor is absent-minded or in a hurry and doesn’t push **Print + Send** for one of the conveyor belts.
 
-- Note that here are a max of 3 total receipts but there could be less than that. HIPAA compliance requires only one receipt for every patient’s index card, so the doctor will sometimes only push the **Print Receipt** button. Even though this is technically not by-the-book procedure, everyone understands that the hospital can get very busy and sometimes less than 3 receipts will be printed for a patient’s index card. So the doctor will sometimes only print just 1 or 2 receipts to achieve HIPAA compliance.
+- Note that there are a max of 3 total receipts but the total number could be less than that. HIPAA compliance requires only one receipt for every patient’s index card, so the doctor will sometimes only push the **Print Receipt** button once or twice. Even though this is technically not by-the-book procedure, everyone understands that the hospital can get very busy and sometimes less than 3 receipts will be printed for a patient’s index card. So the doctor will sometimes only print just 1 or 2 receipts to achieve HIPAA compliance.
 
 Doctors have their own idiosyncrasies and will push the buttons according to what feels natural to them.
 
-- Some will click **Print + Send** and then click**Print Receipt** for each conveyor belt.
+- Some will click **Print + Send** and then click **Print Receipt** for each conveyor belt.
 
 - Another doctor might prefer to click **Print + Send** for conveyor belts 1, 2, and 3 before then clicking **Print Receipt** for each conveyor belt.
 
-- Some will be much more loose and mix **Print + Send** with clicking the **Print Receipt** button. The only requirement is that the **Print + Send** button must be pressed for a conveyor belt before the **Print Receipt** button for it becomes active.
+- Some will be much more loose and mix **Print + Send** with clicking the **Print Receipt** button. The only requirement is that the **Print + Send** button must be pressed for a conveyor belt, and the conveyor belt must report back teh timestamp of it entering its conveyor belt, before the **Print Receipt** button for it becomes active.
 
  
 Just like in real life, it’s up to the nurse to deal with the doctor personality quirks and mixups and to make sure that the patient index cards are in the correct order.
@@ -93,24 +93,25 @@ Just like in real life, it’s up to the nurse to deal with the doctor personali
   
 ## Nurses job: keeping the Index Cards in the Same Order as Patient
 
-This is the area that the doctor is printing to - note the printers at the top of each conveyor belt:
+Here is the area that doctors are printing to (note the printers at the top of each conveyor belt):
 
 ![](./nurse-stations-overview.png)
 
 - Each conveyor belt is watched over by 1 nurse. They only have jurisdiction over the blue area, called the **mutable** region of the conveyor belt, where they can rearrange cards as new index cards and receipts enter the conveyor belt.
+- The blue mutable area represents a duration of 10 minutes in this example hospital. The black immutable area here is 5 minutes long (i.e. once a card reaches the immutable area, it reaches the end of the conveyor belt after 5 minutes).
 - The **coordinators** make sure that there is no card missing from one conveyor belt that is on another one. They can only add cards to other conveyor belts that already exist on the other conveyor belts.
 
 First let's look at the nurses' responsibility:
 
 1) Nurses match receipts with index cards for the conveyor belt they're working on. Although the index card might seem like enough, HIPAA regulations require this hospital clinic to have both the original index card and the receipt of when it was sent in order to treat the patient. If it is missing either of those, the hospital can not treat the patient.
 
-The different conveyor belts share information through the receipts, but their conveyor belts are separate and may have different orderings of cards. Let's imagine the following scenario:
+The different conveyor belts share information through the receipts, but their conveyor belts are separate and may have a different ordering of cards. Let's imagine the following scenario:
 
-- Conveyor #1: is the first to receive the index card for patient ID 745339908-WS. The timestamp of this sent card is 12:12:30.01. But conveyor #1 never receives a receipt.
-- Conveyor #2:  is the second to receive an index card for this patient at timestamp 12:12:35.02. The receipt is also printed on this conveyor belt approximately one second later, and contents both timestamps that have been logged up to this point: 12:12:30.01 and 12:12:35.02.
-- Conveyor #3: is the last to receive this patient's index card, sent at timestamp 12:12:40.03. It also is printed a receipt approximately one second after the index card is sent on this conveyor belt, containing all of the send timestamps across all conveyor belts: 12:12:30.01, 12:12:35.02, and 12:12:40.03.
+- **Conveyor #1**: is the first to receive the index card for patient ID 745339908-WS. The timestamp of this sent card is 12:12:30.01. But conveyor #1 never receives a receipt.
+- **Conveyor #2**:  is the second to receive an index card for this patient at timestamp 12:12:35.02. The receipt is also printed on this conveyor belt approximately one second later, and contents both timestamps that have been logged up to this point: 12:12:30.01 and 12:12:35.02.
+- **Conveyor #3**: is the last to receive this patient's index card, sent at timestamp 12:12:40.03. It also is printed a receipt approximately one second after the index card is sent on this conveyor belt, containing all of the send timestamps across all conveyor belts: 12:12:30.01, 12:12:35.02, and 12:12:40.03.
 
-We see in the above example that even though conveyor #1 is never printed a receipt, the index card was first printed there. The other conveyor belts' receipts reflect this and will sort this patient's card based on that information.
+We see in the above example that even though conveyor #1 was never printed a receipt, the patient's index card was first printed there on conveyor #1. The other conveyor belts' receipts reflect this and will sort this patient's card based on that information.
 
 Conveyor #1 will have to throw away the index card for this patient since the receipt never came within the mutable window of the conveyor belt (10 minutes). So conveyor belts #2 and #3 have a card that conveyor belt #1 doesn't have, that's potentially a big issue. This will get corrected by the hospital coordinator who we will cover a bit later.
 
@@ -124,9 +125,9 @@ On a practical level, here’s how it looks like for a patient index card that h
   
 Nurses make decisions on new receipts and index cards entering the conveyor belt. 
 
--   When a new receipt arrives, she checks the patient ID # on the receipt and attaches it to the index card if the index card is still in the mutable area. If not, the receipt is left on the conveyor belt in case it has arrived before the index card. (is this possible?) If receipt reaches end of mutable area of conveyor belt and patient’s index card still hasn’t arrived, then it’s discarded.
+-   When a new receipt arrives, she checks the patient ID # on the receipt and attaches it to the index card if the index card is still in the mutable area. If not, the receipt is left on the conveyor belt in case it has arrived before the index card. **(is this possible?)** If receipt reaches end of mutable area of conveyor belt and patient’s index card still hasn’t arrived, then it’s discarded.
 
-- The index card and receipt both have to be on the mutable area of the conveyor belt by (earliest timestamp of when index card was sent, as shown on the receipt) or (when index card was received) + 10 minutes, otherwise HIPAA compliance means they will be discarded if either the patient index card or followup receipt is missing.
+- The index card and receipt both have to be on the mutable area of the conveyor belt by the earliest timestamp of when the index card entered the conveyor belt + 10 minutes, otherwise HIPAA compliance dictates that the patient's index card will be discarded if either the patient index card or followup receipt is missing.
 
 -   Once a patient index card is joined with its receipt and is still on the conveyor belt’s mutable position, it’s positioned based on the earliest timestamp on the receipt. 
 
@@ -136,10 +137,10 @@ The nurse’s job is to keep the index cards ordered in the correct position bas
 
 A hospital coordinator sounds like a fancy title, but their job is low-paid grunt work with very little capabilities for them to perform. With that said, they perform a very important function for maintaining the proper order of the patient’s cards. 
 
-A coordinator’s job focuses on both the mutable area of each conveyor belt (in this example, index cards stay in the mutable area for 10 minutes) and the immutable area afterwards which is off limits to the nurses (patient cards stay here for 5 minutes). The immutable area of the conveyor belt is an area where nurses can no longer make changes to the order of the patient index cards.
+A coordinator’s job focuses on both the mutable area of each conveyor belt (in this example, index cards stay in the mutable area for 10 minutes) and the immutable area afterwards which is off limits to the nurses (patient cards move along in this area for 5 minutes). The immutable area of the conveyor belt is an area where nurses can no longer make changes to the order of the patient index cards.
 
 There’s only one job for the hospital coordinator to perform:
 
 -   The coordinator constantly checks each conveyor belt in both the immutable and mutable areas.
--   If the coordinator notices there is an index card missing from one of the conveyor belts, they can print it out on the spot (using a handheld printer) and add it to that conveyor belt.
--   The coordinator can only add, it can’t take away any cards.
+-   If the coordinator notices there is an index card missing from one of the conveyor belts, they can print it out on the spot (using a handheld printer) and add it to that conveyor belt at the same position.
+-   The coordinator can only add, it can’t re-order or take away cards.
