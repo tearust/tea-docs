@@ -20,7 +20,7 @@ Each patient is assessed by a doctor in the order they arrive. The doctor enters
 - Symptoms to be treated
 - Diagnosis and prescription for treatment.
 
-The doctor writes this information out onto an iPad. When done, they’ll print the index cards directly onto the nurses’ conveyor belts. Since the doctor can’t push push two buttons on their iPad for two different conveyor belts at the same time, the send times on these patient index cards will all have slightly different timestamps.
+The doctor writes this information out onto an iPad. When done, they’ll print the index cards directly onto the nurses’ conveyor belts. The **send** time is technically when the patient's index card is printed onto the conveyor belt. Thus the **sent** timestamp must be reported back from the conveyor belt to the iPad. The doctor can't know this time right away because it takes some time for the index card to be printed onto the conveyor belt. Also note that any conveyor belt's printer can only print one card at a time, so the timestamps being reported back to the doctor's iPad will all be unique.
 
 The timestamps of when these index card were sent on the nurses’ conveyor belts must be noted for HIPAA compliance. For the hospital to remain compliant, it notes these timestamps on followup receipts. The doctor has another button to send these receipts onto the nurses’ conveyor belts as they will help the nurses determine the ordering of the patient cards.
 
@@ -33,17 +33,18 @@ After the doctor has finished writing the patient’s initial assessment, they s
 
 We see the **Patient ID** which uniquely identifies the patient in the hospital system. There are three columns each corresponding to one of the conveyor belts.
 
-Once the doctor clicks **Print + Send** in any conveyor belt’s column, three things happen:
+Once the doctor clicks **Print + Send** in any conveyor belt’s column, four things happen:
 
 1. The patient’s index card is printed and sent to that particular conveyor belt.
-2. A timestamp of when that card was sent on that conveyor belt is noted in the timestamp box.
-3. The red **Print Receipt” button, which is not selectable, turns green and is now selectable. In other words, the **Print Receipt** button only becomes operational for a conveyor belt after the index card has been printed.
+2. Once the patient's index card is printed onto the conveyor belt, the exact time it hits the conveyor belt is reported back to the iPad.
+3. A timestamp of when that card was sent on that conveyor belt is noted in the relevant timestamp box on the iPad.
+4. Once the timestamp is reported back to the iPad, the red **Print Receipt” button, which is not selectable, turns green and is now selectable. In other words, the **Print Receipt** button only becomes operational for a conveyor belt after the index card has been printed onto it.
 
 Let’s visually go through this process as the doctor begins by clicking **Print + Send** in the **Conveyor #1** column.
 
 ![](./_print+send-1-click.png)
 
-Clicking that button prints out the patient’s index card onto conveyor belt #1 and starts moving.
+Clicking that button prints out the patient’s index card onto conveyor belt #1 and begins getting carried down the conveyor belt which is always in motion.
 
  ![](./index_card_enters_conveyor_belt.png)
 
