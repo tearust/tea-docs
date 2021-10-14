@@ -144,3 +144,18 @@ There’s only one job for the hospital coordinator to perform:
 -   The coordinator constantly checks each conveyor belt in both the immutable and mutable areas.
 -   If the coordinator notices there is an index card missing from one of the conveyor belts, they can print it out on the spot (using a handheld printer) and add it to that conveyor belt at the same position.
 -   The coordinator can only add, it can’t re-order or take away cards.
+
+## Example of Coordinator at Work
+Let's imagine a scenario where all 3 conveyor belts would be in sync except for one missing patient card on conveyor #3:
+
+![](./consensus-story-coordinator-1-missing-card.png)
+
+This state occurred because the nurse on conveyor #3 was patiently waiting for the receipt for the **PT_2** index card. When the **PT_2** index card reached the immutable area and the nurse hadn't yet seen the receipt arrive, the card had to be thrown away.
+
+This is the type of scenario that the coordinator is trying to fix. Once they notice that one of the conveyor belts is missing a card that should be in sequence, the coordinator prints out that patient's index card and places it into the same sequence as the other conveyor belts.
+
+![](./consensus-story-coordinator-2-prints.png)
+
+Here's what it looks like after the coordinator has completed the task of syncing the index card sequences on the conveyor belts:
+
+![](./consensus-story-coordinator-3-all-equal.png)
