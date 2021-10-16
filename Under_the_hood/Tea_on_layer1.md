@@ -5,7 +5,7 @@ TEA itself is not a blockchain, but it is built on top of blockchain technologie
 - Immutable trust information storage, such as credit history, key IDs and hashes.
 - Block height as a universal clock between TEA nodes.
 
-As explained in [TEA vs Blockchain](../What_is_TEA?/TEA_vs_blockchain.md):
+As explained in [TEA vs Blockchain](https://teaproject.org/How_TEA_Fixes_the_Internet.md#/doc_list/What_is_TEA%3F%2FTEA_vs_Blockchain.md):
 
 > The TEA nodes runs above other blockchains. Any blockchain can send a computational oracle request in a blockchain event and receive the result along with PoT (proof of trust) in a tx at the later time.
 

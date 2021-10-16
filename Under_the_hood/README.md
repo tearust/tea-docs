@@ -22,7 +22,7 @@ Continue [reading...](Tea_on_layer1.md)
 
 ## Trust Chain - Our Hardware Security Guard
 
-We support 2 trusted hardware solutions, TEE or TPM/HSM. In the case of TEE, the validation is centralized, so no chain is requried. In the case of TPM/HSM, a trust chain runs through the entire remote attestation workflow.
+We support 2 trusted hardware solutions, TEE or TPM/HSM. In the case of TEE, the validation is centralized, so no chain is required. In the case of TPM/HSM, a trust chain runs through the entire remote attestation workflow.
 
 Unlike most other layer-2 trusted computing projects, we don't trust pure software solutions and we don't use expensive and unrealistic cryptographic solutions either. We use mature and widely used Trusted Computing technologies, such as TPM / HSM, as our hardware root of trust. We know TPM alone is not secure enough as TPM has many known vulnerabilities. That’s why we insert it between the blockchain and the delegation chain. TPM can be broken, but the potential damage is limited and can be contained.
 

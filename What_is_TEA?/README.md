@@ -24,6 +24,6 @@
 - [Why did you say the Internet is broken?](./Fixing_a_Broken_Internet.md)
 - [How could TEA fix the Internet?](./How_TEA_Fixes_the_Internet.md)
 - [More details about the TEA token economy.](./Token_economy.md)
-- [Can you give us some use cases?](./Use_cases.md)
+- [Can you give us some use cases?](https://teaproject.org/How_TEA_Fixes_the_Internet.md#/doc_list/What_is_TEA%3F%2FUse_Cases.md)
 
 
