@@ -52,7 +52,7 @@ Camellia is an NFT. Every camellia could be different somehow, such as classific
 
 ![TEA pegging](https://miro.medium.com/max/770/1*6IU3eufHmhzwyvBDqDx8YQ.png)
 
-Unlike traditional cloud computing service providers, you cannot hire a miner to work for you for 10 hours. You won’t know, no one knows, which miner will be chosen to run your task. This is very important to keep zero knowledge to prevent attacks. TEA consensus will choose a VRF miner to run your task. The TEA will measure the cost of computing as the “gas” fee. This is similar to Ehtereum’s “gas” fee, so are the “tips.” But TEA will be much cheaper than Ethereum’s cost because we do not need to run the same code on millions of nodes. We have a different way of consensus to get the trust.
+Unlike traditional cloud computing service providers, you cannot hire a miner to work for you for 10 hours. You won’t know, no one knows, which miner will be chosen to run your task. This is very important to keep zero knowledge to prevent attacks. TEA consensus will choose a VRF miner to run your task. The TEA will measure the cost of computing as the “gas” fee. This is similar to Ethereum’s “gas” fee, so are the “tips.” But TEA will be much cheaper than Ethereum’s cost because we do not need to run the same code on millions of nodes. We have a different way of consensus to get the trust.
 
 ## The profitability of a Camellia and the Dispatching Algorithm
 
