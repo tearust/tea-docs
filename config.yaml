@@ -25,6 +25,7 @@ sort:
   - name: Blog_and_Vlog
     path: Blog_and_Vlog/README.md
     children:
+      - name: Bi-Weekly-Report-11-1-21.md
       - name: Bi-Weekly-Report-10-18-21.md
       - name: Bi-Weekly-Report-10-04-21.md
       - name: Epoch_3_What_is_new.md
@@ -33,7 +34,6 @@ sort:
       - name: Bi-Weekly-Report-08-13-21.md
       - name: Bi-Weekly-Report-07-29-21.md
       - name: Gluon_yet_another_crypto_wallet.md
-      - name: Can_trusted_computing_protect_your_digital_assets.md
   - name: Try_the_demo
     path: Try_the_demo/README.md
     children:
