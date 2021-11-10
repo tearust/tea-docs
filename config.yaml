@@ -54,27 +54,27 @@ sort:
       - name: Creating_a_New_Wallet_Account.md
       - name: Why_TEA_Dapps_Show_as_Not_Secure.md
 
-  - name: 中文资料
-    path: 中文资料/README.md
-    children:
-      - name: T计划简介
-        path: /中文资料/chn_teaser.md
-      - name: 代币经济学设计白皮书
-        path: /中文资料/chn_token_economy.md
-      - name: T计划和其他项目的主要区别
-        path: /中文资料/chn_differences.md
-      - name: T计划市场战略的三部曲
-        path: /中文资料/go2market.md
-      - name: T计划的矿工经济学
-        path: /中文资料/miner_tokenomics.md
-      - name: 挖矿竞赛简介(2.1赛季)
-        path: /中文资料/mining_contest_epoch_2.1.md
-      - name: 挖矿竞赛第三赛季预览
-        path: /中文资料/epoch3Preview.md
-      - name: 挖矿竞赛第三季演示视频和文案
-        path: /中文资料/epoch3_mining_contest_intro_video_scripts.md
-      - name: 挖矿竞赛第四季
-        path: /中文资料/epoch4.md
+  # - name: 中文资料
+  #   path: 中文资料/README.md
+  #   children:
+  #     - name: T计划简介
+  #       path: /中文资料/chn_teaser.md
+  #     - name: 代币经济学设计白皮书
+  #       path: /中文资料/chn_token_economy.md
+  #     - name: T计划和其他项目的主要区别
+  #       path: /中文资料/chn_differences.md
+  #     - name: T计划市场战略的三部曲
+  #       path: /中文资料/go2market.md
+  #     - name: T计划的矿工经济学
+  #       path: /中文资料/miner_tokenomics.md
+  #     - name: 挖矿竞赛简介(2.1赛季)
+  #       path: /中文资料/mining_contest_epoch_2.1.md
+  #     - name: 挖矿竞赛第三赛季预览
+  #       path: /中文资料/epoch3Preview.md
+  #     - name: 挖矿竞赛第三季演示视频和文案
+  #       path: /中文资料/epoch3_mining_contest_intro_video_scripts.md
+  #     - name: 挖矿竞赛第四季
+  #       path: /中文资料/epoch4.md
   # - name: 中文资料
   #   path: chn/README.md
   #   children:
