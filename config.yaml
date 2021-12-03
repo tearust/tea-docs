@@ -25,6 +25,7 @@ sort:
   - name: Blog_and_Vlog
     path: Blog_and_Vlog/README.md
     children:
+      - name: Bi-Weekly-Report-12-3-21.md
       - name: Bi-Weekly-Report-11-15-21.md
       - name: Bi-Weekly-Report-11-1-21.md
       - name: Bi-Weekly-Report-10-18-21.md
