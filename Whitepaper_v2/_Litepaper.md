@@ -50,11 +50,11 @@ The TEA Project uses CRDT databases because they are cheap and fast.
 - CRDT is fast as it has no time delay and doesn’t need to wait for others. Allowances are made for new transaction reports which are added non-destructively. This is in contrast to the TEA Project’s strong consistency state machine which must wait a minimum amount of time for confirmation.
 - CRDT storage cost is cheap, relying on IPFS for decentralized hard drive storage instead of the more expensive RAM storage.
 
-## The TEA Project's TWo Tokens: TEA & CML
-The TEA Project uses a dual token setup to incentivize participation among miners, developers, and consumers in the TEA ecosystem. 
+## The TEA Project's Two Tokens: TEA & CML
+The TEA Project uses a dual token setup to incentivize participation among miners, developers, investors, and consumers in the TEA ecosystem. 
 
 ### TEA
-The first token, TEA, is a utility token that must be mined - there is no genesis block, nor will there be any airdrops. The quantity therefore starts at nothing and has a potentially unlimited supply.
+The first token, TEA, is a utility token that must be mined - there is no TEA token in the genesis block (except for a very small amount for the initial gas fee), nor will there be any airdrops. The quantity therefore starts at nothing and has a potentially unlimited supply.
 
 TEA has a variety of uses on the platform:
 
@@ -82,7 +82,7 @@ The TEA Project is designed to allow for TApp token bonding curves for TApp deve
 
 ## TEA Ecosystem Development
 
-We envision the TEA Project ecosystem being built through successive outreach to the following three demographic groups in order: miners, developers, and end-users.
+Besides early investors, we envision the TEA Project ecosystem being built through successive outreach to the following three demographic groups in order: miners, developers, and end-users.
 
 **Miners**
 Prior to the maturity of the TEA Project's Web3 Rich dApps ecosystem, a mining economy is necessary to keep the TEA economy running. TEA’s carefully designed token economy creates NFT scarcity during mining. The scarcity encourages miners to reinvest their harvested TEA back into CML instead of selling TEA. Miners are of course free to host whatever TApps they wish with free market principles guiding them towards hosting TApps that are popular and able to reward miners. 
