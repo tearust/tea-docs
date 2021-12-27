@@ -4,12 +4,12 @@ As blockchain gains popularity for developers seeking decentralization and secur
 
 While traditional cloud apps achieve their speed at the high cost of centralization, the TEA Project's dApps (known as TApps) run full speed while still remaining decentralized. The TEA Project is able to thread the needle of the blockchain trilema and achieve all three facets - decentralization, speed, and security - through its two-layer blockchain design.
 
-- The layer-1 blockchain keeps trust data on the mining nodes running on layer-2. This layer deals with Byzantine fault and ensures that the layer-2 mining nodes all pass validation .
-- TEA Project's layer-2 can ignore Byzantine faults as the decentralized mining nodes on layer-2 have already gained trust from layer-1. They run encrypted app code in TPM-protected enclaves that interact with encrypted customer data, a zero-knowledge process where even the miners and developers don't have access to the customer's data.
+- The layer-1 blockchain keeps trust data on the mining nodes running on layer-2. This layer deals with Byzantine fault and ensures that all validated layer-2 nodes are trusted.
+- TEA Project's layer-2 can ignore Byzantine faults as the decentralized mining nodes on layer-2 have already gained trust from layer-1. It runs encrypted app code in the TPM-protected enclaves of the mining nodes that interact with encrypted customer data. The system is designed such that neither the miners nor the developers have access to the customer's data.
 
-The certification kept by layer-1 that all nodes running on layer-2 is trustable is what makes the TEA Project unique in how it has decentralized the cloud while not sacrificing speed. Rich applications can run at cloud computing performance and scale because layer-2 no longer has to deal with Byzantine faults.   
+The trust certification kept by layer-1 on all layer-2 nodes is how the TEA Project solves the quandary of how to keep apps decentralized without sacrificing speed. Rich applications can run at cloud computing performance and scale because the TEA Project's layer-2 no longer has to deal with Byzantine faults.   
 
-Applications can run on TEA Project's layer-2 and, from the app's POV, it looks just like a traditional cloud computing architecture. And developers themselves don't need any special knowledge about blockchain or consensus algorithms to get the decentralization and security benefits inherent in the TEA Project's 2-layer blockchain. They just have to compile their code with WebAssembly as the output target, allowing them to continue using their preferred programming languages which speeds up TApp development time.
+Applications can run full speed on the TEA Project's layer-2 because, from the app's point of view, it looks just like a normal three-tier cloud computing architecture. And developers themselves don't need any special knowledge about blockchain or consensus algorithms to get the decentralization and security benefits inherent in the TEA Project's 2-layer blockchain. They just need to set WebAssembly as their code compilation target, allowing them to use their preferred programming languages. TApps follow the same three-tier architecture prevalent in cloud computing (presentation tier, app tier, and database tier), but TEA Project TApps run fully decentralized.
 
 ## How The TEA Project Looks in Use
 The TEA Project is looking to disrupt the world of cloud computing by bringing decentralized apps running on blockchain at cloud computing speeds. Because we no longer have the cloud infrastructure, we must incentivize miners to provide the underlying infrastructure. IPFS is the actual storage infrastructure for storing both encrypted app and client data, which miners will host within their protected enclaves when their node is selected for a task. Let's look at the economic incentives for a hypothetical TApp running on the TEA network:
@@ -21,11 +21,15 @@ The TEA Project is looking to disrupt the world of cloud computing by bringing d
 
 In economic terms, the **researcher** pays to use the TApp. The payment flows through the **miner** who provided the node to perform the secure and private calculation, the **photographer** who is paid for the use of their pictures, and the **developer** who is paid for the usage of their code. Every transaction enriches a wide variety of participants in the TEA ecosystem and helps sustain and incentivize further usage.
 
+The TEA Project is able to provide all participants a decentralized computation network that is both secure and private. In practical terms, that means the developer who wrote the code cannot breach the photographer's image. And the miner who is randomly selected to host it in their enclave cannot access either the photographer's data or the developer's code. And the researcher is only able to receive the result of the app's calculation and isn't able to access the photographer's data outside of the enclave. The security and privacy that the TEA Project's decentralized computing network is able to provide has wide range of emerging use cases like residential IoT data and patient health records.
+
+Because the TEA Project is able to provide the underlying trust, there's no longer any trust required between all four parties.
+
 ## The TEA Project's Two Tokens: TEA & CML
 The TEA Project uses a dual token setup to incentivize participation among miners, developers, investors, and consumers in the TEA ecosystem. 
 
 ### TEA
-The first token, TEA, is a utility token that must be mined - there is no TEA token in the genesis block (except for a very small amount for the initial gas fee), nor will there be any airdrops. The quantity therefore starts at nothing and the total supply is determined by the number of miners. Its supply is therefore influenced by the supply and demand of CML tokens which miners need in order to mine TEA.
+The first token, TEA, is a stablecoin utility token that must be mined - there's no TEA token in the genesis block (except for a very small amount for the initial gas fee), nor will there be any airdrops. TEA is generated as the reward given to miners for running security validation services on the TEA network, and TEA is burnt when users buy new CML tokens. Its supply is therefore influenced by the supply and demand of CML tokens which miners need in order to mine TEA.
 
 TEA has a variety of uses on the platform:
 
@@ -62,7 +66,7 @@ Prior to the maturity of the TEA Project's Web3 Rich dApps ecosystem, a mining e
 After attracting miners to the platform, the TEA Project will begin outreach to developers to build TApps using the TEA dev framework. Developers upload their apps to the TApp market and wait for miners to host them. The outreach phase will feature developer tutorials and emphasize the ease of compiling to the WebAssembly format used by TApps.
 
 **Retail Investors**
-Retail investors want to enjoy capital appreciation through investment. Retail investors can purchase CML for a price appreciation play if they're bullish on the TEA ecosystem as a whole. In addition, each TApp will have its own TApp token that investors can purchase. As these tokens are issued on a bonding curve, the earliest TApp token investors will enjoy the largest amount of price appreciation.
+Retail investors want to enjoy capital appreciation through investment. We expect retail investors to be interested in CML just like institutional investors, but there's also another way of participating in the TEA ecosystem as a retail investor: TApp tokens. Each TApp will have its own TApp token that investors can purchase as if investing in a stock. Each TApp token represents a share in the TApp and gives the holder dividends in the form of more TApp tokens issued to its holders whenever someone uses the TApp. As these tokens are issued on a bonding curve, the earliest TApp token investors will enjoy the largest amount of price appreciation.
 
 **End-users**
 Concurrent to attracting developers to the platform, the TEA Project will actively market emerging TApps to consumers. We imagine the TEA Project being an ideal ecosystem for existing cloud apps looking to migrate and benefit from decentralization and data privacy. We look forward to the types of decentralized apps that will flourish on the TEA Project network. We also want to play an active part in welcoming consumers looking to make the leap from the centralized web 2.0 world to the TEA Project and Web3.
