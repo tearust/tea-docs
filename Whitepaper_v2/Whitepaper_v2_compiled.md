@@ -67,5 +67,3 @@ The TEA Project will have an SDK available to help shorten development time on o
 - [How TEA Fixes the Internet](https://teaproject.medium.com/how-tea-fixes-the-internet-a944dfe2db39)
 
 Our [TEA Project Whiteboard Explainer Videos](https://www.youtube.com/watch?v=DSmnP_kgcig&list=PLOhw_qkI0ILVpx0OaY74httLWfK9De9Gb) is also a helpful resource to understand the TEA Project ecosystem and how the various parts work together.
-
-
