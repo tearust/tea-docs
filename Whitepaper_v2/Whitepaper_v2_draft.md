@@ -10,7 +10,7 @@ https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/1.Summary.md
 
 ## 2. Different layers of the TEA Project
 
-- **2.1 Layer-1**（build on Polkadot Substrate, WASM, IPFS etc.
+- **2.1 Layer-1**（built on Polkadot Substrate, WASM, IPFS etc.)
 - **2.2 Layer-2 computing network** (built on top of layer-1's trust).
 
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/2.The-Two-Layers-of-TEA-Project.md
