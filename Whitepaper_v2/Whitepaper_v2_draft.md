@@ -1,4 +1,6 @@
-## 1. Summary
+# Table of Contents
+
+## 1. Overview
 Why does the TEA Project exist?
 
 - **1.1 Our vision to achieve fast, decentralized Web3 dApps.**
@@ -30,10 +32,10 @@ Mainly about how CML and TEA help ecosystem development and their ability to fol
 
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/4.Token-Economy.md
 
-## 5.Ecosystem Development
-- 5.1 How bonding curve impact developers and miners and its value for fundraising.
-- 5.2 The 3-phase rollout: miners, developers, and finally consumers.
+## 5. Ecosystem Development
+- 5.1 **The bonding curve**. Its impact on developers and miners and its value for fundraising.
+- 5.2 **The 3-phase rollout.** How we onboard miners, developers, and finally consumers.
 
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/5.Ecosystem-Development.md
 
-## 6.Ending
+## 6. Conclusion
