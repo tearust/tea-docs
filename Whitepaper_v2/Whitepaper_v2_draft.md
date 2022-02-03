@@ -6,11 +6,10 @@ Why does the TEA Project exist?
 
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/1.Summary.md
 
-## 2.Different layers of TEA Project
+## 2. Different layers of the TEA Project
 
-- **2.1 Layer 1**（build on Polkadot Substrate, WASM, IPFS etc）
-- **2.2 Layer 2** trust computing network
-This section explains framework of TEA Project solutions. Mainly focus on layer 1 including verify node network and storage.
+- **2.1 Layer-1**（build on Polkadot Substrate, WASM, IPFS etc.
+- **2.2 Layer-2 computing network** (built on top of layer-1's trust).
 
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/2.The-Two-Layers-of-TEA-Project.md
 
@@ -32,8 +31,8 @@ Mainly about how CML and TEA help ecosystem development and their ability to fol
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/4.Token-Economy.md
 
 ## 5.Ecosystem Development
-5.1 How bonding curve impact developers and miners and its value for cold start.
-5.2 Others
+- 5.1 How bonding curve impact developers and miners and its value for fundraising.
+- 5.2 The 3-phase rollout: miners, developers, and finally consumers.
 
 https://github.com/tearust/tea-docs/blob/main/Whitepaper_v2/5.Ecosystem-Development.md
 
