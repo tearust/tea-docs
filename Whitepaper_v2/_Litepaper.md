@@ -97,7 +97,7 @@ Multiple nodes will conduct remote attestations on any specific node before deci
 
 Let's summarize the above two points as follows:
 
-1.  **Trusted Execution** comes from protected enclaves where app logic can run while being protected by hardware security modules. All Tea Project TApps run inside of these protected enclaves. Nobody (which includes the app developer and the miners) has any control of the apps nor can they extract any data from the running enclaves.  
+1.  **Trusted Execution** comes from protected enclaves where app logic can run while being protected by hardware security modules. All TEA Project TApps run inside of these protected enclaves. Nobody (which includes the app developer and the miners) has any control of the apps nor can they extract any data from the running enclaves.  
     
 2.  **Trusted Attestation** refers to the process whereby the network nodes run reports on each other to ensure mining hardware running on the TEA network hasn't been tampered with. Once trusted status is attained, these nodes can run on TEA's layer-2 at cloud computing speeds without having to worry about (slow) BFT-consensus.  
 
@@ -117,7 +117,7 @@ The reported time is recognized under the supervision of trusted TPM chips and u
 
 The other state category is a CRDT database that allows for short-term inconsistencies in the business logic of TApps. The TEA Project uses OrbitDB databases built on top of IPFS for these transactions. CRDT stands for conflict-free replication data type, which allows conflict-free mergers between different replications before ultimately achieving network-wide consistency. In fact, the business logic of most apps can tolerate short-term inconsistencies to achieve both decentralization and efficiency. A typical example of a traditional cloud app that deals with this issue gracefully is Google Docs.
 
-Using time as a source of truth allows the Tea Project to sync the state machine between all of our layer-2 nodes without resorting to complicated consensus algorithms. This state machine also includes an embedded SQL-instance as detailed above which allows more complex apps to be built on the Tea platform.
+Using time as a source of truth allows the TEA Project to sync the state machine between all of our layer-2 nodes without resorting to complicated consensus algorithms. This state machine also includes an embedded SQL-instance as detailed above which allows more complex apps to be built on the TEA platform.
 
 **Putting It All Together**
 
