@@ -1,31 +1,38 @@
-      
+**How the TEA Project Solves a Central Web3 Problem**
 
-**How the TEA Project Solves a Central Blockchain Problem**
+The movement of developers to Web3 hasn't yet created an adequate architecture for devs to deploy fully decentralized Web3 dApps. Currently, the lack of a development framework for dApps has acted as a bottleneck for widespread deployment of Web3 dApps. That's where the TEA Project comes in. Just as Ruby on Rails ushered in the Web 2.0 era by allowing full-scale internet applications to be built rapidly, the TEA Project aims to provide a similar development framework for Web3 that allows developers to quickly get their dApps up and running.
 
-Developers moving to Web3 for decentralization and security are often met with a blockchain layer that’s too slow for running rich dApps. While traditional cloud apps achieve their speed at the high cost of centralization, the TEA Project's dApps (known as TApps) run full speed while still remaining decentralized. TEA Project TApps combine decentralization, speed, and security through its two-layer blockchain design.
+Unfortunately, developers too often must cobble together hybrid dApps as they're often met with a blockchain layer that’s too slow for running rich dApps. While traditional cloud apps achieve their speed at the high cost of centralization, the TEA Project's dApps (known as TApps) run full speed while still remaining decentralized. TEA Project TApps combine decentralization, speed, and security through its two-layer blockchain design.
 
 -   The layer-1 blockchain keeps trust data on the mining nodes running on layer-2. This layer deals with Byzantine fault and ensures that all layer-2 nodes are validated as trustworthy.
 -   TEA Project's layer-2 can ignore Byzantine faults as the decentralized mining nodes on layer-2 have already gained trust from layer-1. Each layer-2 mining node has a TPM-protected enclave where the encrypted app code interacts with encrypted customer data where neither the miners or the developers have access to the customer's data.
 
 The trust certification kept by layer-1 on all layer-2 nodes is how the TEA Project keeps the apps decentralized without sacrificing speed. Rich applications can run at cloud computing performance and scale because the TEA Project's layer-2 no longer has to deal with Byzantine faults which requires blockchains to continually inspect nodes for signs of bad actors. Circumventing slow processing speeds inherent with BFT is an endemic problem of decentralized systems. TEA's layer-1 blockchain still uses Byzantine fault tolerance. The longer times needed to reach consensus on TEA's layer-1 won't interfere with the faster speeds required on its layer-2. The TEA network only needs to use the Proof of Trust (PoT) data on layer-1 to reach a consensus on the trustability of nodes on layer-2.
 
-In the TEA Project, dApps run Web Assembly code on layer-2 within hardware-protected enclaves. TEA's root of trust comes from miners' hardware that forms the distributed nodes of the TEA network. Each mining machine has an embedded TPM chip that generates PoT data. This PoT data is stored on TEA's layer-1 blockchain. The beauty of this setup comes from the layer-1 trust data that TEA mining nodes can poll to reach consensus.
+In the TEA Project, dApps run WebAssembly (Wasm) code on layer-2 within hardware-protected enclaves. TEA's use of Wasm means developers can use the programming language they're accustomed to using, making it much more straightforward for developers to deploy apps to Web3 through the TEA Project. Additionally, developers accustomed to the front-end / back-end / database tiers of the cloud computing tech stack will also find them present in the TEA Project. TApps follow the same three-tier architecture prevalent in cloud computing (presentation tier, app tier, and database tier), but TEA Project TApps run fully decentralized.
 
+Applications can run full speed on the TEA Project's layer-2 because, from the app's point of view, it looks just like a normal three-tier cloud computing architecture. And developers themselves don't need any special knowledge about blockchain or consensus algorithms to get the decentralization and security benefits inherent in the TEA Project's 2-layer blockchain. They just need to set WebAssembly as their code compilation target while still using their preferred programming languages. 
 
-The current state of every dApp running on the TEA network is maintained through a state machine that orders transactions using Proof of Time. Using time as a root of trust allows dApps to query the current state through the nearest node that works like a database tier from the app's perspective. Not only are TEA Project dApps fully decentralized, but they can also run full speed (thanks to the layer-2 nodes' protected execution enclaves) and can query a database layer (thanks to the layer-2 nodes' GPS modules).
+**The TEA Project's Three Roots of Trust**
 
-Applications can run full speed on the TEA Project's layer-2 because, from the app's point of view, it looks just like a normal three-tier cloud computing architecture. And developers themselves don't need any special knowledge about blockchain or consensus algorithms to get the decentralization and security benefits inherent in the TEA Project's 2-layer blockchain. They just need to set WebAssembly as their code compilation target, allowing them to use their preferred programming languages. TApps follow the same three-tier architecture prevalent in cloud computing (presentation tier, app tier, and database tier), but TEA Project TApps run fully decentralized.
+Traditional blockchains have two roots of trust: consensus and cryptography. But their reliance on consensus makes it impossible for these blockchains to scale and meet the needs of rich applications. The TEA Project has the usual blockchain roots of trust (consensus and cryptography) as part of its layer-1. But since our layer-2 isn't a blockchain and doesn't rely on consensus, we add two more roots of trust.
+
+**1. A hardware root of trust.** One of TEA's roots of trust comes from the miners' hardware TPM security chips that generate PoT data stored on TEA's layer-1 blockchain. This setup allows our layer-1 to poll the layer-2 nodes' trust data in order to reach consensus on the trustworthiness of TEA's layer-2 mining nodes.
+
+**2. Time as a root of trust.** The current state of every dApp running on the TEA network is maintained through a state machine that orders transactions using Proof of Time. Using time as a root of trust allows dApps to query the current state through the nearest node that works like a database tier from the app's perspective. 
+
+Not only are TEA Project dApps fully decentralized, but they can run full speed (thanks to the layer-2 nodes' protected execution enclaves) and can query a database layer (thanks to the layer-2 nodes' GPS modules).
 
 **How The TEA Project Looks in Use**
 
-The TEA Project is looking to disrupt the world of cloud computing by bringing decentralized apps running on blockchain at cloud computing speeds. Because we no longer have the cloud infrastructure, we must incentivize miners to provide the underlying infrastructure. IPFS is the actual storage infrastructure for storing both encrypted app and client data, which miners will host within their protected enclaves when their node is selected for a task. Let's look at the economic incentives for a hypothetical TApp running on the TEA network: 
+The TEA Project is looking to disrupt the world of cloud computing by enabling decentralized apps to run on the blockchain at cloud computing speeds. Because we no longer have the cloud servers of web 2.0, we must incentivize miners to provide the underlying infrastructure. IPFS is the actual storage infrastructure for storing both encrypted app and client data, which miners will host within their protected enclaves when their node is selected for a task. 
+
+Let's look at the economic incentives for a hypothetical TApp running on the TEA network: 
 
 -   The **developer** uploads their Tensorflow image recognition analysis TApp to IPFS.
 -   A **photographer** uploads their pictures to IPFS.
 -   A **researcher** wants to use the **developer's** TApp with the **photographer's** pictures.
 -   A random **miner** is selected to host the Tensorflow TApp and the pictures within the protected enclave of their mining machine.
-
-  
 
 In economic terms, the **researcher** pays to use the TApp. The payment flows through the **miner** who provided the node to perform the secure and private calculation, the **photographer** who is paid for the use of their pictures, and the **developer** who is paid for the usage of their code. Every transaction enriches a wide variety of participants in the TEA ecosystem and helps sustain and incentivize further usage.
 
@@ -39,7 +46,7 @@ The TEA Project uses a dual token setup to incentivize participation among miner
 
 **TEA**
 
-The first token, TEA, is a stablecoin utility token that must be mined - there's no TEA token in the genesis block (except for a very small amount for the initial gas fee), nor will there be any airdrops. TEA is generated as the reward given to miners for running security validation services on the TEA network. TEA is burnt when users buy new CML tokens through DAO auctions. Its supply is therefore influenced by the supply and demand of CML tokens which miners need in order to mine TEA.
+The first token, TEA, is a stablecoin utility token that will have a 100 million token pre-mine. TEA is also generated as the reward given to miners for running security validation services on the TEA network. TEA is burnt when users buy new CML tokens through DAO auctions. Its supply is therefore influenced by the supply and demand of CML tokens which miners need in order to mine TEA.
 
 TEA has a variety of uses on the platform:
 
@@ -48,7 +55,9 @@ TEA has a variety of uses on the platform:
 -   For miners, TEA can be part of the reward for mining on the network.
 -   Users can also stake TEA to mining nodes to share in a percentage of that node's mining rewards.
 
-TEA is a stable coin that's pegged to the cost of computing resources. That means the same amount of TEA tokens should be able to pay for the same amount of computing resources at any point in time.
+The 100 million pre-mined tokens will be allocated with different vesting schedules (18 months for the investment rounds, 22 months for the community and team). The pre-mine allocation is as follows:
+
+![Allocation](https://user-images.githubusercontent.com/86096370/163118867-f84a529c-186c-4ff3-8a92-6eb8fbfd9b37.png)
 
 **CML**
 
@@ -57,13 +66,15 @@ The TEA Project's second token, CML, is an NFT with a life cycle determined rand
 -   A TEA mining node can only be activated by associating a CML NFT with it. CML functions as a mining license and a credit record. Note that mining TEA doesn’t require a GPU or an ASIC. It only requires the Camellia NFT and cheap secure hardware such as an RPi with a GPS module and a TPM chip. 
 -   Miners buy new Camellia seeds through open bidding, with the TEA exchanged for them burned by the TEA Project DAO.
 -   Investors can stake their defrosted CML to mining machines for revenue sharing.
--   CML is issued by the DAO at a rate to regulate supply and ensure enough uptake by miners and investors to avoid flooding the market. The DAO also burns CML when it when it dies.
+-   Each CML has a lifespan associated with it (approximately 2 years). Its lifespan and other attributes such as productivity have variations that are generated algorithmically.
+-   Each mining machine's characteristics (e.g. its RAM and whether it has a graphics card) will be recorded within the CML nft.
+-   CML is issued by the DAO at a rate to regulate supply and ensure enough uptake by miners and investors to avoid flooding the market. The DAO also burns CML when it dies.
 
 There are three types of CML seeds: 
 
 -   **A CML** when planted into mining nodes provides the infrastructure for our layer-2 state machine as well as the TApps’ database layer.
 -   **B CML** when planted into mining nodes host the TApps on the layer-2 network.
--   **C CML** can be planted into mining nodes to perform public service tasks like remote attestation.
+-   **C CML** can be planted into mining nodes to perform public service tasks like remote attestation. C CML is primarily used for users who want to use TApps to interact with their own private data.
 
 Although each CML has a lifespan, they can remain frozen past its defrost date for an indefinite amount of time. Investors who have participated in funding rounds in exchange for CML seeds can therefore keep their seeds frozen if they don't wish to mine with them.
 
@@ -123,8 +134,8 @@ Using time as a source of truth allows the TEA Project to sync the state machine
 
 The TEA Project aims to become an ideal onboarding point for developers looking to deploy to Web3. As an infrastructure provider for Web3, we designed our ecosystem to look very familiar to developers who will appreciate the straightforward 3-tier architecture that’s similar to cloud computing.
 
--   The **front end** for TEA decentralized applications uses IPFS.
+-   The **front-end** for TEA decentralized applications uses IPFS.
 -   The **server** **layer** handles dev code compiled to WASM, meaning developers can use their existing programming languages and set WASM as the output target.
 -   The **database layer** is handled according to the developer's needs - NoSQL data is sent to IPFS as governed by type-B CML mining nodes, while relationship data is stored in GlueSQL as governed by type-A CML mining nodes.
 
-We look forward to making the TEA Project the preferred entrance for developers looking to enter Web3. We believe the simplicity of our tech stack will be inviting to developers who won’t have to learn new languages or new blockchain concepts. They can enjoy the benefits of decentralization and data privacy that Web3 offers while deploying to a familiar 3-tier architecture.
+We look forward to making the TEA Project the preferred development platform for developers looking to enter Web3. We believe the simplicity of our tech stack will be inviting to developers who won’t have to learn new languages or new blockchain concepts. They can enjoy the benefits of decentralization and data privacy that Web3 offers while deploying to a familiar 3-tier architecture using a mature development framework built for Web3.
