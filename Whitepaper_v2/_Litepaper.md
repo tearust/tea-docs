@@ -6,7 +6,7 @@ Unfortunately, developers too often must cobble together hybrid dApps as they're
 
 > Are smart contracts a necessary component of Web3?
 
-The answer from the TEA Project's perspective is no they're not. Smart contracts have two major limitations: they're limited in the type of algorithms they can execute, and they require consensus. The TEA Project doesn't use smart contracts as part of its execution layer for dApps. Smart contracts have their applications in areas such as DeFi, but they can't possibly be the basis of rich dApps that rival the speed and functionality of current centralized cloud computing apps.
+The answer from the TEA Project's perspective is no, they're not. Smart contracts have two major limitations: they're limited in the type of algorithms they can execute, and they require consensus. The TEA Project doesn't use smart contracts as part of its execution layer for dApps. Smart contracts have their applications in areas such as DeFi, but they can't possibly be the basis of rich dApps that rival the speed and functionality of current centralized cloud computing apps.
 
 And while traditional cloud apps achieve their speed at the high cost of centralization, the TEA Project's dApps (known as TApps) run full speed while still remaining decentralized. TEA Project TApps combine decentralization, speed, and security through its two-layer blockchain design.
 
