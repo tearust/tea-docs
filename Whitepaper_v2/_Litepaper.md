@@ -2,7 +2,13 @@
 
 The movement of developers to Web3 hasn't yet created an adequate architecture for devs to deploy fully decentralized Web3 dApps. Currently, the lack of a development framework for dApps has acted as a bottleneck for widespread deployment of Web3 dApps. That's where the TEA Project comes in. Just as Ruby on Rails ushered in the Web 2.0 era by allowing full-scale internet applications to be built rapidly, the TEA Project aims to provide a similar development framework for Web3 that allows developers to quickly get their dApps up and running.
 
-Unfortunately, developers too often must cobble together hybrid dApps as they're often met with a blockchain layer that’s too slow for running rich dApps. While traditional cloud apps achieve their speed at the high cost of centralization, the TEA Project's dApps (known as TApps) run full speed while still remaining decentralized. TEA Project TApps combine decentralization, speed, and security through its two-layer blockchain design.
+Unfortunately, developers too often must cobble together hybrid dApps as they're often met with a blockchain layer that’s too slow for running rich dApps. Which raises a question many users might have about Web3:
+
+> Are smart contracts a necessary component of Web3?
+
+The answer from the TEA Project's perspective is no they're not. Smart contracts have two major limitations: they're limited in the type of algorithms they can execute, and they require consensus. The TEA Project doesn't use smart contracts as part of its execution layer for dApps. Smart contracts have their applications in areas such as DeFi, but they can't possibly be the basis of rich dApps that rival the speed and functionality of current centralized cloud computing apps.
+
+And while traditional cloud apps achieve their speed at the high cost of centralization, the TEA Project's dApps (known as TApps) run full speed while still remaining decentralized. TEA Project TApps combine decentralization, speed, and security through its two-layer blockchain design.
 
 -   The layer-1 blockchain keeps trust data on the mining nodes running on layer-2. This layer deals with Byzantine fault and ensures that all layer-2 nodes are validated as trustworthy.
 -   TEA Project's layer-2 can ignore Byzantine faults as the decentralized mining nodes on layer-2 have already gained trust from layer-1. Each layer-2 mining node has a TPM-protected enclave where the encrypted app code interacts with encrypted customer data where neither the miners or the developers have access to the customer's data.
