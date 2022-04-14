@@ -63,7 +63,7 @@ TEA has a variety of uses on the platform:
 
 The 100 million pre-mined tokens will be allocated with different vesting schedules (18 months for the investment rounds, 22 months for the community and team). The pre-mine allocation is as follows:
 
-![Allocation](https://user-images.githubusercontent.com/86096370/163118867-f84a529c-186c-4ff3-8a92-6eb8fbfd9b37.png)
+![Allocation](./litepaper-allocation.png)
 
 **CML**
 
