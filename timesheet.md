@@ -8,5 +8,5 @@
 | Lex | 9 dec 2020 | 1 | rewrites and edits of business model video script | 35b3f185198ece1547d9bf4051469688cbbc797e |
 | Lex | 2 dec 2020 | 3 | rewrites and edits of intro video script | fd4ebf356e0fce995904a6688e78cc18c0a4c971 |
 
-
+Requested payment amount: 500 USD
 POLKADOT WALLET: 5C7TjqaNBUKfd4zetZ1MvxABdMx7ZWsdjvtCEfFAgwWKEY8t
