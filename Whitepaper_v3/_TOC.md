@@ -43,7 +43,7 @@
 - Explanation of block rewards (tentatively paid out from state maintainer taxes).
 - Show pre-mine graphic with legend on how the 100M pre-mine is allocated.
 - Given pre-mine / block rewards / locking mechanisms already explained, have a brief discussion about token supply with hypothetical forecasts.
-- **Kevin**: are we still saying TEA is stable relative to compute resources?
+- Explain the rate between TEA and computing resourcse. We will calculate the computing resources the app uses and set a price similar to how AWS does. e.g. 1.25TEA per 1M CPU instructions.
 
 ### 3.2 The NFTs
 #### 3.2.1 State Maintainer Seat Licenses 
@@ -71,8 +71,9 @@
 
 ### 3.4 Staking Tokens
 #### 3.4.1 (State Machine) Global Tokens
+- Earns a share of the state maintainer tax net of public service rewards which have priority.
 #### 3.4.2 (Hosting) CML Tokens
-- (?) Will we still have these?
+- Each individual CML (hosting TApps) will have their own staking token.
 
 ### 3.5 State Memory Tokens
 - Devs will have to purchase in order to secure space in state memory.
