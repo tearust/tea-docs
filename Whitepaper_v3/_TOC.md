@@ -80,7 +80,7 @@
 
 ### 3.6 Bonding Curves
 - Explain general mechanism of bonding curves.
-- Explain why bonding curves were chosen for 1) TApp tokens and 2) staking tokens.
+- Explain why bonding curves were chosen for 1) TApp tokens 2) staking tokens and 3) state memory tokens.
 
 ## 4. Ecosystem Development
 3-phase rollout:
