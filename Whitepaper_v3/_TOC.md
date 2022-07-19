@@ -7,6 +7,7 @@
 ## 1. Summary
 - Problem we're trying to solve (bringing full-speed dApps to the blockchain).
 - How we're solving it (overview of our layer2 and the tech behind it).
+- Emphasize the benefits of the TEA Project.
 - **Portability**: Firefox-vs-OS metaphor, we can run on top of any blockchain we deploy smart contract to.
 - **Trust**: TPM / remote attestation. The various actors don't need to trust each other, it's built into the system.
 - **Security**: TPM-protected enclaves / private CML (private data stays in the home).
