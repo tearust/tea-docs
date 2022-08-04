@@ -52,6 +52,7 @@
 - Supply determined by DAO vote. First ~2 years will only be run by team and select invitees.
 - Explain the state maintainer seat license tokenomics:
 - - State maintainer tax (Harberger tax).
+- - Explain Harberger tax is necessary because state maintainer licenses are a public good.
 - - Collection pool + distribution pool + reserve fund.
 - - Interplay with public service rewards and global token dividends.
 
